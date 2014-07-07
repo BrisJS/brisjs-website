@@ -94,7 +94,7 @@ footer{
   opacity: 1;
   width:350px; /* all the nested css is done as percentages of this, so you can scale it to your <3's content */
   height:250px;
-  background: #FFFFFF url("/img/logo.jpg") center no-repeat;
+  background: url("/img/brisjs.png") center no-repeat;
   background-size: contain;
   position:relative;
   top:40px;
