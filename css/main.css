@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-        padding: 0;
+	padding: 0;
 	font: 16px/1.6em 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #333;
 }
@@ -8,32 +8,32 @@ body {
 a { text-decoration: none; color:rgb(180,30,30);}
 
 #header {
-  margin: 0 0 200px;
-  text-align: center;
-  height: 250px;
-  background: #222 url("/img/banner.jpg") center top no-repeat;
-  background-size: 100% auto;
-  background-size: cover;
+	margin: 0 0 260px;
+	text-align: center;
+	height: 250px;
+	background: #222 url("/img/banner.jpg") center top no-repeat;
+	background-size: 100% auto;
+	background-size: cover;
 }
 
 @media all and (min-width: 750px){
-  #header .notice{
-    display: inline-block;
-  }
+	#header .notice{
+		display: inline-block;
+	}
 }
 
 .badges a{
-  width:50px;
-  height:50px;
-  display: inline-block;
+	width:50px;
+	height:50px;
+	display: inline-block;
 }
 .badges .github{
-  background: url("/img/badge-github.png") center center no-repeat;
-  background-size:80% 80%;
+	background: url("/img/badge-github.png") center center no-repeat;
+	background-size:80% 80%;
 }
 .badges .twitter{
-  background: url("/img/badge-twitter.png") center center no-repeat;
-  background-size:80% 80%;
+	background: url("/img/badge-twitter.png") center center no-repeat;
+	background-size:80% 80%;
 }
 .content { max-width: 590px; margin: 0 auto; padding: 0 8px;}
 
@@ -43,7 +43,7 @@ a { text-decoration: none; color:rgb(180,30,30);}
 
 #footer a, #footer a:visited, #footer a:link, #organizers a, #organizers a:visited, #organizers a:link  { color:#efefef;}
 
-h1 { font-family: 'Monda', sans-serif;  font-size: 66px; font-weight:400; margin-bottom: 30px; margin-top: 80px;}
+h1 { font-family: 'Monda', sans-serif;  font-size: 66px; font-weight:400; margin-bottom: 30px; margin-top: 30px;}
 /* font-size: 72px; */
 
 h1 a { text-decoration: none; color: #111;}
@@ -65,37 +65,37 @@ ul{ padding-left: 20px}
 li{ margin:0 0 0.6em}
 
 .team {
-  width:512px;
-  list-style-type: none;
-  padding: 0;
-  margin: 44px auto 0;
+	width:512px;
+	list-style-type: none;
+	padding: 0;
+	margin: 44px auto 0;
 }
 
 .team li {
-  width: 190px;
-  display: inline-block;
-  margin-left: 44px;
-  text-align: center;
+	width: 190px;
+	display: inline-block;
+	margin-left: 44px;
+	text-align: center;
 }
 
 .team img, .inventor img {
-  border: 1px solid #333;
-  width: 100%;
+	border: 1px solid #333;
+	width: 100%;
 }
 
 footer{
-  margin: 100px 0 0;
+	margin: 100px 0 0;
 }
 
 
 .icon{
-  margin:0 auto;
-  z-index:2;
-  opacity: 1;
-  width:350px; /* all the nested css is done as percentages of this, so you can scale it to your <3's content */
-  height:250px;
-  background: url("/img/brisjs.png") center no-repeat;
-  background-size: contain;
-  position:relative;
-  top:40px;
+	margin:0 auto;
+	z-index:2;
+	opacity: 1;
+	width:350px; /* all the nested css is done as percentages of this, so you can scale it to your <3's content */
+	height:350px;
+	background: url("/img/brisjs.png");
+	background-size: contain;
+	position:relative;
+	top:40px;
 }
