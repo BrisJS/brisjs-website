@@ -1,6 +1,6 @@
 brisjs.github.io
 ====================
 
-The http://brisjs.com website.
+The https://bris.js.org/ website.
 
 Push to master will automagically publish changes.
