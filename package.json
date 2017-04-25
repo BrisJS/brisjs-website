@@ -1,0 +1,25 @@
+{
+  "name": "brisjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "beefy app/app.js:app.js",
+    "build": "rm -rf dist;mkdir dist && cp -r index.html images style.css dist && browserify app/app.js|uglifyjs>dist/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "beefy": "^2.1.8",
+    "browserify": "^14.3.0",
+    "date-fns": "^1.28.3",
+    "domready": "^1.0.8",
+    "ejs": "^2.5.6",
+    "handlebars": "^4.0.6",
+    "lodash": "^4.17.4",
+    "markdown-it": "^8.3.1",
+    "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
+  },
+  "dependencies": {}
+}
