@@ -1,59 +1,241 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!-- gh-pages likes to cache for 24h, let's disable that -->
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="expires" content="Thu, 01 Jan 1970 13:37:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <title>BrisJS - Brisbane Javascript Meetup</title>
-    <link rel="shortcut icon" href="/img/favicon.png" >
-    <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen" href="/css/main.css" >
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+	<script defer src="app.js"></script>
+
+  <title>Brisbane Javascript</title>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-    <header id="header">
+<div class="ui vertical inverted sidebar menu left">
+  <a class="page-home active item" href="#">BrisJS</a>
+  <a class="page-present item" href="#present">Present a talk</a>
+  <a class="page-jobs item" href="#jobs">Find a job</a>
+</div>
+<div class="pusher">
+  <div id="hero" class="ui inverted vertical masthead center aligned segment">
 
-        <div class="icon"></div>
-
-        <h1><a href="/">BrisJS</a></h1>
-        <h2>A Brisbane Javascript Meetup</h2>
-
-    </header>
-
-    <div class="content">
-        <p>
-            BrisJS is a Brisbane JavaScript meetup group that talks about Node.js and frontend javascript.
-        </p>
-
-        <p>
-            We meet the first Monday of every month. For more information, check out the <a href="http://www.meetup.com/BrisJS/">meetup.com/BrisJS/</a>.
-        </p>
-
-        <p>
-            <a href="http://www.meetup.com/BrisJS/">
-                <img src="http://img2.meetupstatic.com/img/8308650022681532654/header/logo-2x.png" alt="meetup logo" />
-            </a>
-        </p>
-
-        <h2>Want to Hear About Something?</h2>
-
-        <p>If you would like to hear about something, please open an <a href="https://github.com/BrisJS/meetups/issues?state=open">issue in github</a> </p>
-
-        <h2>Keep up to Date</h2>
-
-        <p>Follow <a href="https://twitter.com/brisjs">@brisjs</a> on twitter, join the <a href="http://www.meetup.com/BrisJS/">meetup group</a> and watch the <a href="https://github.com/BrisJS/meetups/issues?state=open">github repo</a>.</p>
-
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="item logo image" href="#"><img alt="" src="images/logo.svg"></a>
+        <a class="page-home active item" href="#">BrisJS</a>
+        <a class="page-present item" href="#present">Present</a>
+        <a class="page-jobs item" href="#jobs">Jobs</a>
+        <div class="right item">
+          <a class="ui inverted button" href="https://www.meetup.com/en-AU/BrisJS/join/?rg=joinus2">Join us!</a>
+        </div>
+      </div>
     </div>
 
-    <footer id="footer">
-        <div class="badges">
-            <a class="github" href="https://github.com/BrisJS/meetups/issues?state=open" title="Code on GitHub"></a>
-            <a class="twitter" href="https://twitter.com/brisjs" title="News on Twitter"></a>
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        BrisJS
+      </h1>
+      <h2>The Brisbane Javascript meetup.</h2>
+      <a class="ui huge primary button" href="https://www.meetup.com/BrisJS/">
+				<span data-latest="name">Next Event</span>
+				<i class="right arrow icon"></i>
+			</a>
+    </div>
+
+  </div>
+	<div data-page="home">
+	  <div class="ui vertical stripe segment">
+	    <div class="ui stackable grid container">
+	      <div class="row">
+	        <div class="eight wide column">
+	          <h3 class="ui header">Who we are</h3>
+						<p>We're the Brisbane JavaScript programming group - BrisJS for short. Our mission is to provide a community and a voice for Brisbane's JavaScript technology community.</p>
+						<h3 class="ui header">What we do</h3>
+						<p>We present technical talks on the first Monday of every month, and have periodic networking events between.&nbsp;</p>
+	        </div>
+	        <div class="six wide right floated column">
+					  <div class="ui card">
+					    <div class="content">
+					      <img class="right floated mini ui image" alt="" src="/images/logo.svg">
+					      <div class="header" data-latest="name">
+					        Next event
+					      </div>
+					      <div class="meta">
+									<span data-latest="dateHuman">Sometime</span>
+										at
+									<span data-latest="venue.name">Someplace</span>
+					      </div>
+					      <div class="description" data-latest="description" data-html="true">
+					        Click through to Meetup for event deails.
+					      </div>
+					    </div>
+					    <div class="extra content">
+					      <div class="ui two buttons">
+					        <a class="ui basic green button" href="meetup.com/BrisJS/">Join us!</a>
+					      </div>
+					    </div>
+					  </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+<div data-page="present">
+  <div class="ui text container center aligned vertical stripe segment">
+    <h2 class="ui header">Present at BrisJS</h2>
+    <p>We're always looking for presenters! If you have an idea for a talk
+      you should absolutely get in touch with us!</p>
+    <a
+      class="ui huge primary button"
+      href="https://github.com/BrisJS/meetups/issues/new?body=Talk%20title:+My+Talk%0ATalk%20length:+20+min/40+min%0ATalk%20synopsis:%0AAvailable+month(s):%0AOptional:+your+Twitter+account+so+we+can+promote+your+talk">
+      Submit your talk <i class="right arrow icon"></i>
+    </a>
+  </div>
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Talks requested</h3>
+          <p>Need some inspiration? The <a href="https://github.com/BrisJS/meetups/issues?q=is%3Aopen+is%3Aissue+label%3A%22Talk+Requests%22">
+            following are talks requested by BrisJS users</a>.</p>
+          <p>Click through to the GitHub issue trakcto claim the talk or add more info</p>
+          <script id="template-talksrequested" type="text/x-handlebars-template">
+          {{#each this}}
+          <div class="ui items">
+  <div class="item">
+    <div class="ui tiny image">
+      <img src="{{user.avatar_url}}" alt="{{user.login}}">
+    </div>
+    <div class="content">
+      <a class="header">{{title}}</a>
+      <div class="meta">
+        <span>Requested by <a href="{{user.html_url}}">{{user.login}}</a></span>
+      </div>
+      <div class="description">
+        {{{html}}}
+      </div>
+      <div class="extra">
+        <a
+          href="{{html_url}}">
+          More info <i class="right arrow icon"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+          {{/each}}
+          </script>
         </div>
-    </footer>
+        <div class="six wide right floated column">
+          <h3>Presentation details</h3>
+          <p>The Auth &amp; General venue is fitted out with 1080p displays
+            mirrored throughout the venue. These support HDMI &amp; mini DP
+            output, however audio is not supported.</p>
+          <p>Talks run for either a 20 or 40 minute slot, let us know which you
+            prefer. Presentation style is relaxed and can take the form of a
+            presentation, live coding session, Q&amp;A session or all of the
+            above.</p>
+          <p>If you have special requirements on the night, please let us know.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div data-page="jobs">
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <div class="row">
+        <div class="five wide column">
+          <img alt="" src="images/montage.svg">
+        </div>
+        <div class="ten wide right floated column">
+          <h3 class="ui header">Job Board</h3>
+          <p>The BrisJS job board is an opportunity for the community to post
+          jobs for the community.</p>
+          <h3 class="ui header">Post a Job</h3>
+          <p>Have a job to advertise? Great!</p>
+          <ol>
+            <li>You'll need a GitHub account</li>
+            <li><a href="https://github.com/BrisJS/meetups/issues/new">Create a job ad</a> on our GitHub repo</li>
+            <li>Your job will appear on this page after moderation</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script id="template-jobs" type="text/x-handlebars-template">
+{{#each this}}
+<div class="ui vertical stripe segment">
+	<div class="ui stackable grid container">
+    <div class="row">
+      <div class="five wide column">
+        <div class="ui card">
+          <div class="content">
+            <img alt="{{user.login}}" class="right floated mini ui image" src="{{user.avatar_url}}">
+            <div class="header" data-latest="name">
+              <a href="{{html_url}}">{{title}}</a>
+            </div>
+            <div class="meta">
+              Posted by <a href="{{user.html_url}}">{{user.login}}</a> on {{dateHuman}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ten wide right floated column">
+        {{{html}}}
+        <div class="ui message">
+          <div class="header">
+            More info
+          </div>
+          <p>Leave a <a href="{{comments_url}}">comment on the original post</a> or <a href="{{user.html_url}}">contact the poster</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+</script>
+	</div>
+</div>
+<div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a class="page-home active item" href="#">BrisJS</a>
+            <a class="page-present item" href="#present">Present a talk</a>
+            <a class="page-jobs item" href="#jobs">Find a job</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Follow us elsewhere</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Meetup</a>
+            <a href="#" class="item">GitHub Issues</a>
+            <a href="#" class="item">Twitter</a>
+            <a href="#" class="item">Facebook</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Brisbane Javascript</h4>
+          <p>BrisJS is brought to you by our sponsors. This site built with <a href="https://semantic-ui.com">Semantic UI</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
+
 </html>
