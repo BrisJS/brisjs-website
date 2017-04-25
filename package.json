@@ -13,12 +13,12 @@
   "devDependencies": {
     "beefy": "^2.1.8",
     "date-fns": "^1.28.3",
+    "domready": "^1.0.8",
     "ejs": "^2.5.6",
     "handlebars": "^4.0.6",
     "lodash": "^4.17.4",
+    "markdown-it": "^8.3.1",
     "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
   },
-  "dependencies": {
-    "markdown-it": "^8.3.1"
-  }
+  "dependencies": {}
 }
