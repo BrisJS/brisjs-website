@@ -74,7 +74,7 @@ function init(){
       templateContent('#template-talksrequested', issues, 'Talk Requests');
     });
 
-  const contacts = require('../data/contact');
+  const contacts = require('./data/contact');
   templateContent('#template-contact', contacts, '');
 
   // initialize semantic ui sidebar
