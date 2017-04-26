@@ -206,6 +206,44 @@
 {{/each}}
 </script>
 	</div>
+
+  <div data-page="contact">
+    <div class="ui vertical stripe segment">
+      <div class="ui stackable grid container">
+        <div class="row">
+          <div class="eleven wide column">
+  <script id="template-contact" type="text/x-handlebars-template">
+    <div class="ui cards">
+  {{#each this}}
+    <div class="ui card">
+      <div class="image">
+        <img alt="" class="right floated mini ui image" src="{{photo}}">
+      </div>
+      <div class="content">
+        <div class="header">{{name}}</div>
+        <div class="meta">{{role}}</div>
+        <div class="description">{{bio}}</div>
+      </div>
+      <div class="extra content">
+        <a class="right floated" title="Twitter account for {{name}}" href="{{twitter}}">
+          <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="" width="24" height="24">
+        </a>
+        <a class="email" href="mailto:{{email}}">{{email}}</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+  </script>
+  </div>
+  <div class="five wide column">
+    <h2>Get in touch</h2>
+    <p>Whether you're looking to submit a talk, make an announcement,
+      organize to sponsor us, or otherwise have a query, please feel free
+      to contact us.</p>
+  </div>
+</div>
+</div>
+</div>
 </div>
 <div class="ui inverted vertical footer segment">
     <div class="ui container">
@@ -216,6 +254,7 @@
             <a class="page-home active item" href="#">BrisJS</a>
             <a class="page-present item" href="#present">Present a talk</a>
             <a class="page-jobs item" href="#jobs">Find a job</a>
+            <a class="page-contact item" href="#contact">Contact</a>
           </div>
         </div>
         <div class="three wide column">

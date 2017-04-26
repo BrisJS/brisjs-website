@@ -9,10 +9,13 @@ var md = require('markdown-it')({
 });
 
 function templateContent(selector, allIssues, label){
-  const issues = allIssues.filter(function(data){
-    const foundLabel = !!data.labels.map(a => a.name).includes(label);
-    return foundLabel;
-  });
+  let issues = allIssues;
+  if(label){
+    issues = allIssues.filter(function(data){
+      const foundLabel = !!data.labels.map(a => a.name).includes(label);
+      return foundLabel;
+    });
+  }
   const templateElement = document.querySelector(selector);
   const template = Handlebars.compile(templateElement.innerHTML);
   const output = template(issues);
@@ -21,7 +24,7 @@ function templateContent(selector, allIssues, label){
   templateElement.parentNode.appendChild(element);
 }
 
-function hashChange(){
+function hashChange(options){
   const hash = window.location.hash.substring(1) || 'home';
   Array.from(document.querySelectorAll('[data-page]')).forEach(page => {
     const thisHash = page.dataset.page;
@@ -35,7 +38,7 @@ function hashChange(){
       links[0].className = links[0].className.replace(/active/, '');
       links[1].className = links[1].className.replace(/active/, '');
     }
-    document.body.scrollTop = 0;
+    if(options.jump !== false) document.body.scrollTop = 0;
     document.body.className = hash;
   });
 }
@@ -71,9 +74,17 @@ function init(){
       templateContent('#template-talksrequested', issues, 'Talk Requests');
     });
 
-    $('.ui.sidebar')
-      .sidebar('attach events', '.toc.item');
-    hashChange();
+  const contacts = require('../data/contact');
+  templateContent('#template-contact', contacts, '');
+
+  // initialize semantic ui sidebar
+  $('.ui.sidebar')
+    .sidebar('attach events', '.toc.item');
+
+  // set the pages ups
+  hashChange({
+    jump: false
+  });
 }
 
 window.addEventListener('hashchange', hashChange);
