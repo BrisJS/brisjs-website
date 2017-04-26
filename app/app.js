@@ -32,11 +32,11 @@ function hashChange(options){
     if(thisHash === hash){
       page.style.display = 'block';
       links[0].className += ' active';
-      links[1].className += ' active';
+      links[1] && (links[1].className += ' active');
     } else {
       page.style.display = 'none';
       links[0].className = links[0].className.replace(/active/, '');
-      links[1].className = links[1].className.replace(/active/, '');
+      links[1] && (links[1].className = links[1].className.replace(/active/, ''));
     }
     if(options.jump !== false) document.body.scrollTop = 0;
     document.body.className = hash;

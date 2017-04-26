@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Kevin Vanderbeken",
+    "role": "Fearless Leader",
+    "bio": "Organizes BrisJS talks, wrangles sponsorship, ensures there's beer.",
+    "twitter": "https://twitter.com/kevdesign",
+    "email": "me@kevinv.org",
+    "photo": "https://www.gravatar.com/avatar/c4686543022fdb8978acb8ff4995c284?s=500"
+  },
+  {
+    "name": "Ash Kyd",
+    "role": "Assistant Busybody",
+    "bio": "Organizes BrisJS Social, steps up when Kev's out of town.",
+    "twitter": "https://twitter.com/ashkyd",
+    "email": "ash@kyd.com.au",
+    "photo": "https://www.gravatar.com/avatar/24073d0e70921eda1a2ae25e2cceb057?s=500"
+  }
+]
