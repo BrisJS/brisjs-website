@@ -42,7 +42,7 @@ function fetchJson(filename){
 }
 
 function init(){
-  fetchJson('https://crossorigin.me/http://api.meetup.com/BrisJS/events')
+  fetchJson('https://cors.ash.ms/?csurl=http://api.meetup.com/BrisJS/events')
     .then(function(events){
       const latest = events[0];
       latest.dateHuman = dateFns.format(new Date(latest.time), 'd MMM');
