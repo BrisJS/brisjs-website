@@ -2,7 +2,11 @@ const domready = require('domready');
 const Handlebars = require('handlebars');
 const dateFns = require('date-fns');
 const _ = require('lodash');
-var md = require('markdown-it')();
+var md = require('markdown-it')({
+  html: true,
+  linkify: true,
+  typographer: true
+});
 
 function templateContent(selector, allIssues, label){
   const issues = allIssues.filter(function(data){
