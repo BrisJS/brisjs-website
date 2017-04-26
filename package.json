@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "beefy app/app.js:app.js",
-    "build": "rm -rf dist;mkdir dist && cp -r index.html images style.css dist && browserify app/app.js|uglifyjs>dist/app.js"
+    "build": "rm app.min.js; browserify app.js|uglifyjs>app.min.js"
   },
   "author": "",
   "license": "ISC",
