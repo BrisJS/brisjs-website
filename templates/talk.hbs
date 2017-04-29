@@ -1,0 +1,89 @@
+<div class="ui text container center aligned vertical stripe segment">
+  <h2 class="ui header">{{title}}</h2>
+  <p>A talk at the {{dateHuman}} BrisJS meetup</p>
+</div>
+
+<div class="ui vertical stripe segment">
+  <div class="ui stackable grid container">
+    <div class="row">
+      <div class="four wide column">
+        <div class="ui cards">
+          {{#each speakers}}
+          <div class="card">
+            <div class="content">
+              {{#if twitter.profileImage}}
+                <img class="right floated mini ui image" src="{{twitter.profileImage}}">
+              {{else}}
+                <span class="right floated ui avatar image"></span>
+              {{/if}}
+              <div class="header">
+                <strong>{{name}}</strong>
+              </div>
+              <div class="description">
+                {{#if twitter.description}}
+                  {{twitter.description}}
+                {{else}}
+                  {{name}} does not have a Twitter account (or we don't know it)
+                  yet. <a href="#contact">Contact us</a> to update this.
+                {{/if}}
+              </div>
+            </div>
+            <div class="extra content">
+              {{#if twitter.username}}
+              <a title="Twitter account for {{name}}" href="https://twitter.com/{{twitter.username}}">
+                <span class="resource"><i class="twitter icon"></i> Twitter</span>
+              </a>
+              {{/if}}
+
+              {{#if twitter.url}}
+              <a title="Website for {{name}}" href="{{twitter.url}}">
+                <span class="resource"><i class="linkify icon"></i> Website</span>
+              </a>
+              {{/if}}
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="twelve wide column">
+        {{#if youtube}}
+          <div class="player-wrapper">
+            <div class="ui segment">
+              <div class="ui active dimmer">
+                <div class="ui text loader">Loading video</div>
+              </div>
+            </div>
+            <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/{{youtube.id}}?autoplay=0" frameborder="0"></iframe>
+          </div>
+        {{else}}
+          <div class="player-wrapper no-video">
+            <div class="ui segment">
+              <div class="ui active dimmer">
+                <div class="ui text">No video for this talk</div>
+              </div>
+            </div>
+          </div>
+        {{/if}}
+        <div class="ui buttons">
+        {{#if slides}}
+          <a class="ui button" href="{{slides}}">
+              <i class="file powerpoint outline icon" title="Slides available to view"></i> Slides
+          </a>
+        {{/if}}
+        {{#if youtube}}
+          <a class="ui button" href="{{youtube.url}}">
+              <i class="video icon" title="Video available on YouTube"></i> Video
+          </a>
+        {{/if}}
+        {{#if code}}
+          <a class="ui button" href="{{code}}">
+              <i class="file code outline icon" title="Code resources available"></i> Code
+          </a>
+        {{/if}}
+        <a class="ui button" href="#talks">More talks</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

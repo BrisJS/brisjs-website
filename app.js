@@ -1,3 +1,5 @@
+const config = require('./config');
+const tsvTalks = require('./lib/tsvTalks');
 const domready = require('domready');
 const Handlebars = require('handlebars');
 const dateFns = require('date-fns');
@@ -7,6 +9,7 @@ var md = require('markdown-it')({
   linkify: true,
   typographer: true
 });
+let talks;
 
 function templateContent(selector, allIssues, label){
   let issues = allIssues;
@@ -29,27 +32,34 @@ function hashChange(options){
   Array.from(document.querySelectorAll('[data-page]')).forEach(page => {
     const thisHash = page.dataset.page;
     const links = document.querySelectorAll(`.page-${thisHash}`);
-    if(thisHash === hash){
-      page.style.display = 'block';
-      links[0].className += ' active';
-      links[1] && (links[1].className += ' active');
-    } else {
-      page.style.display = 'none';
-      links[0].className = links[0].className.replace(/active/, '');
-      links[1] && (links[1].className = links[1].className.replace(/active/, ''));
-    }
+    try{
+      if(thisHash === hash){
+        page.style.display = 'block';
+        links[0].className += ' active';
+        links[1] && (links[1].className += ' active');
+      } else {
+        page.style.display = 'none';
+        links[0].className = links[0].className.replace(/active/, '');
+        links[1] && (links[1].className = links[1].className.replace(/active/, ''));
+      }
+    } catch(e){}
     if(options.jump !== false) document.body.scrollTop = 0;
     document.body.className = hash;
   });
-}
-
-function fetchJson(filename){
-  return fetch(filename)
-    .then(response => response.json());
+  const talkId = hash.match(/^talk-(\d+)$/);
+  if(talkId && talkId[1] && talks){
+    const talk = talks.find(meetup => meetup.id === talkId[1]);
+    if(!talk) return;
+    const template = require('./templates/talk.hbs');
+    const page = document.querySelector('[data-page=talk-single]');
+    page.innerHTML = template(talk);
+    page.style.display = 'block';
+  }
 }
 
 function init(){
-  fetchJson('https://cors.ash.ms/?csurl=http://api.meetup.com/BrisJS/events')
+  fetch(config.dataSources.events)
+    .then(response => response.json())
     .then(function(events){
       const latest = events[0];
       latest.dateHuman = dateFns.format(new Date(latest.time), 'd MMM');
@@ -61,7 +71,8 @@ function init(){
         });
     });
 
-  fetchJson('https://api.github.com/repos/brisjs/meetups/issues?state=open')
+  fetch(config.dataSources.githubIssues)
+    .then(response => response.json())
     .then(function(issues){
       // render markdown
       issues = issues.map(function(issue){
@@ -72,6 +83,19 @@ function init(){
 
       templateContent('#template-jobs', issues, 'Jobs / Employment');
       templateContent('#template-talksrequested', issues, 'Talk Requests');
+    });
+
+  fetch(config.dataSources.talks)
+    .then(response => response.text())
+    .then(tsv => {
+        const twitterData = require('./data/twitter');
+        talks = tsvTalks.parseTsv(tsv, twitterData);
+        talks.reverse();
+        const meetups = tsvTalks.getTalksByMeetup(talks);
+        templateContent('#template-talks', meetups, '');
+        hashChange({
+          jump: false
+        });
     });
 
   const contacts = require('./data/contact');
