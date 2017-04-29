@@ -18,12 +18,12 @@
 <div class="ui vertical inverted sidebar menu left">
   <a class="page-home active item" href="#">BrisJS</a>
   <a class="page-present item" href="#present">Present a talk</a>
+  <a class="page-talks item" href="#present">Past talks</a>
   <a class="page-jobs item" href="#jobs">Find a job</a>
   <a class="page-findus item" href="#findus">Find the meetup</a>
 </div>
 <div class="pusher">
   <div id="hero" class="ui inverted vertical masthead center aligned segment">
-
     <div class="ui container">
       <div class="ui large secondary inverted pointing menu">
         <a class="toc item">
@@ -32,6 +32,7 @@
         <a class="item logo image" href="#"><img alt="" src="images/logo.svg"></a>
         <a class="page-home active item" href="#">BrisJS</a>
         <a class="page-present item" href="#present">Present</a>
+        <a class="page-talks item" href="#talks">Past talks</a>
         <a class="page-jobs item" href="#jobs">Jobs</a>
         <a class="page-findus item" href="#findus">Find Us</a>
         <div class="right item">
@@ -230,7 +231,7 @@
                 </div>
                 <div class="extra content">
                   <a class="right floated" title="Twitter account for {{name}}" href="{{twitter}}">
-                    <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="" width="24" height="24">
+                    <i class="twitter icon"></i>
                   </a>
                   <a class="email" href="mailto:{{email}}">{{email}}</a>
                 </div>
@@ -284,6 +285,77 @@
   </div>
 </div>
 
+<div data-page="talks">
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <script id="template-talks" type="x-handlebars/template">
+      {{#each this}}
+      <div class="ui grid {{className}}">
+        <div class="four wide column">
+        	<h2>{{dateHuman}} Meetup</h2>
+          <p>There were {{talks.length}} at the {{dateHuman}} meetup.</p>
+        </div>
+        <div class="twelve wide column">
+          <div class="ui link cards">
+            {{#each talks}}
+              <a class="ui card" href="#talk-{{id}}">
+                <div class="content">
+                  {{#if speakers.0.twitter.profileImage}}
+                    <img class="ui avatar image" src="{{speakers.0.twitter.profileImage}}">
+                  {{else}}
+                    <span class="ui avatar image"></span>
+                  {{/if}}
+                  {{#each speakers}} {{name}} {{/each}}
+      	        </div>
+                <div class="image">
+                  {{#youtube}}
+                    <div class="extra images">
+                      <img alt="" src="{{posterFrame.medium}}" style="width:100%;">
+                      <div class="talk title">{{../title}}</div>
+                    </div>
+                  {{else}}
+                    <div class="extra images">
+                      <div class="talk placeholder"></div>
+                      <div class="talk title">{{title}}</div>
+                    </div>
+                  {{/youtube}}
+                </div>
+                <div class="content">
+                  <span class="right floated"></span>
+                  {{#if slides}}
+                    <span class="resource">
+                        <i class="file powerpoint outline icon" title="Slides available to view"></i> Slides
+                    </span>
+                  {{/if}}
+                  {{#if youtube}}
+                    <span class="resource">
+                        <i class="video icon" title="Video available on YouTube"></i> Video
+                    </span>
+                  {{/if}}
+                  {{#if code}}
+                    <span class="resource">
+                        <i class="file code outline icon" title="Code resources available"></i> Code
+                    </span>
+                  {{/if}}
+                </div>
+              </a>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+      <div class="ui horizontal divider">
+        <i class="heart icon"></i>
+      </div>
+      {{/each}}
+      </script>
+    </div>
+  </div>
+</div>
+
+<div data-page="talk-single">
+HELLO WYRLD
+</div>
+
 <div class="ui inverted vertical footer segment">
     <div class="ui container">
       <div class="ui stackable inverted divided equal height stackable grid">
@@ -292,6 +364,7 @@
           <div class="ui inverted link list">
             <a class="page-home active item" href="#">BrisJS</a>
             <a class="page-present item" href="#present">Present a talk</a>
+            <a class="page-present item" href="#talks">Past talks</a>
             <a class="page-jobs item" href="#jobs">Find a job</a>
             <a class="page-findus item" href="#findus">Find us</a>
             <a class="page-contact item" href="#contact">Contact</a>

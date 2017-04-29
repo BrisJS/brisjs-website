@@ -1,0 +1,331 @@
+{
+  "drnic": {
+    "username": "drnic",
+    "name": "Dr Nic",
+    "description": "Cloud Foundry, BOSH and a world of Ops knowledge and humor. CEO of Stark & Wayne.",
+    "profileImage": "https://pbs.twimg.com/profile_images/844401686038896641/I1QIEnMa_normal.jpg",
+    "url": "https://t.co/RpOmL7wZjd"
+  },
+  "ben_h": {
+    "username": "ben_h",
+    "name": "Ben Hoskings",
+    "description": "",
+    "profileImage": "https://pbs.twimg.com/profile_images/3152159854/f52cea7e492a74596463a92c1edbbf80_normal.jpeg",
+    "url": "https://t.co/BUTLhT3Jzu"
+  },
+  "geoffreyd": {
+    "username": "geoffreyd",
+    "name": "Geoffrey Donaldson",
+    "description": "Javascript hacker, and Web App Consultant and Karateka.",
+    "profileImage": "https://pbs.twimg.com/profile_images/2344344234/bk9a3ts2xozocdglirbe_normal.jpeg",
+    "url": "http://t.co/4ATb1jux4R"
+  },
+  "damonoehlman": {
+    "username": "DamonOehlman",
+    "name": "Damon Oehlman",
+    "description": "Coding shiny things with JS with touches of CSS + HTML for flavour. Husband, Dad and experienced heckler.",
+    "profileImage": "https://pbs.twimg.com/profile_images/529458627313012736/XHlpFVtY_normal.jpeg",
+    "url": "https://t.co/Au4jb0I1Wj"
+  },
+  "louisstow": {
+    "username": "louisstow",
+    "name": "Louis Stowasser",
+    "description": "Computer Man. I am the creator of the Crafty game engine, and work for ABC News. Views rarely my own",
+    "profileImage": "https://pbs.twimg.com/profile_images/652481464706031616/nzvqO0jd_normal.jpg",
+    "url": null
+  },
+  "petechappell": {
+    "username": "petechappell",
+    "name": "Pete Chappell",
+    "description": "",
+    "profileImage": "https://pbs.twimg.com/profile_images/90135846/IMG_0155__2__normal.JPG",
+    "url": null
+  },
+  "timoxley": {
+    "username": "TimOxley",
+    "name": "Tim Oxley",
+    "description": "",
+    "profileImage": "https://pbs.twimg.com/profile_images/3141319869/57c19cbaafe8b1b3c0a710fdf21dbeca_normal.jpeg",
+    "url": null
+  },
+  "evilmarty": {
+    "username": "evilmarty",
+    "name": "MΛRTY ZΛLΞGΛ",
+    "description": "Just your friendly neighbourhood developer/gamer/musician",
+    "profileImage": "https://pbs.twimg.com/profile_images/537006501970210816/FaR48FgM_normal.jpeg",
+    "url": "http://t.co/49d60C7DVp"
+  },
+  "butlermaurice": {
+    "username": "ButlerMaurice",
+    "name": "Maurice Butler",
+    "description": "Doer of all things JavaScript && Node.js",
+    "profileImage": "https://pbs.twimg.com/profile_images/839016699/n624893311_1692797_8646_normal.jpg",
+    "url": "https://t.co/vBEwYAtiDu"
+  },
+  "nathanhoad": {
+    "username": "nathanhoad",
+    "name": "Nathan Hoad",
+    "description": "Code & design geek. I make https://t.co/5yPfmFnc3T & http://t.co/cNbAIUZK4Z",
+    "profileImage": "https://pbs.twimg.com/profile_images/2900888365/d2538c6c8200e36d357f7bce717618c0_normal.png",
+    "url": "http://t.co/ZpxRPwCcaK"
+  },
+  "collypops": {
+    "username": "collypops",
+    "name": "Colin Gourlay",
+    "description": "Code & stories for @abcnews",
+    "profileImage": "https://pbs.twimg.com/profile_images/852341729164279808/KYiC9oS1_normal.jpg",
+    "url": "https://t.co/nSPMm8BsCJ"
+  },
+  "coenhyde": {
+    "username": "coenhyde",
+    "name": "Coen Hyde",
+    "description": "Co-founder @popbasic. Software Engineer. Maker and doer of things. #500Strong",
+    "profileImage": "https://pbs.twimg.com/profile_images/799158677261295620/RgkKXexT_normal.jpg",
+    "url": "http://t.co/qRcllJlTXe"
+  },
+  "sstur_": {
+    "username": "sstur_",
+    "name": "Simon Sturmer",
+    "description": "Purveyor of fine JS. React enthusiast. Founder at @KodeFox. Previously an engineer at Facebook.",
+    "profileImage": "https://pbs.twimg.com/profile_images/2668960560/1e8b008aa1abacb201a7e466e17a8487_normal.jpeg",
+    "url": "https://t.co/4o7aeX00tS"
+  },
+  "twe4ked": {
+    "username": "twe4ked",
+    "name": "Odin Dutton",
+    "description": "Rails developer. Traveller. Tiny sentences. Music for the progressive B-boy.",
+    "profileImage": "https://pbs.twimg.com/profile_images/620161743617064960/cPTfn2Ks_normal.jpg",
+    "url": "https://t.co/PW7DjLeL5Y"
+  },
+  "johnbristowe": {
+    "username": "JohnBristowe",
+    "name": "John Bristowe",
+    "description": "Developer Relations at @Telerik/@ProgressSW. @KendoUI, @NativeScript, Web, Mobile. CrossFit, rugby union, and ice hockey. Canadian expat living Down Under.",
+    "profileImage": "https://pbs.twimg.com/profile_images/720413935829065728/EyZta73__normal.jpg",
+    "url": "https://t.co/jXnAGs4zoj"
+  },
+  "korynunn": {
+    "username": "KoryNunn",
+    "name": "Kory Nunn",
+    "description": "ew why would you use a wheel someone else invented?\n\n*DOES SO MUCH JS*",
+    "profileImage": "https://pbs.twimg.com/profile_images/720913876426956800/KfIZg83P_normal.jpg",
+    "url": "http://t.co/uTd8dySTRs"
+  },
+  "kevdesign": {
+    "username": "kevdesign",
+    "name": "Kevin Vanderbeken",
+    "description": "A Brisbane designer / developer / photog / maker / geek who is enthusiastic & passionate about everything! Loves to discuss and learn more - drop me a line.",
+    "profileImage": "https://pbs.twimg.com/profile_images/621888649068572672/X0XraMiX_normal.jpg",
+    "url": "http://t.co/W8YDphnR2h"
+  },
+  "garrows": {
+    "username": "garrows",
+    "name": "Glen Arrowsmith",
+    "description": "Javascript/Node.js dev, system architect, roboticist, father.",
+    "profileImage": "https://pbs.twimg.com/profile_images/517472547575590912/nMNjcnzV_normal.jpeg",
+    "url": "http://t.co/0I0r1NuaCK"
+  },
+  "annagerber": {
+    "username": "AnnaGerber",
+    "name": "Anna Gerber",
+    "description": "I like to make things and write code",
+    "profileImage": "https://pbs.twimg.com/profile_images/855307168035127297/tmj1L_AA_normal.jpg",
+    "url": "https://t.co/5OagrpTrDo"
+  },
+  "liammclennan": {
+    "username": "liammclennan",
+    "name": "liammclennan",
+    "description": "I like to build things https://t.co/pauizHixVL. Allegro con brio.",
+    "profileImage": "https://pbs.twimg.com/profile_images/519671427314622464/5CsNV1O0_normal.jpeg",
+    "url": "http://t.co/7DdU92iCtu"
+  },
+  "spadgos": {
+    "username": "spadgos",
+    "name": "Nick Fisher",
+    "description": "Javascript Engineer living in Berlin, working at @SoundCloud",
+    "profileImage": "https://pbs.twimg.com/profile_images/378800000530247282/81e8162fa7d724a7e6e9ea64bba196e6_normal.jpeg",
+    "url": "http://t.co/b0iVde6fiW"
+  },
+  "ashkyd": {
+    "username": "AshKyd",
+    "name": "Ash",
+    "description": "Linux-powered code monkey, works for @abcnews and helps run @brisjs. I like JavaScript, #gamedev, bicycles & men. 🏳️‍🌈 Print this coupon for a free hug.",
+    "profileImage": "https://pbs.twimg.com/profile_images/849614541163855872/vDntsrBZ_normal.jpg",
+    "url": "https://t.co/qqnmaxbRMs"
+  },
+  "andreweddie": {
+    "username": "AndrewEddie",
+    "name": "Andrew Eddie",
+    "description": "Javascript craftsman; retired Joomla guru; pastor's husband; dad; wanabe astronomer; Hans Zimmer fan",
+    "profileImage": "https://pbs.twimg.com/profile_images/1102519439/port4_head_600px_normal.jpg",
+    "url": "http://t.co/0blkTD0gWE"
+  },
+  "tatejohnson": {
+    "username": "tatejohnson",
+    "name": "Tate Johnson",
+    "description": "Has been known to strum keyboards.",
+    "profileImage": "https://pbs.twimg.com/profile_images/414360859687669760/YR4X9L3H_normal.jpeg",
+    "url": "https://t.co/KD85ZGmsgA"
+  },
+  "mwlawlor": {
+    "username": "mwlawlor",
+    "name": "Mark Lawlor",
+    "description": "",
+    "profileImage": "https://pbs.twimg.com/profile_images/760213230832586752/NkotTt5y_normal.jpg",
+    "url": null
+  },
+  "wazcox": {
+    "username": "WazCox",
+    "name": "Warwick Cox",
+    "description": "Entrepreneur, Husband, Software Dev",
+    "profileImage": "https://pbs.twimg.com/profile_images/707100710865739776/9CR-t35O_normal.jpg",
+    "url": null
+  },
+  "zenvatweets": {
+    "username": "ZenvaTweets",
+    "name": "ZENVA",
+    "description": "The best place to learn #GameDev, #VR, #Programming and #WebDev. 🔥🐉 Access +100 online courses by industry experts on https://t.co/0PgXjXu95E",
+    "profileImage": "https://pbs.twimg.com/profile_images/828743440120762368/neamrotO_normal.jpg",
+    "url": "https://t.co/0PgXjXu95E"
+  },
+  "sitapati": {
+    "username": "sitapati",
+    "name": "Josh Wulf",
+    "description": "Founder https://t.co/Z1XvXRJLAp - Legendary recruiter at https://t.co/W6vtlxtbHn - husband of @paramsatya dad of @purpsta_YT  - Red Hat Alumnus",
+    "profileImage": "https://pbs.twimg.com/profile_images/823125792418775040/xUkDmp_8_normal.jpg",
+    "url": "https://t.co/CjXZZK5u8d"
+  },
+  "xwipeoutx": {
+    "username": "xwipeoutx",
+    "name": "Steve Leigh",
+    "description": "Developer. Husband. Father. Christian. Readifarian.",
+    "profileImage": "https://pbs.twimg.com/profile_images/150507745/smiley_normal.jpg",
+    "url": "https://t.co/ADOq2IDLAL"
+  },
+  "girvo": {
+    "username": "girvo",
+    "name": "Josh Girvin",
+    "description": "Senior Engineer at @studionone, tech head, and local music addict. Living in Brisbane, Australia.",
+    "profileImage": "https://pbs.twimg.com/profile_images/721535456924426240/YS51Z6en_normal.jpg",
+    "url": "http://t.co/R4TCxBJUF3"
+  },
+  "drzax": {
+    "username": "drzax",
+    "name": "Simon Elvery",
+    "description": "Telling stories for @abcnews | \nOrganising @HacksHackersBNE | \nParticipating in https://t.co/US6Rf93DRw | \nhttps://t.co/DyFiIQiMIL",
+    "profileImage": "https://pbs.twimg.com/profile_images/560565216342052882/tdaeqtPy_normal.jpeg",
+    "url": "https://t.co/9IE9m1kX5Q"
+  },
+  "tomnewbyau": {
+    "username": "tomnewbyau",
+    "name": "Tom Newby",
+    "description": "product manager, developer, #stem & #techED mentor, #cycling, #startups, #coffee, @RedEye_Apps. Creator of @PiggyBike",
+    "profileImage": "https://pbs.twimg.com/profile_images/649044482118189056/qnXUyEcC_normal.jpg",
+    "url": "https://t.co/fn5tDGkmsX"
+  },
+  "dwightgunning": {
+    "username": "DwightGunning",
+    "name": "Dwight Gunning",
+    "description": "Tech adventurer. Software Engineer & Developer Advocate at https://t.co/VeA0L3D5vl. Organises https://t.co/4s3ET75CGs meetup and facilitates Startup Weekends.",
+    "profileImage": "https://pbs.twimg.com/profile_images/590012609597874176/kNDa12Gx_normal.jpg",
+    "url": "https://t.co/M2x7yZ7ROD"
+  },
+  "lukebrooker": {
+    "username": "lukebrooker",
+    "name": "Luke Brooker 👌",
+    "description": "Designer of things. Developer of said things. Co-organising @ProductOfBNE.\nWorking @everydayhero, previously Red Hat.",
+    "profileImage": "https://pbs.twimg.com/profile_images/687134780748500992/bsbXysZP_normal.jpg",
+    "url": "https://t.co/9WJ8B5v7Kk"
+  },
+  "balupton": {
+    "username": "balupton",
+    "name": "Benjamin Lupton",
+    "description": "If you’ve used @nodejs you’ve probably installed something of mine. If you’ve had a thought, you’ve probably disagreed with me. Let’s learn and build together.",
+    "profileImage": "https://pbs.twimg.com/profile_images/514915910608363521/jysuBiV1_normal.jpeg",
+    "url": "https://t.co/aimVjZP7Hj"
+  },
+  "bedeoverend": {
+    "username": "BedeOverend",
+    "name": "Bede Overend",
+    "description": "Love JS, Web Components and the extensible Web. Co-Founder of @simplaio",
+    "profileImage": "https://pbs.twimg.com/profile_images/705159924817358848/I2Jzuk6R_normal.jpg",
+    "url": null
+  },
+  "linuxninja_aza": {
+    "username": "linuxninja_aza",
+    "name": "Azarel Howard",
+    "description": "I'm a web programmer with a certain je ne sais quoi. I bite off more than I can chew and still manage to come up with an elegant solution to the problem.",
+    "profileImage": "https://pbs.twimg.com/profile_images/759710256612057089/uN0_SF4l_normal.jpg",
+    "url": "https://t.co/66wuX3CFfn"
+  },
+  "pori_alex": {
+    "username": "pori_alex",
+    "name": "Alexander Hernandez",
+    "description": "Programmer. Amateur cook. 道 (Taoist). @pori on GitHub, Medium.",
+    "profileImage": "https://pbs.twimg.com/profile_images/852293293635280897/_6LEppei_normal.jpg",
+    "url": null
+  },
+  "vladimiraus": {
+    "username": "VladimirAus",
+    "name": "Vladimir Roudakov",
+    "description": "Software wizard (level 40), audio engineer, movie junkie, drum beater, guitar squealer, fast kicker, non-filtered beer lover, @drupalSouth coordinator!",
+    "profileImage": "https://pbs.twimg.com/profile_images/572409701812277248/0ZAvi_zY_normal.jpeg",
+    "url": "https://t.co/zMvMbWNFgh"
+  },
+  "jbscript": {
+    "username": "jbscript",
+    "name": "Jonny Buchanan",
+    "description": "Sav'aaq! Norn Ironer in Aus; dad by day, dev by dark, dead by dawn. May contain traces of JavaScript, React & React-likes, DX, dadlife, videogames and baking.",
+    "profileImage": "https://pbs.twimg.com/profile_images/728147168725377025/AkdilUjT_normal.jpg",
+    "url": "https://t.co/W3OjjSsPcl"
+  },
+  "johncmckim": {
+    "username": "johncmckim",
+    "name": "John McKim",
+    "description": "Software Developer for @acloudguru, Serverless enthusiast, writer, cyclist, terrible gardener. #AWS #awslambda #serverless #nodejs - https://t.co/EOHGk2rOnQ",
+    "profileImage": "https://pbs.twimg.com/profile_images/745212162570756096/yzvy_qT8_normal.jpg",
+    "url": "https://t.co/78hrz70rae"
+  },
+  "unixbigot": {
+    "username": "unixbigot",
+    "name": "Christopher Biggs",
+    "description": "Hacker. Father. Scientist. Rantist. Atheist. Roboticist. Treehugger.     Consultant, Mentor, Speaker on #IoT #BigData #DevOps at @accelerando_au",
+    "profileImage": "https://pbs.twimg.com/profile_images/783931036052795392/WEBMqk0N_normal.jpg",
+    "url": "https://t.co/Hjx4O9hCg2"
+  },
+  "dunchunter": {
+    "username": "dunchunter",
+    "name": "Duncan Hunter",
+    "description": "http://t.co/NegrbZaDm7​",
+    "profileImage": "https://pbs.twimg.com/profile_images/815868970435690497/Zc3Kltry_normal.jpg",
+    "url": "http://t.co/M4xSpAZf50"
+  },
+  "thiagospassos": {
+    "username": "thiagospassos",
+    "name": "Thiago Passos",
+    "description": "Love technology, dancing and I get unfriendly when I'm hungry.",
+    "profileImage": "https://pbs.twimg.com/profile_images/587121642871984128/oX_raSjK_normal.jpg",
+    "url": "https://t.co/x182dfAoYZ"
+  },
+  "timmarwick": {
+    "username": "TimMarwick",
+    "name": "Tim Marwick",
+    "description": "Captain of TinkerTown at @magikcraftio, and Chief Remover of Blockers. Coder, Creative, Coordinator. UX Guy. Drupalista. Startup addicted.",
+    "profileImage": "https://pbs.twimg.com/profile_images/791501291486752768/rT9Q4lO5_normal.jpg",
+    "url": null
+  },
+  "death667b": {
+    "username": "death667b",
+    "name": "Ian Daniel",
+    "description": "Part owner Junction3 IT Services.\nStudying Computer Science at QUT\nVolunteer at @magikcraftio",
+    "profileImage": "https://pbs.twimg.com/profile_images/804872663294349312/61acVOFH_normal.jpg",
+    "url": null
+  },
+  "chrisgrigg": {
+    "username": "ChrisGrigg",
+    "name": "Christopher Grigg",
+    "description": "",
+    "profileImage": "https://pbs.twimg.com/profile_images/670846299617423360/UuGlEQiM_normal.jpg",
+    "url": "https://t.co/Ge9lGZ6P6p"
+  }
+}

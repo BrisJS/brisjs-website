@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "beefy app.js:app.min.js",
-    "build": "rm app.min.js; browserify app.js|uglifyjs>app.min.js"
+    "build": "rm app.min.js; browserify app.js|uglifyjs>app.min.js",
+    "build-twitter": "node tools/build-twitter > data/twitter.json"
   },
   "author": "",
   "license": "ISC",
@@ -16,10 +17,18 @@
     "date-fns": "^1.28.3",
     "domready": "^1.0.8",
     "ejs": "^2.5.6",
+    "fetch": "^1.1.0",
     "handlebars": "^4.0.6",
+    "hbsfy": "^2.7.0",
     "lodash": "^4.17.4",
     "markdown-it": "^8.3.1",
+    "twitter": "^1.7.0",
     "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "browserify": {
+    "transform": [
+      "hbsfy"
+    ]
+  }
 }
