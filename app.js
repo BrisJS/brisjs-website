@@ -42,9 +42,11 @@ function hashChange(options){
         links[0].className = links[0].className.replace(/active/, '');
         links[1] && (links[1].className = links[1].className.replace(/active/, ''));
       }
+      document.querySelector('[data-page=talk-single]').innerHTML = '';
     } catch(e){}
     if(options.jump !== false) document.body.scrollTop = 0;
     document.body.className = hash;
+
   });
   const talkId = hash.match(/^talk-(\d+)$/);
   if(talkId && talkId[1] && talks){
