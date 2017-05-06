@@ -86,7 +86,7 @@
   "sstur_": {
     "username": "sstur_",
     "name": "Simon Sturmer",
-    "description": "Purveyor of fine JS. React enthusiast. Founder at @KodeFox. Previously an engineer at Facebook.",
+    "description": "Purveyor of fine JS. React enthusiast. Founder & CTO @KodeFox. Previously an engineer at Facebook.",
     "profileImage": "https://pbs.twimg.com/profile_images/2668960560/1e8b008aa1abacb201a7e466e17a8487_normal.jpeg",
     "url": "https://t.co/4o7aeX00tS"
   },
@@ -260,7 +260,7 @@
   },
   "pori_alex": {
     "username": "pori_alex",
-    "name": "Alexander Hernandez",
+    "name": "Alex Hernandez",
     "description": "Programmer. Amateur cook. 道 (Taoist). @pori on GitHub, Medium.",
     "profileImage": "https://pbs.twimg.com/profile_images/852293293635280897/_6LEppei_normal.jpg",
     "url": null
@@ -334,5 +334,12 @@
     "description": "",
     "profileImage": "https://pbs.twimg.com/profile_images/670846299617423360/UuGlEQiM_normal.jpg",
     "url": "https://t.co/Ge9lGZ6P6p"
+  },
+  "joshduck": {
+    "username": "joshduck",
+    "name": "josh🦆",
+    "description": "Frontend web stuff. JavaScript, Node, React, Relay. Team lead at @ABCaustralia.",
+    "profileImage": "https://pbs.twimg.com/profile_images/1248761620/27700_511032456790_208900213_486013_8291152_n_normal.jpg",
+    "url": "https://t.co/IFJDtc1bSv"
   }
 }
