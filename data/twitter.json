@@ -149,7 +149,7 @@
   "ashkyd": {
     "username": "AshKyd",
     "name": "Ash",
-    "description": "Linux-powered code monkey, works for @abcnews and helps run @brisjs. I like JavaScript, #gamedev, bicycles & men. 🏳️‍🌈 Print this coupon for a free hug.",
+    "description": "Linux-powered code monkey, works for @abcnews and helps run @brisjs. I like JavaScript, #gamedev, bicycles & men. 🏳️‍🌈 Best viewed at 800x600.",
     "profileImage": "https://pbs.twimg.com/profile_images/849614541163855872/vDntsrBZ_normal.jpg",
     "url": "https://t.co/qqnmaxbRMs"
   },
@@ -281,7 +281,7 @@
   },
   "johncmckim": {
     "username": "johncmckim",
-    "name": "John McKim",
+    "name": "John McKim ⚡🐨",
     "description": "Software Developer for @acloudguru, Serverless enthusiast, writer, cyclist, terrible gardener. #AWS #awslambda #serverless #nodejs - https://t.co/EOHGk2rOnQ",
     "profileImage": "https://pbs.twimg.com/profile_images/745212162570756096/yzvy_qT8_normal.jpg",
     "url": "https://t.co/78hrz70rae"
@@ -341,5 +341,12 @@
     "description": "Frontend web stuff. JavaScript, Node, React, Relay. Team lead at @ABCaustralia.",
     "profileImage": "https://pbs.twimg.com/profile_images/1248761620/27700_511032456790_208900213_486013_8291152_n_normal.jpg",
     "url": "https://t.co/IFJDtc1bSv"
+  },
+  "mrceleryman": {
+    "username": "MrCeleryman",
+    "name": "Daniel Mitchell",
+    "description": "Web/app dev in Brisbane",
+    "profileImage": "https://pbs.twimg.com/profile_images/862999292222386177/EI6-rLeh_normal.jpg",
+    "url": "https://t.co/WyzYPgfWgO"
   }
 }
