@@ -72,7 +72,7 @@
   "collypops": {
     "username": "collypops",
     "name": "Colin Gourlay",
-    "description": "Code & stories for @abcnews. This is where I praise my family, my nation, my deity, my former university and a sports team. Pronouns. Emojis.",
+    "description": "Code & stories for @abcnews. This is where I praise my family, my nation, my deity, my former university and a sports team. Pronouns. Emoji.",
     "profileImage": "https://pbs.twimg.com/profile_images/870695055614296064/9ya92r3L_normal.jpg",
     "url": "https://t.co/nSPMm8BsCJ"
   },
@@ -121,9 +121,9 @@
   "garrows": {
     "username": "garrows",
     "name": "Glen Arrowsmith",
-    "description": "Javascript/Node.js dev, system architect, roboticist, father.",
+    "description": "Javascript/Node.js dev, system architect, roboticist, father. Insert coin to continue.",
     "profileImage": "https://pbs.twimg.com/profile_images/517472547575590912/nMNjcnzV_normal.jpeg",
-    "url": "http://t.co/0I0r1NuaCK"
+    "url": "https://t.co/0I0r1NuaCK"
   },
   "annagerber": {
     "username": "AnnaGerber",
@@ -150,7 +150,7 @@
     "username": "AshKyd",
     "name": "Ash",
     "description": "Linux-powered code monkey, works for @abcnews and helps run @brisjs. I like JavaScript, #gamedev, bicycles & men. 🏳️‍🌈 Best viewed at 800x600.",
-    "profileImage": "https://pbs.twimg.com/profile_images/864745266796126208/Ib7PJdKL_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/876787612320649217/mgG5Uj78_normal.jpg",
     "url": "https://t.co/qqnmaxbRMs"
   },
   "andreweddie": {
@@ -198,9 +198,9 @@
   "sitapati": {
     "username": "sitapati",
     "name": "Josh Wulf",
-    "description": "Founder https://t.co/Z1XvXRsaIR - Legendary at https://t.co/W6vtlxbAPP - husband of @paramsatya dad of @purpsta_YT  - Red Hat Alumnus",
-    "profileImage": "https://pbs.twimg.com/profile_images/823125792418775040/xUkDmp_8_normal.jpg",
-    "url": "https://t.co/CjXZZK5u8d"
+    "description": "Legendary https://t.co/Z1XvXRsaIR Open Sourceror - https://t.co/W6vtlxbAPP - husband of @paramsatya dad of @purpsta_YT - Red Hat Alumnus - JavaScripter",
+    "profileImage": "https://pbs.twimg.com/profile_images/877614263694753792/afmQzNsX_normal.jpg",
+    "url": "https://t.co/CjXZZKn5wN"
   },
   "xwipeoutx": {
     "username": "xwipeoutx",
@@ -234,7 +234,7 @@
     "username": "DwightGunning",
     "name": "Dwight Gunning",
     "description": "Tech adventurer. Software Engineer & Developer Advocate at https://t.co/VeA0L3D5vl. Organises https://t.co/4s3ET75CGs meetup and facilitates Startup Weekends.",
-    "profileImage": "https://pbs.twimg.com/profile_images/590012609597874176/kNDa12Gx_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/880798197890916353/VdJ0Ccnn_normal.jpg",
     "url": "https://t.co/M2x7yZ7ROD"
   },
   "lukebrooker": {
@@ -268,9 +268,9 @@
   "pori_alex": {
     "username": "pori_alex",
     "name": "Alex Hernandez",
-    "description": "WordPress Developer @ CXA",
-    "profileImage": "https://pbs.twimg.com/profile_images/867966841741758467/67AThOoz_normal.jpg",
-    "url": "https://t.co/CRWiRIJcu9"
+    "description": "current status in profile picture",
+    "profileImage": "https://pbs.twimg.com/profile_images/877249122792820737/mk57sJkx_normal.jpg",
+    "url": null
   },
   "vladimiraus": {
     "username": "VladimirAus",
@@ -319,7 +319,7 @@
     "name": "Tim Marwick",
     "description": "Captain of TinkerTown at @magikcraftio, and Chief Remover of Blockers. Coder, Creative, Coordinator. UX Guy. Drupalista. Startup addicted.",
     "profileImage": "https://pbs.twimg.com/profile_images/873740539245453312/5Zn65wBo_normal.jpg",
-    "url": "https://t.co/9SkaiGT1AU"
+    "url": "https://t.co/OKiG34NG4Z"
   },
   "death667b": {
     "username": "death667b",
@@ -361,6 +361,13 @@
     "name": "David Buchan-Swanson",
     "description": "Undergrad BEng @ QUT. Software Engineer @ Tanda. Massive Nerd + Tech Enthusiast. JS Hopeful. INTJ, for better or worse. My own opinions.",
     "profileImage": "https://pbs.twimg.com/profile_images/843330909394821120/a14IDrdQ_normal.jpg",
+    "url": null
+  },
+  "ohiaia": {
+    "username": "ohiaia",
+    "name": "Alberto Falchi",
+    "description": "",
+    "profileImage": "https://pbs.twimg.com/profile_images/503263703589220352/fPZNwk6b_normal.jpeg",
     "url": null
   }
 }
