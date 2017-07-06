@@ -59,7 +59,7 @@
     "username": "ButlerMaurice",
     "name": "Maurice Butler",
     "description": "Doer of all things JavaScript && Node.js",
-    "profileImage": "https://pbs.twimg.com/profile_images/839016699/n624893311_1692797_8646_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/882411251619332097/Rie6jw9Y_normal.jpg",
     "url": "https://t.co/vBEwYAtiDu"
   },
   "nathanhoad": {
@@ -79,9 +79,9 @@
   "coenhyde": {
     "username": "coenhyde",
     "name": "Coen Hyde",
-    "description": "Co-founder @popbasic. Software Engineer. Maker and doer of things. #500Strong",
+    "description": "Co-founder @popbasic. Software Engineer. Maker and doer of things",
     "profileImage": "https://pbs.twimg.com/profile_images/799158677261295620/RgkKXexT_normal.jpg",
-    "url": "http://t.co/qRcllJlTXe"
+    "url": "https://t.co/qRcllJlTXe"
   },
   "sstur_": {
     "username": "sstur_",
@@ -362,6 +362,13 @@
     "description": "Undergrad BEng @ QUT. Software Engineer @ Tanda. Massive Nerd + Tech Enthusiast. JS Hopeful. INTJ, for better or worse. My own opinions.",
     "profileImage": "https://pbs.twimg.com/profile_images/843330909394821120/a14IDrdQ_normal.jpg",
     "url": null
+  },
+  "purpsta_yt": {
+    "username": "Purpsta_YT",
+    "name": "Prahlad Ur Boi",
+    "description": "My Youtube: https://t.co/NPAANfOA22",
+    "profileImage": "https://pbs.twimg.com/profile_images/873802051570028544/zK3WE6Cc_normal.jpg",
+    "url": "https://t.co/NPAANfwZau"
   },
   "ohiaia": {
     "username": "ohiaia",
