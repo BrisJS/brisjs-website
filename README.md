@@ -1,6 +1,6 @@
 brisjs.github.io
 ====================
 
-The https://bris.js.org/ website.
+The https://brisjs.org/ website.
 
-Push to master will automagically publish changes.
+Push to master will automagically publish changes to [Netlify](http://netlify.com/).
