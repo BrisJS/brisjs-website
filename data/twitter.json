@@ -65,28 +65,28 @@
   "nathanhoad": {
     "username": "nathanhoad",
     "name": "Nathan Hoad",
-    "description": "Code is art. Art is also art.",
-    "profileImage": "https://pbs.twimg.com/profile_images/872974122824777728/7hyu38Sr_normal.jpg",
-    "url": "http://t.co/ZpxRPwCcaK"
+    "description": "Digital Interactive Storyteller at @abcnews and winner of @reactriot and @nodeknockout",
+    "profileImage": "https://pbs.twimg.com/profile_images/890871061398528000/TqLipoNs_normal.jpg",
+    "url": "https://t.co/ZpxRPwCcaK"
   },
   "collypops": {
     "username": "collypops",
     "name": "Colin Gourlay",
-    "description": "Code & stories for @abcnews. This is where I praise my family, my nation, my deity, my former university and a sports team. Pronouns. Emoji.",
-    "profileImage": "https://pbs.twimg.com/profile_images/870695055614296064/9ya92r3L_normal.jpg",
+    "description": "Code & stories for @abcnews",
+    "profileImage": "https://pbs.twimg.com/profile_images/909415696739713024/QpE7c7bq_normal.jpg",
     "url": "https://t.co/nSPMm8BsCJ"
   },
   "coenhyde": {
     "username": "coenhyde",
     "name": "Coen Hyde",
-    "description": "Co-founder @popbasic. Software Engineer. Maker and doer of things",
+    "description": "Director of Infrastructure @bugcrowd. Software Engineer. Maker and doer of things",
     "profileImage": "https://pbs.twimg.com/profile_images/799158677261295620/RgkKXexT_normal.jpg",
     "url": "https://t.co/qRcllJlTXe"
   },
   "sstur_": {
     "username": "sstur_",
     "name": "Simon Sturmer",
-    "description": "Purveyor of fine JS. React enthusiast. Founder & CTO @KodeFox. Previously an engineer at Facebook.",
+    "description": "Purveyor of fine JS. React enthusiast. Founder & CTO @KodeFox. Father, husband, traveller, entrepreneur. From Kansas City.",
     "profileImage": "https://pbs.twimg.com/profile_images/2668960560/1e8b008aa1abacb201a7e466e17a8487_normal.jpeg",
     "url": "https://t.co/4o7aeX00tS"
   },
@@ -142,15 +142,15 @@
   "spadgos": {
     "username": "spadgos",
     "name": "Nick Fisher",
-    "description": "Javascript Engineer living in Berlin, working at @SoundCloud",
+    "description": "Javascript Engineer living in Zürich, working at @Google. Ex- @SoundCloud, ex-Berliner",
     "profileImage": "https://pbs.twimg.com/profile_images/378800000530247282/81e8162fa7d724a7e6e9ea64bba196e6_normal.jpeg",
-    "url": "http://t.co/b0iVde6fiW"
+    "url": "https://t.co/6cadg6vZKo"
   },
   "ashkyd": {
     "username": "AshKyd",
     "name": "Ash",
-    "description": "Linux-powered code monkey, works for @abcnews and helps run @brisjs. I like JavaScript, #gamedev, bicycles & men. 🏳️‍🌈 Best viewed at 800x600.",
-    "profileImage": "https://pbs.twimg.com/profile_images/876787612320649217/mgG5Uj78_normal.jpg",
+    "description": "Linux-powered code monkey, works for @abcnews and helps run @brisjs. I like JavaScript, #gamedev, bicycles & men. 🏳️‍🌈 Some system functions may not work.",
+    "profileImage": "https://pbs.twimg.com/profile_images/892345888407863296/_1LjX3H3_normal.jpg",
     "url": "https://t.co/qqnmaxbRMs"
   },
   "andreweddie": {
@@ -198,9 +198,9 @@
   "sitapati": {
     "username": "sitapati",
     "name": "Josh Wulf",
-    "description": "Legendary https://t.co/Z1XvXRsaIR Open Sourceror - https://t.co/W6vtlxbAPP - husband of @paramsatya dad of @purpsta_YT - Red Hat Alumnus - JavaScripter",
+    "description": "Open Sourcer https://t.co/Z1XvXRJLAp - https://t.co/W6vtlxtbHn - husband of @paramsatya dad of @purpsta_YT - Red Hat Alumnus. Pronoun: Legendary.",
     "profileImage": "https://pbs.twimg.com/profile_images/877614263694753792/afmQzNsX_normal.jpg",
-    "url": "https://t.co/CjXZZKn5wN"
+    "url": "https://t.co/NbizbZJ7G0"
   },
   "xwipeoutx": {
     "username": "xwipeoutx",
@@ -212,9 +212,9 @@
   "girvo": {
     "username": "girvo",
     "name": "Josh Girvin",
-    "description": "Senior Engineer at @studionone, tech head, and local music addict. Living in Brisbane, Australia.",
+    "description": "Senior Engineer at @everledger, tech head, and local music addict. Living in Brisbane, Australia.",
     "profileImage": "https://pbs.twimg.com/profile_images/721535456924426240/YS51Z6en_normal.jpg",
-    "url": "http://t.co/R4TCxBJUF3"
+    "url": "https://t.co/9GEjvW5b66"
   },
   "drzax": {
     "username": "drzax",
@@ -226,7 +226,7 @@
   "tomnewbyau": {
     "username": "tomnewbyau",
     "name": "Tom Newby",
-    "description": "I like to ship products // Product Manager and Software Dev Lead @RedEye_Apps // Co-founder @Dingo_PM 🐕 // Creator of @PiggyBike 🐖🚲",
+    "description": "I like to ship products // Product Manager and Software Dev Lead @RedEyeWFM // Co-founder @Dingo_PM 🐕 // Creator of @PiggyBike 🐖🚲",
     "profileImage": "https://pbs.twimg.com/profile_images/649044482118189056/qnXUyEcC_normal.jpg",
     "url": "https://t.co/fn5tDG2L4n"
   },
@@ -241,7 +241,7 @@
     "username": "lukebrooker",
     "name": "Luke Brooker 👌",
     "description": "Designer of things. Developer of said things. Co-organising @ProductOfBNE.\nWorking @everydayhero, previously Red Hat.",
-    "profileImage": "https://pbs.twimg.com/profile_images/687134780748500992/bsbXysZP_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/900295654638931969/94_qIk4F_normal.jpg",
     "url": "https://t.co/9WJ8B5v7Kk"
   },
   "balupton": {
@@ -262,14 +262,14 @@
     "username": "linuxninja_aza",
     "name": "Azarel Howard",
     "description": "I'm a web programmer with a certain je ne sais quoi. I bite off more than I can chew and still manage to come up with an elegant solution to the problem.",
-    "profileImage": "https://pbs.twimg.com/profile_images/759710256612057089/uN0_SF4l_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/902901371476647940/tO4Qtej4_normal.jpg",
     "url": "https://t.co/66wuX3CFfn"
   },
   "pori_alex": {
     "username": "pori_alex",
-    "name": "Alex Hernandez",
-    "description": "current status in profile picture",
-    "profileImage": "https://pbs.twimg.com/profile_images/877249122792820737/mk57sJkx_normal.jpg",
+    "name": "Alex Hernandez 🍊",
+    "description": "Design + Code. I travel a lot.",
+    "profileImage": "https://pbs.twimg.com/profile_images/905974691088572416/EF3EhnaV_normal.jpg",
     "url": null
   },
   "vladimiraus": {
@@ -296,7 +296,7 @@
   "unixbigot": {
     "username": "unixbigot",
     "name": "Christopher Biggs",
-    "description": "Hacker. Father. Scientist. Rantist. Atheist. Roboticist. Treehugger.     Consultant, Mentor, Speaker on #IoT #BigData #DevOps at @accelerando_au",
+    "description": "Hacker. Father. Scientist. Rantist. Atheist. Roboticist. Treehugger.     Founder at @accelerando_au. \nConsultant, Mentor, Speaker on #IoT #DevOps #BigData",
     "profileImage": "https://pbs.twimg.com/profile_images/783931036052795392/WEBMqk0N_normal.jpg",
     "url": "https://t.co/Hjx4O9hCg2"
   },
@@ -325,7 +325,7 @@
     "username": "death667b",
     "name": "Ian Daniel",
     "description": "Part owner Junction3 IT Services.\nStudying Computer Science at QUT\nVolunteer at @magikcraftio",
-    "profileImage": "https://pbs.twimg.com/profile_images/804872663294349312/61acVOFH_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/888911000862208000/lVpTfDwI_normal.jpg",
     "url": null
   },
   "chrisbriggsy": {
@@ -345,14 +345,14 @@
   "joshduck": {
     "username": "joshduck",
     "name": "josh🦆",
-    "description": "Frontend web stuff. JavaScript, Node, React, Relay. Team lead at @ABCaustralia.",
+    "description": "Frontend web stuff. JavaScript, Node, React, Relay. Team lead at @ABCaustralia, formerly @Facebook.",
     "profileImage": "https://pbs.twimg.com/profile_images/1248761620/27700_511032456790_208900213_486013_8291152_n_normal.jpg",
     "url": "https://t.co/IFJDtc1bSv"
   },
   "mrceleryman": {
     "username": "MrCeleryman",
     "name": "Daniel Mitchell",
-    "description": "Web/Mobile developer In Brisbane. Used to fear underscores, now Elixir has made me love them again.",
+    "description": "Self proclaimed good guy, poor vegetable identifier, front + back + side end developer in Brisbane",
     "profileImage": "https://pbs.twimg.com/profile_images/862999292222386177/EI6-rLeh_normal.jpg",
     "url": "https://t.co/uHaDXbccF9"
   },
@@ -366,7 +366,7 @@
   "purpsta_yt": {
     "username": "Purpsta_YT",
     "name": "Prahlad Ur Boi",
-    "description": "My Youtube: https://t.co/NPAANfOA22",
+    "description": "My Twitch:\nhttps://t.co/4WFJPOdri9",
     "profileImage": "https://pbs.twimg.com/profile_images/873802051570028544/zK3WE6Cc_normal.jpg",
     "url": "https://t.co/NPAANfwZau"
   },
@@ -375,6 +375,55 @@
     "name": "Alberto Falchi",
     "description": "",
     "profileImage": "https://pbs.twimg.com/profile_images/503263703589220352/fPZNwk6b_normal.jpeg",
+    "url": null
+  },
+  "samousavih": {
+    "username": "samousavih",
+    "name": "Amin Mousavi Hasab",
+    "description": "love science and music. Javascript and C# dev.",
+    "profileImage": "https://pbs.twimg.com/profile_images/906417383765626881/37Radfek_normal.jpg",
+    "url": null
+  },
+  "developersteve": {
+    "username": "DeveloperSteve",
+    "name": "Developer Steve",
+    "description": "API and Platform Evangelist @Telstra @TelstraDev. Seasoned Dev/Ops/CTO/Maker/Geek/Gamer. International Speaker/MC. Hackathon Mentor/Judge.",
+    "profileImage": "https://pbs.twimg.com/profile_images/545676051410468864/_lu8PxXu_normal.png",
+    "url": "https://t.co/PFtmOG0RnR"
+  },
+  "iamtommcc": {
+    "username": "iamtommcc",
+    "name": "Tom 💬",
+    "description": "Front end dev & product management @RexSoftware. React/Redux ecosystem junkie. Occasionally pretend to be a designer. Professional imposter.",
+    "profileImage": "https://pbs.twimg.com/profile_images/908966636421472257/g2EHZNqf_normal.jpg",
+    "url": "https://t.co/jes2Bgv2k6"
+  },
+  "_______kim": {
+    "username": "_______kim",
+    "name": "Kim Burgess",
+    "description": "Media nerd. Developer. Easily distracted by shiny things.",
+    "profileImage": "https://pbs.twimg.com/profile_images/862999761057492992/lG_DR4kb_normal.jpg",
+    "url": "https://t.co/Hqs1mL54De"
+  },
+  "phocks": {
+    "username": "phocks",
+    "name": "Joshua Byrd 🐝",
+    "description": "Plant-powered semi-aquatic lifeform. Bees rights activist. Code for @abcnews. Street fighter for @VelociraptorAU. Anything you don't agree with is satire",
+    "profileImage": "https://pbs.twimg.com/profile_images/875311751172022273/JSYCiFXM_normal.jpg",
+    "url": "https://t.co/UXXEPrKuuP"
+  },
+  "loklaan": {
+    "username": "loklaan",
+    "name": "mr lochlan",
+    "description": "developer of things. avid failure. @rexsoftware 'frontend engineer' 'human'",
+    "profileImage": "https://pbs.twimg.com/profile_images/907585835230310400/vaDp4Fu-_normal.jpg",
+    "url": "https://t.co/f5PgDzxPoj"
+  },
+  "benonealux": {
+    "username": "BenONealUX",
+    "name": "Ben O'Neal",
+    "description": "So awesome.",
+    "profileImage": "https://pbs.twimg.com/profile_images/524423301402087424/vXHfzjHX_normal.jpeg",
     "url": null
   }
 }
