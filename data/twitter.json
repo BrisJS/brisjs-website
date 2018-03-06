@@ -59,7 +59,7 @@
     "username": "ButlerMaurice",
     "name": "Maurice Butler",
     "description": "Doer of all things JavaScript && Node.js",
-    "profileImage": "https://pbs.twimg.com/profile_images/882411251619332097/Rie6jw9Y_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/964105283625656320/odKsgtIT_normal.jpg",
     "url": "https://t.co/vBEwYAtiDu"
   },
   "nathanhoad": {
@@ -73,7 +73,7 @@
     "username": "collypops",
     "name": "Colin Gourlay",
     "description": "✉️⇨🐵  💬🔁❤️⇨🙈",
-    "profileImage": "https://pbs.twimg.com/profile_images/951303426842882048/XZW1EqTJ_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/963812530643550208/TfPmX_X9_normal.jpg",
     "url": "https://t.co/nSPMm8BsCJ"
   },
   "coenhyde": {
@@ -94,7 +94,7 @@
     "username": "twe4ked",
     "name": "Odin Dutton",
     "description": "Software developer (Ruby). Traveller. Tiny sentences. Music for the progressive B-boy.",
-    "profileImage": "https://pbs.twimg.com/profile_images/620161743617064960/cPTfn2Ks_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/967325151770505216/CIbj3nq3_normal.jpg",
     "url": "https://t.co/PW7DjLeL5Y"
   },
   "johnbristowe": {
@@ -149,7 +149,7 @@
   "ashkyd": {
     "username": "AshKyd",
     "name": "Ash Kyd",
-    "description": "Linux-powered code monkey, works for @abcnews and helps run @brisjs. I like JavaScript, #gamedev, bicycles & men. 🏳️‍🌈 low crunch, and easy to fit in a purse",
+    "description": "Linux-powered code monkey, works for @abcnews and helping run @campjs. I like JavaScript, #gamedev, bicycles & men. 🏳️‍🌈 low crunch, and easy to fit in a purse",
     "profileImage": "https://pbs.twimg.com/profile_images/892345888407863296/_1LjX3H3_normal.jpg",
     "url": "https://t.co/qqnmaxbRMs"
   },
@@ -163,7 +163,7 @@
   "tatejohnson": {
     "username": "tatejohnson",
     "name": "Tate Johnson",
-    "description": "Has been known to strum keyboards.",
+    "description": "Has been known to strum keyboards. Husband to @wotbuff.",
     "profileImage": "https://pbs.twimg.com/profile_images/414360859687669760/YR4X9L3H_normal.jpeg",
     "url": "https://t.co/KD85ZGmsgA"
   },
@@ -212,7 +212,7 @@
   "girvo": {
     "username": "girvo",
     "name": "Josh Girvin",
-    "description": "Senior Engineer at @everledger, tech head, and local music addict. Living in a butt.",
+    "description": "Software engineer, tech head, and local music addict.",
     "profileImage": "https://pbs.twimg.com/profile_images/721535456924426240/YS51Z6en_normal.jpg",
     "url": "https://t.co/9GEjvW5b66"
   },
@@ -226,7 +226,7 @@
   "tomnewbyau": {
     "username": "tomnewbyau",
     "name": "Tom Newby",
-    "description": "I build software products, teams and people // Currently building HyraIQ // Co-founder @Dingo_PM / @PiggyBike",
+    "description": "I build software products, teams and people // Currently building HyraIQ // Symfony + Aurelia // Co-founder @Dingo_PM / @PiggyBike",
     "profileImage": "https://pbs.twimg.com/profile_images/649044482118189056/qnXUyEcC_normal.jpg",
     "url": "https://t.co/fn5tDG2L4n"
   },
@@ -268,8 +268,8 @@
   "pori_alex": {
     "username": "pori_alex",
     "name": "Alex Hernandez",
-    "description": "Baking up @LeaseCake 🎂 Organizing @OrlandoJelly 👯‍♀️ Finding home matches @SensarieApp 🏡",
-    "profileImage": "https://pbs.twimg.com/profile_images/914536781067960321/0aJBgIUq_normal.jpg",
+    "description": "Baking up @LeaseCake 🎂 Coworking at @OrlandoJelly 👯‍♀️ @StarterStudio Alumni 🚀 (RIP @goRapido🐰)",
+    "profileImage": "https://pbs.twimg.com/profile_images/963163158465728512/oaZisxeG_normal.jpg",
     "url": null
   },
   "vladimiraus": {
@@ -351,10 +351,10 @@
   },
   "joshduck": {
     "username": "joshduck",
-    "name": "josh🦆",
-    "description": "Frontend web stuff. JavaScript, Node, React, Relay. Team lead at @ABCaustralia, formerly @Facebook.",
-    "profileImage": "https://pbs.twimg.com/profile_images/930338558522675200/Nl0CZlkz_normal.jpg",
-    "url": "https://t.co/IFJDtc1bSv"
+    "name": "Josh",
+    "description": "",
+    "profileImage": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+    "url": null
   },
   "purpsta_yt": {
     "username": "Purpsta_YT",
@@ -386,10 +386,10 @@
   },
   "phocks": {
     "username": "phocks",
-    "name": "Josh Byrd 🐦",
-    "description": "Plant-powered developer. Code and stories for @abcnews. Street fighter for @VelociraptorAU. Views are probably my own etc... 🅥",
+    "name": "josh👽",
+    "description": "i have been on this website since 2007 lol",
     "profileImage": "https://pbs.twimg.com/profile_images/923071076023779328/Zj_YaPHD_normal.jpg",
-    "url": "https://t.co/CTgXfSHNij"
+    "url": "https://t.co/QUjNiHLAWm"
   },
   "_______kim": {
     "username": "_______kim",
@@ -408,7 +408,7 @@
   "iamtommcc": {
     "username": "iamtommcc",
     "name": "Tom 💬",
-    "description": "Front end dev & product manager @RexSoftware. React ecosystem junkie. Professional imposter. Former eSports person for @compLexityLive, @EvilGeniuses and others",
+    "description": "Front end dev & product manager @RexSoftware. React ecosystem junkie. Professional imposter. Former eSports guy at @compLexityLive, @EvilGeniuses and others",
     "profileImage": "https://pbs.twimg.com/profile_images/908966636421472257/g2EHZNqf_normal.jpg",
     "url": "https://t.co/jes2Bgv2k6"
   },
@@ -457,7 +457,7 @@
   "_kartikgupta_": {
     "username": "_kartikgupta_",
     "name": "Kartik Gupta",
-    "description": "Ember Developer at @gbstholdings. Former Dev at @mathleticsAUS, @readingeggs. Co-organiser @campjs @EmberBris. Be kind people.",
+    "description": "Ember Developer at @gbstholdings. Former Dev at @mathleticsAUS, @readingeggs. Co-organiser @campjs @EmberBris. SoftwareEng @sydney_uni. Be kind people.",
     "profileImage": "https://pbs.twimg.com/profile_images/867692414932320256/bTxdSiRT_normal.jpg",
     "url": "https://t.co/aewGynwkNG"
   },
@@ -472,7 +472,21 @@
     "username": "CaitlinPB",
     "name": "CaitlinPalmer-Bright",
     "description": "From park ranger to teacher to rails developer @TwoRedKites. I run Brisbane Tech Newbies. Eater of cheese pizza, lover of naps and puppies, eternal optimist!",
-    "profileImage": "https://pbs.twimg.com/profile_images/828406711237029888/-8lHOnoj_normal.jpg",
+    "profileImage": "https://pbs.twimg.com/profile_images/970948469157326849/Wh_QLpu2_normal.jpg",
     "url": "https://t.co/mVQNBreTr0"
+  },
+  "zoe_meers1": {
+    "username": "zoe_meers1",
+    "name": "Zoe Meers",
+    "description": "Student of politics, statistics, & data science | @googlenewslab Fellow with @abcnews | Research Assistant @USSC  | @smithcollege @uwccostarica alumna",
+    "profileImage": "https://pbs.twimg.com/profile_images/964459273932619777/GbP0Sx5j_normal.jpg",
+    "url": "https://t.co/VaPINqItFw"
+  },
+  "astrotim": {
+    "username": "astrotim",
+    "name": "Tim Holt",
+    "description": "Web designer, Astronaut Web Co.",
+    "profileImage": "https://pbs.twimg.com/profile_images/2205353480/2012-04-filtered_normal.jpg",
+    "url": "http://t.co/oOiPU4X8n3"
   }
 }
