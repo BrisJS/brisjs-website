@@ -3,6 +3,7 @@ const tsvTalks = require('./lib/tsvTalks');
 const domready = require('domready');
 const Handlebars = require('handlebars');
 const dateFns = require('date-fns');
+const fetchJsonp = require('fetch-jsonp');
 const _ = require('lodash');
 var md = require('markdown-it')({
   html: true,
@@ -59,10 +60,10 @@ function hashChange(options) {
 }
 
 function init() {
-  fetch(config.dataSources.events)
+  fetchJsonp(config.dataSources.events)
     .then(response => response.json())
     .then(function(events) {
-      const latest = events[0];
+      const latest = _.get(events, 'data[0]');
       latest.dateHuman = dateFns.format(new Date(latest.time), 'd MMM');
       Array.from(document.querySelectorAll('[data-latest]')).forEach(element => {
         const data = _.get(latest, element.dataset.latest);
