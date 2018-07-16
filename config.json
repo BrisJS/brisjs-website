@@ -1,6 +1,6 @@
 {
   "dataSources": {
-    "talks": "https://docs.google.com/spreadsheets/d/1paafwoek3xLd0-FtcH6CyM4qBL3TwoHObHL9rcg9MuU/export&format=tsv&id=1paafwoek3xLd0-FtcH6CyM4qBL3TwoHObHL9rcg9MuU&gid=0",
+    "talks": "https://docs.google.com/spreadsheets/d/1paafwoek3xLd0-FtcH6CyM4qBL3TwoHObHL9rcg9MuU/export?format=tsv&id=1paafwoek3xLd0-FtcH6CyM4qBL3TwoHObHL9rcg9MuU&gid=0",
     "events": "https://api.meetup.com/brisjs/events?photo-host=public&page=20&sig_id=12263633&sig=2814433f6140917042975f0bf8957f693e85e8a7",
     "githubIssues": "https://api.github.com/repos/brisjs/meetups/issues?state=open"
   }
