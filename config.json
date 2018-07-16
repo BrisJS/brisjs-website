@@ -1,7 +1,7 @@
 {
   "dataSources": {
-    "talks": "https://cors.ash.ms/?csurl=https://docs.google.com/spreadsheets/d/1paafwoek3xLd0-FtcH6CyM4qBL3TwoHObHL9rcg9MuU/export&format=tsv&id=1paafwoek3xLd0-FtcH6CyM4qBL3TwoHObHL9rcg9MuU&gid=0",
-    "events": "https://cors.ash.ms/?csurl=http://api.meetup.com/BrisJS/events",
+    "talks": "https://docs.google.com/spreadsheets/d/1paafwoek3xLd0-FtcH6CyM4qBL3TwoHObHL9rcg9MuU/export&format=tsv&id=1paafwoek3xLd0-FtcH6CyM4qBL3TwoHObHL9rcg9MuU&gid=0",
+    "events": "http://api.meetup.com/BrisJS/events",
     "githubIssues": "https://api.github.com/repos/brisjs/meetups/issues?state=open"
   }
 }
