@@ -1,118 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-  <script defer src="app.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script defer src="app.min.js"></script>
 
-  <title>Brisbane Javascript</title>
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Brisbane Javascript</title>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
+
 <body>
-<div class="ui vertical inverted sidebar menu left">
-  <a class="page-home active item" href="#">BrisJS</a>
-  <a class="page-present item" href="#present">Present a talk</a>
-  <a class="page-talks item" href="#present">Past talks</a>
-  <a class="page-jobs item" href="#jobs">Find a job</a>
-  <a class="page-findus item" href="#findus">Find the meetup</a>
-</div>
-<div class="pusher">
-  <div id="hero" class="ui inverted vertical masthead center aligned segment">
-    <div class="ui container">
-      <div class="ui large secondary inverted pointing menu">
-        <a class="toc item">
-          <i class="sidebar icon"></i>
-        </a>
-        <a class="item logo image" href="#"><img alt="" src="images/logo.svg"></a>
+    <div class="ui vertical inverted sidebar menu left">
         <a class="page-home active item" href="#">BrisJS</a>
-        <a class="page-present item" href="#present">Present</a>
-        <a class="page-talks item" href="#talks">Past talks</a>
-        <a class="page-jobs item" href="#jobs">Jobs</a>
-        <a class="page-findus item" href="#findus">Find Us</a>
-        <div class="right item">
-          <a class="ui inverted button" href="https://www.meetup.com/en-AU/BrisJS/join/?rg=joinus2">Join us!</a>
+        <a class="page-present item" href="#present">Present a talk</a>
+        <a class="page-talks item" href="#present">Past talks</a>
+        <a class="page-jobs item" href="#jobs">Find a job</a>
+        <a class="page-findus item" href="#findus">Find the meetup</a>
+    </div>
+    <div class="pusher">
+        <div id="hero" class="ui inverted vertical masthead center aligned segment">
+            <div class="ui container">
+                <div class="ui large secondary inverted pointing menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <a class="item logo image" href="#">
+                        <img alt="" src="images/logo.svg">
+                    </a>
+                    <a class="page-home active item" href="#">BrisJS</a>
+                    <a class="page-present item" href="#present">Present</a>
+                    <a class="page-talks item" href="#talks">Past talks</a>
+                    <a class="page-jobs item" href="#jobs">Jobs</a>
+                    <a class="page-findus item" href="#findus">Find Us</a>
+                    <div class="right item">
+                        <a class="ui inverted button" href="https://www.meetup.com/en-AU/BrisJS/join/?rg=joinus2">Join us!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui text container">
+                <h1 class="ui inverted header">
+                    BrisJS
+                </h1>
+                <h2>The Brisbane Javascript meetup.</h2>
+                <a class="ui huge primary button" href="https://www.meetup.com/BrisJS/">
+                    <span data-latest="name">Next Event</span>
+                    <i class="right arrow icon"></i>
+                </a>
+            </div>
+
         </div>
-      </div>
+        <div data-page="home">
+            <div class="ui vertical stripe segment">
+                <div class="ui stackable grid container">
+                    <div class="row">
+                        <div class="eight wide column">
+                            <h3 class="ui header">Who we are</h3>
+                            <p>We're the Brisbane JavaScript programming group - BrisJS for short. Our mission is to provide a community and a voice for Brisbane's JavaScript technology community.</p>
+                            <h3 class="ui header">What we do</h3>
+                            <p>We present technical talks on the first Monday of every month, and have periodic networking events between.&nbsp;</p>
+                            <h3 class="ui header">Code of Conduct</h3>
+                            <p>BrisJS is dedicated to providing a harassment-free experience for everyone. Our anti-harassment policy can be found at:
+                                <a href="#conduct">https://bris.js.org/#conduct</a>
+                            </p>
+                        </div>
+                        <div class="six wide right floated column">
+                            <div class="ui card">
+                                <div class="content">
+                                    <img class="right floated mini ui image" alt="" src="/images/logo.svg">
+                                    <div class="header" data-latest="name">
+                                        Next event
+                                    </div>
+                                    <div class="meta">
+                                        <span data-latest="dateHuman">Sometime</span>
+                                        at
+                                        <span data-latest="venue.name">Someplace</span>
+                                    </div>
+                                    <div class="description" data-latest="description" data-html="true">
+                                        Click through to Meetup for event deails.
+                                    </div>
+                                </div>
+                                <div class="extra content">
+                                    <div class="ui two buttons">
+                                        <a class="ui basic green button" href="https://meetup.com/BrisJS/">Join us!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        BrisJS
-      </h1>
-      <h2>The Brisbane Javascript meetup.</h2>
-      <a class="ui huge primary button" href="https://www.meetup.com/BrisJS/">
-				<span data-latest="name">Next Event</span>
-				<i class="right arrow icon"></i>
-			</a>
-    </div>
-
-  </div>
-	<div data-page="home">
-	  <div class="ui vertical stripe segment">
-	    <div class="ui stackable grid container">
-	      <div class="row">
-	        <div class="eight wide column">
-	          <h3 class="ui header">Who we are</h3>
-						<p>We're the Brisbane JavaScript programming group - BrisJS for short. Our mission is to provide a community and a voice for Brisbane's JavaScript technology community.</p>
-						<h3 class="ui header">What we do</h3>
-						<p>We present technical talks on the first Monday of every month, and have periodic networking events between.&nbsp;</p>
-            <h3 class="ui header">Code of Conduct</h3>
-            <p>BrisJS is dedicated to providing a harassment-free experience for everyone. Our anti-harassment policy can be found at: <a href="#conduct">https://bris.js.org/#conduct</a></p>
-	        </div>
-	        <div class="six wide right floated column">
-					  <div class="ui card">
-					    <div class="content">
-					      <img class="right floated mini ui image" alt="" src="/images/logo.svg">
-					      <div class="header" data-latest="name">
-					        Next event
-					      </div>
-					      <div class="meta">
-									<span data-latest="dateHuman">Sometime</span>
-										at
-									<span data-latest="venue.name">Someplace</span>
-					      </div>
-					      <div class="description" data-latest="description" data-html="true">
-					        Click through to Meetup for event deails.
-					      </div>
-					    </div>
-					    <div class="extra content">
-					      <div class="ui two buttons">
-					        <a class="ui basic green button" href="https://meetup.com/BrisJS/">Join us!</a>
-					      </div>
-					    </div>
-					  </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-</div>
-<div data-page="present">
-  <div class="ui text container center aligned vertical stripe segment">
-    <h2 class="ui header">Present at BrisJS</h2>
-    <p>We're always looking for presenters! If you have an idea for a talk
-      you should absolutely get in touch with us!</p>
-    <a
-      class="ui huge primary button"
-      href="https://github.com/BrisJS/meetups/issues/new?body=Talk%20title:+My+Talk%0ATalk%20length:+20+min/40+min%0ATalk%20synopsis:%0AAvailable+month(s):%0AOptional:+your+Twitter+account+so+we+can+promote+your+talk">
-      Submit your talk <i class="right arrow icon"></i>
-    </a>
-  </div>
-  <div class="ui vertical stripe segment">
-    <div class="ui stackable grid container">
-      <div class="row">
-        <div class="eight wide column">
-          <h3 class="ui header">Talks requested</h3>
-          <p>Need some inspiration? The <a href="https://github.com/BrisJS/meetups/issues?q=is%3Aopen+is%3Aissue+label%3A%22Talk+Requests%22">
-            following are talks requested by BrisJS users</a>.</p>
-          <p>Click through to the GitHub issue tracker to claim the talk or add more info</p>
-          <script id="template-talksrequested" type="text/x-handlebars-template">
+    <div data-page="present">
+        <div class="ui text container center aligned vertical stripe segment">
+            <h2 class="ui header">Present at BrisJS</h2>
+            <p>We're always looking for presenters! If you have an idea for a talk you should absolutely get in touch with us!</p>
+            <a class="ui huge primary button" href="https://github.com/BrisJS/meetups/issues/new?body=Talk%20title:+My+Talk%0ATalk%20length:+20+min/40+min%0ATalk%20synopsis:%0AAvailable+month(s):%0AOptional:+your+Twitter+account+so+we+can+promote+your+talk">
+                Submit your talk
+                <i class="right arrow icon"></i>
+            </a>
+        </div>
+        <div class="ui vertical stripe segment">
+            <div class="ui stackable grid container">
+                <div class="row">
+                    <div class="eight wide column">
+                        <h3 class="ui header">Talks requested</h3>
+                        <p>Need some inspiration? The
+                            <a href="https://github.com/BrisJS/meetups/issues?q=is%3Aopen+is%3Aissue+label%3A%22Talk+Requests%22">
+                                following are talks requested by BrisJS users</a>.</p>
+                        <p>Click through to the GitHub issue tracker to claim the talk or add more info</p>
+                        <script id="template-talksrequested" type="text/x-handlebars-template">
           {{#each this}}
           <div class="ui items">
   <div class="item">
@@ -138,63 +143,66 @@
 </div>
           {{/each}}
           </script>
-        </div>
-        <div class="six wide right floated column">
-          <h3>Presentating at BrisJS</h3>
-          <p>Talks run for either a 20 or 40 minute slot, let us know which you
-            prefer. Presentation style is relaxed and can take the form of a
-            presentation, live coding session, Q&amp;A session or all of the
-            above.</p>
-            <p>Talks are video recorded for eventual sharing on our <a href="https://www.youtube.com/channel/UC9Zts-dkDz0DBZ_f8ETgHcQ" target="_blank">Youtube channel</a>. If you do not wish to be recorded, please let us know in advance and we will make arrangements to prevent this.</p>
-            <p>BrisJS is dedicated to a harassment-free experience for everyone. Please make sure to familiareze yourself with our <a href="#conduct">Code of Conduct</a></p>
+                    </div>
+                    <div class="six wide right floated column">
+                        <h3>Presentating at BrisJS</h3>
+                        <p>Talks run for either a 20 or 40 minute slot, let us know which you prefer. Presentation style is relaxed and can take the form of a presentation, live coding session, Q&amp;A session or all of the above.
+                        </p>
+                        <p>Talks are video recorded for eventual sharing on our
+                            <a href="https://www.youtube.com/channel/UC9Zts-dkDz0DBZ_f8ETgHcQ" target="_blank">Youtube channel</a>. If you do not wish to be recorded, please let us know in advance and we will make arrangements to prevent this.</p>
+                        <p>BrisJS is dedicated to a harassment-free experience for everyone. Please make sure to familiareze yourself with our
+                            <a href="#conduct">Code of Conduct</a>
+                        </p>
 
-          <h3>The tech</h3>
-          <p>The Auth &amp; General venue is fitted out with 1080p displays
-            mirrored throughout the venue. These support HDMI &amp; mini DP
-            output, however audio is not yet supported via this output.</p>
-          <p>There is room wide amplification for your presentation, with a lapel &amp; hand-held mic.</p>
-          <p>Internet is generally not available at this time. If required, you may request access to a tethered phone connection from organisers but please ensure your presentation will work offline should the worst happen.</p>
-          <p>If you have special requirements on the night (either technical or personal), please let us know.</p>
-          <h3>Presentation tips</h3>
-          <p>Follow these tips to help the audience get the most from your talk:</p>
-          <ul>  
-            <li>Use text that is large enough to read from the back of the room. This applies not only to slides but also your code editor, command line and browser if you are doing a demo - bump up the font size or use the accessibility features of your O.S. to zoom in on part of the screen.</li>
-            <li>Some colors are harder to read than others on the displays. Adopt a high-contrast color scheme for text to make it easier to read, and consider people who are colorblind when selecting colors.</li>
-            <li>To get the best result for the recording of your talk, remember to speak clearly using the microphone, and if someone asks a question, try to repeat or rephrase the question as part of your answer so that it also gets recorded.</li>
-            <li>If you're planning on live coding or giving a live demo, it's a good idea to have prepared a backup option (e.g. screenshots, video, or a version of the code that is known to work) in case it doesn't go to plan.</li>
-            <li>Consider checking your slides with <a href="http://slidelint.net/">slidelint</a></li>
-            <li>For even more tips on accessibility of presentations check out the <a href="https://www.w3.org/WAI/training/accessible">W3C Web Accessibility Initiative's Guide</a></li>
-          </ul>
+                        <h3>The tech</h3>
+                        <p>The Auth &amp; General venue is fitted out with 1080p displays mirrored throughout the venue. These support HDMI &amp; mini DP output, however audio is not yet supported via this output.</p>
+                        <p>There is room wide amplification for your presentation, with a lapel &amp; hand-held mic.</p>
+                        <p>Internet is generally not available at this time. If required, you may request access to a tethered phone connection from organisers but please ensure your presentation will work offline should the worst happen.</p>
+                        <p>If you have special requirements on the night (either technical or personal), please let us know.</p>
+                        <h3>Presentation tips</h3>
+                        <p>Follow these tips to help the audience get the most from your talk:</p>
+                        <ul>
+                            <li>Use text that is large enough to read from the back of the room. This applies not only to slides but also your code editor, command line and browser if you are doing a demo - bump up the font size or use the accessibility features of your O.S. to zoom in on part of the screen.</li>
+                            <li>Some colors are harder to read than others on the displays. Adopt a high-contrast color scheme for text to make it easier to read, and consider people who are colorblind when selecting colors.</li>
+                            <li>To get the best result for the recording of your talk, remember to speak clearly using the microphone, and if someone asks a question, try to repeat or rephrase the question as part of your answer so that it also gets recorded.</li>
+                            <li>If you're planning on live coding or giving a live demo, it's a good idea to have prepared a backup option (e.g. screenshots, video, or a version of the code that is known to work) in case it doesn't go to plan.</li>
+                            <li>Consider checking your slides with
+                                <a href="http://slidelint.net/">slidelint</a>
+                            </li>
+                            <li>For even more tips on accessibility of presentations check out the
+                                <a href="https://www.w3.org/WAI/training/accessible">W3C Web Accessibility Initiative's Guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
-<div data-page="jobs">
-  <div class="ui vertical stripe segment">
-    <div class="ui stackable grid container">
-      <div class="row">
-        <div class="five wide column">
-          <img alt="" src="images/montage.svg">
+    <div data-page="jobs">
+        <div class="ui vertical stripe segment">
+            <div class="ui stackable grid container">
+                <div class="row">
+                    <div class="five wide column">
+                        <img alt="" src="images/montage.svg">
+                    </div>
+                    <div class="ten wide right floated column">
+                        <h3 class="ui header">Job Board</h3>
+                        <p>The BrisJS job board is an opportunity for the community to post jobs for the community.</p>
+                        <h3 class="ui header">Post a Job</h3>
+                        <p>Have a job to advertise? Great!</p>
+                        <ol>
+                            <li>You'll need a GitHub account</li>
+                            <li>
+                                <a href="https://github.com/BrisJS/meetups/issues/new">Create a job ad</a> on our GitHub repo</li>
+                            <li>Your job will appear on this page after moderation</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="ten wide right floated column">
-          <h3 class="ui header">Job Board</h3>
-          <p>The BrisJS job board is an opportunity for the community to post
-          jobs for the community.</p>
-          <h3 class="ui header">Post a Job</h3>
-          <p>Have a job to advertise? Great!</p>
-          <ol>
-            <li>You'll need a GitHub account</li>
-            <li><a href="https://github.com/BrisJS/meetups/issues/new">Create a job ad</a> on our GitHub repo</li>
-            <li>Your job will appear on this page after moderation</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-<script id="template-jobs" type="text/x-handlebars-template">
+        <script id="template-jobs" type="text/x-handlebars-template">
 {{#each this}}
 <div class="ui vertical stripe segment">
 	<div class="ui stackable grid container">
@@ -226,14 +234,14 @@
 </div>
 {{/each}}
 </script>
-	</div>
+    </div>
 
-<div data-page="contact">
-  <div class="ui vertical stripe segment">
-    <div class="ui stackable grid container">
-      <div class="row">
-        <div class="eleven wide column">
-          <script id="template-contact" type="text/x-handlebars-template">
+    <div data-page="contact">
+        <div class="ui vertical stripe segment">
+            <div class="ui stackable grid container">
+                <div class="row">
+                    <div class="eleven wide column">
+                        <script id="template-contact" type="text/x-handlebars-template">
             <div class="ui cards">
             {{#each this}}
               <div class="ui card">
@@ -255,237 +263,251 @@
             {{/each}}
             </div>
           </script>
-        </div>
-        <div class="five wide column">
-          <h2>Get in touch</h2>
-          <p>Whether you're looking to submit a talk, make an announcement,
-            organise to sponsor us, or otherwise have a query, please feel free
-            to contact us.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div data-page="findus">
-  <div class="ui vertical stripe segment">
-    <div class="ui stackable grid container">
-      <div class="row">
-        <div class="eleven wide column">
-          <img src="images/toowong.svg" alt="" width="100%">
-        </div>
-        <div class="five wide column">
-          <h2>Find the Meetup</h2>
-          <p>BrisJS meetups are held on the first Monday of the month, and
-            are hosted by Auto &amp; General.</p>
-          <p>Parking is available at Toowong Village until 10:30. Find more <a href="http://www.toowongvillage.com.au/centre-info/getting-here/">parking info on the Toowong Village site</a>.</p>
-          <p>These meetups are accessible from the <em>Gallery Level</em> (GL)
-            elevators. This is the same level as the railway station, and one
-            level up from Coles.</p>
-          <p>Security will let people into the venue 30 minutes before and 15
-            minutes after the starting time. If you arrive late,
-            you will need to get in touch with the contact on the meetup invite
-            to arrange access.</p>
-
-          <h2>Social Drinks</h2>
-          <p>Social drinks are held at numerous venues around town, so check
-            the meetup event page.</p>
-          <p>Feel free to suggest a venue on
-            <a href="https://twitter.com/brisjs">Twitter</a>
-            or
-            <a href="https://meetup.com/brisjs">Meetup</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div data-page="conduct">
-  <div class="ui text container center aligned vertical stripe segment">
-    <p>BrisJS is committed to making our talks, pub meets, and other events
-    a safe and enjoyable place for everyone.</p>
-  </div>
-  <div class="ui vertical stripe segment">
-    <div class="ui stackable grid container">
-      <div class="row">
-        <div class="three wide column"></div>
-        <div class="ten wide column">
-          <h3 class="ui huge header">Code of Conduct</h3>
-          <p>The BrisJS community has proven to be a very welcoming and open group. By joining that group as an attendee, speaker, or sponsor, you will be held to that same high standard.</p>
-          <p>BrisJS is dedicated to providing a harassment-free experience for everyone.</p>
-          <p>Harassment includes, but is not limited to:</p>
-
-          <ol>
-            <li>Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body sise, race, age, religion (or lack thereof)</li>
-            <li>Sexual images in public spaces</li>
-            <li>Deliberate intimidation, stalking, or following</li>
-            <li>Harassing photography or recording</li>
-            <li>Sustained disruption of talks or other events</li>
-            <li>Inappropriate physical contact</li>
-            <li>Unwelcome sexual attention</li>
-            <li>Advocating for, or encouraging, any of the above behaviour</li>
-          </ol>
-
-          <p>Participants asked to stop any harassing behaviour are expected to comply immediately.</p>
-
-          <p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.</p>
-
-          <p>We expect participants to follow these rules at conference and workshop venues, conference-related social events and online spaces.</p>
-
-          <div class="ui divider"></div>
-
-          <h3 class="ui huge header">If you are being harassed</h3>
-          <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please get in touch with us. You can make a report either personally or anonymously.</p>
-
-          <h4>Anonymous report</h4>
-          <p>You can use our <a href="https://goo.gl/forms/uZsjKme75V8PBcQZ2">anonymous report form</a>. We can't follow up an anonymous report with you directly, but we will fully investigate it and take whatever action is necessary to prevent a recurrence. </p>
-
-          <h4>Personal report</h4>
-          <p>
-            When taking a personal report, we will ensure you are safe and cannot be overheard. We may involve other event organisers to ensure your report is managed properly. Once safe, we'll ask you to tell us about what happened. This can be upsetting, but we'll handle it as respectfully as possible, and you can bring someone to support you. You won't be asked to confront anyone and we won't tell anyone who you are.
-          </p>
-          <p>We will be happy to help you contact venue security or local law enforcement, provide escorts, or otherwise assist you to feel safe for the duration of the event. We value your attendance.</p>
-
-          <p>Contacts you can speak to confidentially at or outside of an event include:</p>
-
-          <div class="ui two column grid">
-            <div class="column">
-              <div class="ui card fluid">
-                <div class="image"> <img src="https://secure.gravatar.com/avatar/24073d0e70921eda1a2ae25e2cceb057?s=400" alt="Ash Kyd"> </div>
-                <div class="content"> <a class="header">Ash</a>
-                  <div class="meta"> <a href="https://twitter.com/ashkyd">@ashkyd</a></div>
-                  <div class="description">You can speak to him in person at most events or <a href="mailto:ash@kyd.com.au">email ash@kyd.com.au</a>. <b>For immediate issues you can <a href="tel:+61457363189">call Ash on 0457&nbsp;363&nbsp;189</a></b></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="ui card fluid">
-                <div class="image"> <img src="https://secure.gravatar.com/avatar/6c5be200a84951c74c05932ae73fa4a9?s=400" alt="Anna Gerber"> </div>
-                <div class="content"> <a class="header">Anna</a>
-                  <div class="meta"> <a hred="https://twitter.com/annagerber">@annagerber</a></div>
-                  <div class="description">Anna is a BrisJS regular, you can speak to her in person at most events.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="ui divider"></div>
-
-          <h3>More info</h3>
-          <p>This code of conduct is based on the work of the <a href="http://confcodeofconduct.com/">Conference Code of Conduct</a>, <a href="http://2016.cssconf.com.au/codeofconduct/">CSSConf Australia</a>, and the <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">Geek Feminism anti-harassment policy</a>.</p>
-
-          <p>If you have any feedback, recommendations for improving this policy, or wish to help in any way, please contact one of the organisers.</p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div data-page="talks">
-  <div class="ui vertical stripe segment">
-    <div class="ui stackable grid container">
-      <script id="template-talks" type="x-handlebars/template">
-      {{#each this}}
-      <div class="ui grid {{className}}">
-        <div class="four wide column">
-        	<h2>{{dateHuman}} Meetup</h2>
-          <p>There were {{talks.length}} talks at the {{dateHuman}} meetup.</p>
-        </div>
-        <div class="twelve wide column">
-          <div class="ui link cards">
-            {{#each talks}}
-              <a class="ui card" href="#talk-{{id}}">
-                <div class="content">
-                  {{#if speakers.0.twitter.profileImage}}
-                    <img class="ui avatar image" src="{{speakers.0.twitter.profileImage}}">
-                  {{else}}
-                    <span class="ui avatar image"></span>
-                  {{/if}}
-                  {{#each speakers}} {{name}} {{/each}}
-      	        </div>
-                <div class="image">
-                  {{#youtube}}
-                    <div class="extra images">
-                      <img alt="" src="{{posterFrame.medium}}" style="width:100%;">
-                      <div class="talk title">{{../title}}</div>
                     </div>
-                  {{else}}
-                    <div class="extra images">
-                      <div class="talk placeholder"></div>
-                      <div class="talk title">{{title}}</div>
+                    <div class="five wide column">
+                        <h2>Get in touch</h2>
+                        <p>Whether you're looking to submit a talk, make an announcement, organise to sponsor us, or otherwise have a query, please feel free to contact us.</p>
                     </div>
-                  {{/youtube}}
                 </div>
-                <div class="content">
-                  <span class="right floated"></span>
-                  {{#if slides}}
-                    <span class="resource">
-                        <i class="file powerpoint outline icon" title="Slides available to view"></i> Slides
-                    </span>
-                  {{/if}}
-                  {{#if youtube}}
-                    <span class="resource">
-                        <i class="video icon" title="Video available on YouTube"></i> Video
-                    </span>
-                  {{/if}}
-                  {{#if code}}
-                    <span class="resource">
-                        <i class="file code outline icon" title="Code resources available"></i> Code
-                    </span>
-                  {{/if}}
+            </div>
+        </div>
+    </div>
+
+    <div data-page="findus">
+        <div class="ui vertical stripe segment">
+            <div class="ui stackable grid container">
+                <div class="row">
+                    <div class="eleven wide column">
+                        <img src="images/toowong.svg" alt="" width="100%">
+                    </div>
+                    <div class="five wide column">
+                        <h2>Find the Meetup</h2>
+                        <p>BrisJS meetups are held on the first Monday of the month, and are hosted by Auto &amp; General.</p>
+                        <p>Parking is available at Toowong Village until 10:30. Find more
+                            <a href="http://www.toowongvillage.com.au/centre-info/getting-here/">parking info on the Toowong Village site</a>.</p>
+                        <p>These meetups are accessible from the
+                            <em>Gallery Level</em> (GL) elevators. This is the same level as the railway station, and one level up from Coles.</p>
+                        <p>Security will let people into the venue 30 minutes before and 15 minutes after the starting time. If you arrive late, you will need to get in touch with the contact on the meetup invite to arrange access.</p>
+
+                        <h2>Social Drinks</h2>
+                        <p>Social drinks are held at numerous venues around town, so check the meetup event page.</p>
+                        <p>Feel free to suggest a venue on
+                            <a href="https://twitter.com/brisjs">Twitter</a>
+                            or
+                            <a href="https://meetup.com/brisjs">Meetup</a>.
+                        </p>
+                    </div>
                 </div>
-              </a>
-            {{/each}}
-          </div>
+            </div>
         </div>
-      </div>
-      <div class="ui horizontal divider">
-        <i class="heart icon"></i>
-      </div>
-      {{/each}}
-      </script>
     </div>
-  </div>
-</div>
 
-<div data-page="talk-single">
-HELLO WYRLD
-</div>
+    <div data-page="conduct">
+        <div class="ui text container center aligned vertical stripe segment">
+            <p>BrisJS is committed to making our talks, pub meets, and other events a safe and enjoyable place for everyone.</p>
+        </div>
+        <div class="ui vertical stripe segment">
+            <div class="ui stackable grid container">
+                <div class="row">
+                    <div class="three wide column"></div>
+                    <div class="ten wide column">
+                        <h3 class="ui huge header">Code of Conduct</h3>
+                        <p>The BrisJS community has proven to be a very welcoming and open group. By joining that group as an attendee, speaker, or sponsor, you will be held to that same high standard.</p>
+                        <p>BrisJS is dedicated to providing a harassment-free experience for everyone.</p>
 
-<div class="ui inverted vertical footer segment">
-    <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="three wide column">
-          <h4 class="ui inverted header">About</h4>
-          <div class="ui inverted link list">
-            <a class="page-home active item" href="#">BrisJS</a>
-            <a class="page-present item" href="#present">Present a talk</a>
-            <a class="page-present item" href="#talks">Past talks</a>
-            <a class="page-jobs item" href="#jobs">Find a job</a>
-            <a class="page-findus item" href="#findus">Find us</a>
-            <a class="page-contact item" href="#contact">Contact</a>
-          </div>
+                        <p>Language or imagery which belittles individuals based on personal characteristics protected under the Australian Human Rights Commission Act 1986 is prohibited.</p>
+                        <p>Our events are safe environments for the expression of personal work and ideas. Participants are required to provide feedback in a positive manner. Ridicule, bullying or personal embarrassment will not be tolerated.</p>
+
+                        <p>Harassment includes, but is not limited to:</p>
+                        <ol>
+                            <li>Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body sise, race, age, religion (or lack thereof)</li>
+                            <li>Sexual images in public spaces</li>
+                            <li>Deliberate intimidation, stalking, or following</li>
+                            <li>Harassing photography or recording</li>
+                            <li>Sustained disruption of talks or other events</li>
+                            <li>Inappropriate physical contact</li>
+                            <li>Unwelcome sexual attention</li>
+                            <li>Advocating for, or encouraging, any of the above behaviour</li>
+                        </ol>
+
+                        <p>Participants asked to stop any harassing behaviour are expected to comply immediately.</p>
+                        <p>Participants disregarding a direction to cease this behaviour will be sanctioned or expelled from the event at the discretion of the organisers.</p>
+
+                        <p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.</p>
+
+                        <p>We expect participants to follow these rules at meetups, conferences and workshop venues, meetup or conference-related social events and online spaces.</p>
+
+                        <div class="ui divider"></div>
+
+                        <h3 class="ui huge header">If you are being harassed</h3>
+                        <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please get in touch with us. You can make a report either personally or anonymously.</p>
+
+                        <h4>Anonymous report</h4>
+                        <p>You can use our
+                            <a href="https://goo.gl/forms/uZsjKme75V8PBcQZ2">anonymous report form</a>. We can't follow up an anonymous report with you directly, but we will fully investigate it and take whatever action is necessary to prevent a recurrence. </p>
+
+                        <h4>Personal report</h4>
+                        <p>
+                            When taking a personal report, we will ensure you are safe and cannot be overheard. We may involve other event organisers to ensure your report is managed properly. Once safe, we'll ask you to tell us about what happened. This can be upsetting, but we'll handle it as respectfully as possible, and you can bring someone to support you. You won't be asked to confront anyone and we won't tell anyone who you are.
+                        </p>
+                        <p>We will be happy to help you contact venue security or local law enforcement, provide escorts, or otherwise assist you to feel safe for the duration of the event. We value your attendance.</p>
+
+                        <p>Contacts you can speak to confidentially at or outside of an event include:</p>
+
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <div class="ui card fluid">
+                                    <div class="image">
+                                        <img src="https://secure.gravatar.com/avatar/24073d0e70921eda1a2ae25e2cceb057?s=400" alt="Ash Kyd"> </div>
+                                    <div class="content">
+                                        <a class="header">Ash</a>
+                                        <div class="meta">
+                                            <a href="https://twitter.com/ashkyd">@ashkyd</a>
+                                        </div>
+                                        <div class="description">You can speak to him in person at most events or
+                                            <a href="mailto:ash@kyd.com.au">email ash@kyd.com.au</a>.
+                                            <b>For immediate issues you can
+                                                <a href="tel:+61457363189">call Ash on 0457&nbsp;363&nbsp;189</a>
+                                            </b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="ui card fluid">
+                                    <div class="image">
+                                        <img src="https://secure.gravatar.com/avatar/6c5be200a84951c74c05932ae73fa4a9?s=400" alt="Anna Gerber"> </div>
+                                    <div class="content">
+                                        <a class="header">Anna</a>
+                                        <div class="meta">
+                                            <a hred="https://twitter.com/annagerber">@annagerber</a>
+                                        </div>
+                                        <div class="description">Anna is a BrisJS regular, you can speak to her in person at most events.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui divider"></div>
+
+                        <h3>More info</h3>
+                        <p>This code of conduct is based on the work of the
+                            <a href="http://confcodeofconduct.com/">Conference Code of Conduct</a>,
+                            <a href="http://2016.cssconf.com.au/codeofconduct/">CSSConf Australia</a>, and the
+                            <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">Geek Feminism anti-harassment policy</a>.</p>
+
+                        <p>If you have any feedback, recommendations for improving this policy, or wish to help in any way, please contact one of the organisers.</p>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Follow us elsewhere</h4>
-          <div class="ui inverted link list">
-            <a href="https://meetup.com/BrisJS/" class="item">Meetup</a>
-            <a href="https://github.com/BrisJS/meetups/issues" class="item">GitHub Issues</a>
-            <a href="https://twitter.com/brisjs" class="item">Twitter</a>
-            <a href="https://www.facebook.com/BrisJSMeetup/" class="item">Facebook</a>
-            <a href="https://bne.social/@brisjs" class="item">Mastodon</a>
-          </div>
-        </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Brisbane Javascript</h4>
-          <p>BrisJS is brought to you by our sponsors. This site built with <a href="https://semantic-ui.com">Semantic UI</a>.</p>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
+
+    <div data-page="talks">
+        <div class="ui vertical stripe segment">
+            <div class="ui stackable grid container">
+                <script id="template-talks" type="x-handlebars/template">
+                    {{#each this}}
+                    <div class="ui grid {{className}}">
+                        <div class="four wide column">
+                            <h2>{{dateHuman}} Meetup</h2>
+                        <p>There were {{talks.length}} talks at the {{dateHuman}} meetup.</p>
+                        </div>
+                        <div class="twelve wide column">
+                        <div class="ui link cards">
+                            {{#each talks}}
+                            <a class="ui card" href="#talk-{{id}}">
+                                <div class="content">
+                                {{#if speakers.0.twitter.profileImage}}
+                                    <img class="ui avatar image" src="{{speakers.0.twitter.profileImage}}">
+                                {{else}}
+                                    <span class="ui avatar image"></span>
+                                {{/if}}
+                                {{#each speakers}} {{name}} {{/each}}
+                                </div>
+                                <div class="image">
+                                {{#youtube}}
+                                    <div class="extra images">
+                                    <img alt="" src="{{posterFrame.medium}}" style="width:100%;">
+                                    <div class="talk title">{{../title}}</div>
+                                    </div>
+                                {{else}}
+                                    <div class="extra images">
+                                    <div class="talk placeholder"></div>
+                                    <div class="talk title">{{title}}</div>
+                                    </div>
+                                {{/youtube}}
+                                </div>
+                                <div class="content">
+                                <span class="right floated"></span>
+                                {{#if slides}}
+                                    <span class="resource">
+                                        <i class="file powerpoint outline icon" title="Slides available to view"></i> Slides
+                                    </span>
+                                {{/if}}
+                                {{#if youtube}}
+                                    <span class="resource">
+                                        <i class="video icon" title="Video available on YouTube"></i> Video
+                                    </span>
+                                {{/if}}
+                                {{#if code}}
+                                    <span class="resource">
+                                        <i class="file code outline icon" title="Code resources available"></i> Code
+                                    </span>
+                                {{/if}}
+                                </div>
+                            </a>
+                            {{/each}}
+                        </div>
+                        </div>
+                    </div>
+                    <div class="ui horizontal divider">
+                        <i class="heart icon"></i>
+                    </div>
+                    {{/each}}
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div data-page="talk-single">
+        HELLO WYRLD
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header">About</h4>
+                    <div class="ui inverted link list">
+                        <a class="page-home active item" href="#">BrisJS</a>
+                        <a class="page-present item" href="#present">Present a talk</a>
+                        <a class="page-present item" href="#talks">Past talks</a>
+                        <a class="page-jobs item" href="#jobs">Find a job</a>
+                        <a class="page-findus item" href="#findus">Find us</a>
+                        <a class="page-contact item" href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Follow us elsewhere</h4>
+                    <div class="ui inverted link list">
+                        <a href="https://meetup.com/BrisJS/" class="item">Meetup</a>
+                        <a href="https://github.com/BrisJS/meetups/issues" class="item">GitHub Issues</a>
+                        <a href="https://twitter.com/brisjs" class="item">Twitter</a>
+                        <a href="https://www.facebook.com/BrisJSMeetup/" class="item">Facebook</a>
+                        <a href="https://bne.social/@brisjs" class="item">Mastodon</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Brisbane Javascript</h4>
+                    <p>BrisJS is brought to you by our sponsors. This site built with
+                        <a href="https://semantic-ui.com">Semantic UI</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 </body>
 
