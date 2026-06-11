@@ -48,7 +48,7 @@ for decisions, EARS for requirements, and referenceable IDs (`FR-/US-/TC-/ADR-/P
 ## ADR-002: Migrate to a CMS-backed architecture with Strapi Cloud
 
 **Date:** 2026-06-11
-**Status:** Proposed
+**Status:** Accepted (confirmed 2026-06-11; ADR-004 and ADR-005 build on this)
 
 ### Context
 
@@ -89,7 +89,7 @@ types (see [`features/001-strapi-content-modeling`](../features/001-strapi-conte
 ## ADR-003: Frontend framework for the rebuild
 
 **Date:** 2026-06-11
-**Status:** Proposed (undecided — evaluation open)
+**Status:** Superseded by ADR-004
 
 ### Context
 
@@ -119,6 +119,82 @@ approach. A follow-up ADR will record the chosen framework with rationale.
 - ✅ Avoids prematurely committing to a stack before content modelling is validated.
 - ⚠️ Some downstream docs (TEST_STRATEGY tool choices, rendering-related NFRs) stay TBD until
   this is resolved.
+
+---
+
+## ADR-004: Adopt Astro as the frontend framework
+
+**Date:** 2026-06-11
+**Status:** Accepted (supersedes ADR-003)
+
+### Context
+
+ADR-003 left the rebuild's frontend framework open pending evaluation. The site is a
+content-centric brochure/meetup site (talks archive, talk detail, events, jobs, static
+pages) sourced from the Strapi API (ADR-002). It needs strong SEO and fast first paint —
+both weaknesses of the current client-side-rendered SPA — without a heavy application
+runtime.
+
+### Decision
+
+Use **Astro** for the frontend. Pages are statically generated at build time by fetching
+published content from the Strapi REST API, shipping minimal/zero client JS by default and
+adding interactivity only where needed (islands). The build is re-run when content changes
+(via a Strapi webhook → Netlify build hook; see ADR-005).
+
+### Alternatives Considered
+
+| Alternative | Reason Rejected |
+| ----------- | --------------- |
+| Next.js | Capable but heavier than needed; React app runtime is overkill for a mostly-static content site |
+| Nuxt | Same trade-off as Next, Vue flavour; no decisive advantage here |
+| Modernise the current CSR SPA | Keeps the SEO/perf weaknesses we're trying to fix |
+
+### Consequences
+
+- ✅ Static output → excellent SEO, fast loads, cheap CDN hosting.
+- ✅ Minimal client JS; islands available for the few interactive bits.
+- ⚠️ Content changes require a rebuild/redeploy (handled by webhook, ADR-005) rather than
+  being instant — acceptable for a meetup site's update cadence.
+- ⚠️ A talk-detail route must be generated per talk; very large archives lengthen builds
+  (mitigate with pagination/incremental strategies if needed).
+
+---
+
+## ADR-005: Deployment topology — Astro on Netlify, Strapi on Strapi Cloud
+
+**Date:** 2026-06-11
+**Status:** Accepted
+
+### Context
+
+With Astro (ADR-004) consuming Strapi (ADR-002), we must decide where each piece runs.
+Netlify is the existing host and is excellent for static sites, but it **cannot host Strapi**
+— it has no persistent Node server or database, both of which Strapi requires.
+
+### Decision
+
+- **Astro frontend → Netlify.** Built and deployed by Netlify on push to the default branch.
+  Content-only updates trigger a rebuild via a **Strapi publish webhook → Netlify build hook**.
+- **Strapi → Strapi Cloud** (free plan, per ADR-002). The frontend reads its public REST API
+  at build time.
+- Secrets (Strapi API base URL, read token) live in **Netlify environment variables**, never
+  in the repo or client bundle.
+
+### Alternatives Considered
+
+| Alternative | Reason Rejected (for now) |
+| ----------- | ------------------------- |
+| Run Strapi on Netlify | Not possible — no persistent server/DB on Netlify |
+| Self-host Strapi (Render/Railway/Fly + Postgres) | Deferred to ADR-002's documented future self-host option; more ops/cost up front |
+| Astro SSR on Netlify Functions | Unnecessary now — SSG covers the content site; revisit only if real-time data is needed |
+
+### Consequences
+
+- ✅ Keeps the simple push-to-deploy model and zero-cost hosting to start.
+- ✅ Clean separation: content in Strapi Cloud, presentation built on Netlify.
+- ⚠️ A content publish must trigger a rebuild (webhook wiring) to appear live.
+- ⚠️ Two platforms to operate (Netlify + Strapi Cloud); env/secret management spans both.
 
 ---
 

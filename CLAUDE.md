@@ -10,9 +10,13 @@ a Google Sheet (talks), the Meetup API (events), GitHub issues (jobs + talk requ
 committed JSON (`data/twitter.json` speaker cache, `data/contact.json` organizers). Deployed
 as static assets to Netlify on push to `master`. No backend, no database, no tests.
 
-**Direction:** we are planning a migration to a CMS-backed architecture (Strapi Cloud free
-plan, with a future self-host option) plus a design refresh. See `docs/DESIGN_DECISIONS.md`
-(ADR-002, ADR-003) and `features/001-strapi-content-modeling/`.
+**Direction:** migrating to a CMS-backed architecture. Adopted stack: **Astro** frontend
+(ADR-004) deployed on **Netlify**, reading content at build time from **Strapi Cloud** (free
+plan, ADR-002/ADR-005; future self-host option preserved). The frontend first **ports the
+current design as-is** (feature 002) — any redesign is a separate later feature. See
+`docs/DESIGN_DECISIONS.md` (ADR-002 through ADR-005) and the migration features:
+`features/001-strapi-content-modeling`, `002-astro-frontend`, `003-strapi-backend-integration`,
+`004-netlify-deployment`.
 
 > Note: the repo `CNAME` currently reads `bris.js.org` while the live domain is `brisjs.org`
 > (see `docs/HLD.md` Open Questions).

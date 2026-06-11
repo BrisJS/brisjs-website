@@ -38,3 +38,6 @@ features/<NNN>-<kebab-case-name>/
 | # | Feature | Status | Folder |
 | - | ------- | ------ | ------ |
 | 001 | Strapi content modeling | planning | [`features/001-strapi-content-modeling/`](./001-strapi-content-modeling/) |
+| 002 | Astro frontend (port current design) | planning | [`features/002-astro-frontend/`](./002-astro-frontend/) |
+| 003 | Strapi backend integration | planning | [`features/003-strapi-backend-integration/`](./003-strapi-backend-integration/) |
+| 004 | Netlify deployment & hosting | planning | [`features/004-netlify-deployment/`](./004-netlify-deployment/) |
