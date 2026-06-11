@@ -52,11 +52,25 @@ TalkRequest
   body          richtext      (required)
   submittedDate date          (optional)
   status        enumeration   (open | scheduled | declined)
+
+Organizer
+  name          string        (required)
+  role          string        (optional)
+  bio           richtext      (optional)
+  photo         media         (optional, single image)
+  twitter       string/url    (optional)
+  email         email         (optional)
+  order         integer       (optional — display order)
 ```
 
 ### Single Types
 
 ```
+HomePage
+  heroTagline   string        (optional — hero/banner line)
+  intro         richtext      (optional — "who we are")
+  whatWeDo      richtext      (optional — "what we do")
+
 CodeOfConduct
   body          richtext      (required)
 
@@ -67,6 +81,10 @@ FindUs
   parking       richtext
   accessibility richtext
 ```
+
+> `Organizer` and `HomePage` were added so the contact list and the home-page intro copy are
+> CMS-editable rather than hard-coded. See the Content & Rendering Map in
+> `features/002-astro-frontend/DESIGN.md` for the full dynamic-vs-static split.
 
 ### Derived Validation / Types
 
@@ -121,6 +139,8 @@ happen only through the Strapi admin.
 | `GET` | `/api/events?populate=talks` | List events with their talks |
 | `GET` | `/api/job-postings` | List job postings |
 | `GET` | `/api/talk-requests` | List talk requests |
+| `GET` | `/api/organizers?populate=photo` | List organizers (contact page) |
+| `GET` | `/api/home-page` | Home intro copy single type |
 | `GET` | `/api/code-of-conduct` | Code of Conduct single type |
 | `GET` | `/api/find-us` | Find Us single type |
 
@@ -138,9 +158,10 @@ happen only through the Strapi admin.
 | TSV col 8 `synopsis` | text | `Talk.synopsis` |
 | Meetup API event | name/time/venue/desc | `Event.*` |
 | `data/twitter.json` | profile fields | `Speaker.bio` / `Speaker.photo` / `Speaker.website` |
-| `data/contact.json` | organizer fields | (Organizer — see Key Design Decisions) |
+| `data/contact.json` | name/role/bio/twitter/email/photo | `Organizer.*` |
 | GitHub issue (`Jobs / Employment`) | title/body/updated_at | `JobPosting.*` |
 | GitHub issue (`Talk Requests`) | title/body/updated_at | `TalkRequest.*` |
+| `index.html` home intro ("who we are" / "what we do") | static copy | `HomePage.intro` / `HomePage.whatWeDo` |
 | `index.html` Code of Conduct | static copy | `CodeOfConduct.body` |
 | `index.html` Find Us | static copy | `FindUs.*` |
 
@@ -149,7 +170,8 @@ happen only through the Strapi admin.
 | Decision | Alternatives Considered | Rationale |
 | -------- | ----------------------- | --------- |
 | Speakers as a first-class related type | Embed speaker fields on each talk | Removes duplication; one speaker → many talks; matches `getUniqueUsers` intent in `lib/tsvTalks.js` |
-| Organizers: reuse Speaker vs dedicated Organizer type | Single shared "Person" type | **Open** — `data/contact.json` has role/email not on speakers; lean toward a small dedicated Organizer type. Tracked below. |
+| Dedicated `Organizer` type | Reuse `Speaker`; single shared "Person" type | **Resolved** — organizers have role/email/order not on speakers; a small dedicated type is clearer and keeps the contact list CMS-editable |
+| `HomePage` single type for intro copy | Hard-code intro in Astro | Keeps home "who we are / what we do" copy editable without a deploy |
 | Events managed in Strapi | Keep live Meetup API for archive | Removes the opaque Meetup `sig` dependency for historical display; upcoming-event sync is Open Q3 |
 | Jobs/requests as CMS entries | Keep GitHub issues | Moderated, structured, no GitHub-label coupling |
 
@@ -177,6 +199,6 @@ erDiagram
 
 | # | Question | Owner | Resolution |
 |---|----------|-------|------------|
-| 1 | Dedicated `Organizer` type vs reusing `Speaker`? (organizers have role/email) | — | — |
+| 1 | ~~Dedicated `Organizer` type vs reusing `Speaker`?~~ Resolved: dedicated `Organizer` type | — | Resolved 2026-06-11 |
 | 2 | Keep a `legacyId` on `Talk` to preserve old `#talk-<id>` URLs / redirects? | — | — |
 | 3 | Model `venue` as a reusable Strapi **component** shared by Event and FindUs? | — | — |

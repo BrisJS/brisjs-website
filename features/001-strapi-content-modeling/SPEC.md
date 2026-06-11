@@ -49,12 +49,18 @@ to its **Talks**. This replaces the live Meetup API dependency for display purpo
 Model **Job posting** and **Talk request** entries, each with `title`, `body` (rich text),
 `submittedDate`, and `status` — replacing the label-filtered GitHub issues.
 
-### FR-05: Static single types
+### FR-05: Organizer content type
 
-Model **Code of Conduct** and **Find Us / Venue** as single types holding rich-text/structured
-content currently hard-coded in `index.html`.
+Model **Organizer** with `name`, `role`, `bio` (rich text), `photo` (media), `twitter`, `email`,
+and `order`, replacing `data/contact.json` so the contact list is CMS-editable.
 
-### FR-06: Publication workflow
+### FR-06: Editable single types
+
+Model **HomePage** (hero tagline + "who we are" / "what we do" intro copy), **Code of Conduct**,
+and **Find Us / Venue** as single types holding the rich-text/structured content currently
+hard-coded in `index.html`.
+
+### FR-07: Publication workflow
 
 Every collection type supports Strapi's draft/publish so content can be staged before going live.
 

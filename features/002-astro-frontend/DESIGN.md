@@ -12,11 +12,39 @@ to Netlify (feature 004). The browser never calls Strapi directly — the API to
 during the build. **The current visual design is ported as-is** (carry over `style.css` and
 the existing Semantic-UI look); any redesign is a separate future feature.
 
+## Content & Rendering Map (dynamic vs static)
+
+Derived from the current site (`index.html` pages + the runtime fetches in `app.js`). Default
+bias: **content is CMS-driven** (Strapi, feature 001) so organizers can edit without a deploy;
+only the **structural shell and chrome** are hard-coded in Astro. "For ease," anything that is
+copy/content — even the home intro — is CMS-driven.
+
+| Site area | Current source | Rendering | Source of truth |
+| --------- | -------------- | --------- | --------------- |
+| Global header / nav | `index.html` markup | **Astro (static)** | code — nav rarely changes |
+| Footer | `index.html` markup | **Astro (static)** | code |
+| Page layout / grid / hero structure + hero image | `style.css`, `images/` | **Astro (static)** | code + repo assets |
+| Home hero tagline + "who we are" / "what we do" copy | `index.html` static text | **CMS** | `HomePage` single type |
+| Upcoming / next event | Meetup API | **CMS** (Event marked upcoming) | `Event` — live-Meetup option is feature 001 Open Q3 |
+| Talks archive (grouped) | Google Sheet | **CMS** | `Talk` + `Event` |
+| Talk detail | Google Sheet + Twitter cache | **CMS** | `Talk` + `Speaker` |
+| Speaker info | `data/twitter.json` | **CMS** | `Speaker` |
+| Jobs | GitHub issues | **CMS** | `JobPosting` |
+| Talk requests | GitHub issues | **CMS** | `TalkRequest` |
+| Organizers / contact | `data/contact.json` | **CMS** | `Organizer` |
+| Code of Conduct | `index.html` static text | **CMS** | `CodeOfConduct` single type |
+| Find Us / venue (incl. parking, accessibility) | `index.html` static text | **CMS** | `FindUs` single type |
+| SEO/meta defaults, 404, favicon | n/a | **Astro (static)** | code |
+
+> Rule of thumb: **structure = Astro, content = Strapi.** If a non-technical organizer might
+> reasonably want to change it, it's CMS-driven.
+
 ## Data Model
 
 The frontend consumes the Strapi content types defined in feature 001 (Talk, Speaker, Event,
-JobPosting, TalkRequest, CodeOfConduct, FindUs). It does not define new persistent data; it
-defines **view models** mapped from the Strapi REST shape (`{ data: [{ id, attributes }] }`).
+JobPosting, TalkRequest, Organizer, HomePage, CodeOfConduct, FindUs). It does not define new
+persistent data; it defines **view models** mapped from the Strapi REST shape
+(`{ data: [{ id, attributes }] }`).
 
 ### Derived Validation / Types
 
@@ -35,7 +63,8 @@ src/
 │   ├── events.ts            # getUpcomingEvent(), getEvents()
 │   ├── speakers.ts
 │   ├── postings.ts          # jobs + talk requests
-│   └── pages.ts             # code-of-conduct, find-us single types
+│   ├── organizers.ts        # getOrganizers()
+│   └── pages.ts             # home-page, code-of-conduct, find-us single types
 ├── layouts/
 │   └── BaseLayout.astro     # head/meta, header, footer, OG tags
 ├── components/
@@ -44,11 +73,12 @@ src/
 │   ├── EventBanner.astro
 │   └── ResourceButtons.astro
 ├── pages/
-│   ├── index.astro          # home + upcoming event
+│   ├── index.astro          # home: HomePage copy + upcoming event
 │   ├── talks/index.astro    # archive grouped by event
 │   ├── talks/[slug].astro   # talk detail (getStaticPaths)
 │   ├── jobs.astro
 │   ├── talk-requests.astro
+│   ├── contact.astro        # organizers
 │   ├── code-of-conduct.astro
 │   └── find-us.astro
 └── styles/
@@ -56,7 +86,7 @@ src/
 ```
 
 > Styling note: this feature **ports** the existing `style.css` and Semantic-UI-based look
-> rather than introducing a new design system. A future design feature may replace this.
+> rather than introducing a new design system. Feature 005 (design refresh) replaces this later.
 
 ## Data Flow
 
@@ -89,7 +119,9 @@ islands with local state only.
 | `GET` | `/api/speakers?populate=photo` | speaker cards |
 | `GET` | `/api/job-postings` | jobs page |
 | `GET` | `/api/talk-requests` | talk-requests page |
-| `GET` | `/api/code-of-conduct` / `/api/find-us` | static pages |
+| `GET` | `/api/organizers?populate=photo` | contact page |
+| `GET` | `/api/home-page` | home intro copy |
+| `GET` | `/api/code-of-conduct` / `/api/find-us` | static-content pages |
 
 ## Key Design Decisions
 
@@ -105,11 +137,12 @@ islands with local state only.
 ### Route map
 
 ```
-/                      → home + upcoming event
+/                      → home (HomePage copy + upcoming event)
 /talks                 → archive grouped by event
 /talks/[slug]          → talk detail (one per published talk)
 /jobs                  → job postings
 /talk-requests         → requested talks
+/contact               → organizers
 /code-of-conduct       → single type
 /find-us               → single type
 ```

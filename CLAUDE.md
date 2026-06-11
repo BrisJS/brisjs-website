@@ -16,7 +16,9 @@ plan, ADR-002/ADR-005; future self-host option preserved). The frontend first **
 current design as-is** (feature 002) — any redesign is a separate later feature. See
 `docs/DESIGN_DECISIONS.md` (ADR-002 through ADR-005) and the migration features:
 `features/001-strapi-content-modeling`, `002-astro-frontend`, `003-strapi-backend-integration`,
-`004-netlify-deployment`.
+`004-netlify-deployment`, and `005-design-refresh` (the deferred redesign). The
+dynamic-vs-static content split (what's CMS-driven via Strapi vs hard-coded Astro layout) is
+mapped in `features/002-astro-frontend/DESIGN.md`.
 
 > Note: the repo `CNAME` currently reads `bris.js.org` while the live domain is `brisjs.org`
 > (see `docs/HLD.md` Open Questions).

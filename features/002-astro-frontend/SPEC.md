@@ -26,17 +26,18 @@ and feel. This feature covers the frontend application only; CMS content modelli
 
 - Strapi content modelling (feature 001) and provisioning/permissions (feature 003).
 - Netlify build/deploy/domain configuration (feature 004).
-- **Any redesign / change to the look and feel** — deferred to a future design feature; this
-  feature ports the existing design as-is.
+- **Any redesign / change to the look and feel** — deferred to feature 005 (design refresh);
+  this feature ports the existing design as-is.
 - Authoring tools or content submission from the website (organizers edit in Strapi).
 
 ## Functional Requirements
 
 ### FR-01: Page set
 
-Generate these pages: Home (with next/upcoming event), Talks archive (grouped by event/month),
-Talk detail (per talk), Jobs, Talk requests, Code of Conduct, Find Us. Optionally a Speakers
-listing if feature 001's Speaker type warrants it.
+Generate these pages: Home (CMS intro copy + next/upcoming event), Talks archive (grouped by
+event/month), Talk detail (per talk), Jobs, Talk requests, Contact (organizers), Code of
+Conduct, Find Us. Optionally a Speakers listing if feature 001's Speaker type warrants it. See
+the **Content & Rendering Map** in `DESIGN.md` for which areas are CMS-driven vs static Astro.
 
 ### FR-02: Strapi data-access layer
 
