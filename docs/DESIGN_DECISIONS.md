@@ -198,4 +198,43 @@ Netlify is the existing host and is excellent for static sites, but it **cannot 
 
 ---
 
+## ADR-006: Repository layout during the migration
+
+**Date:** 2026-06-11
+**Status:** Accepted
+
+### Context
+
+The rebuild adds two new applications — the Astro site (ADR-004) and the Strapi project
+(ADR-002) — but the repo root is currently the legacy SPA, which Netlify deploys from
+`master` and which is the visual-parity reference for feature 002. All three cannot own the
+root, and the legacy site must stay live and untouched until cutover.
+
+### Decision
+
+Adopt a simple monorepo layout on the migration branch:
+
+- **`web/`** — the Astro frontend (its own `package.json`).
+- **`cms/`** — the Strapi project (its own `package.json`).
+- **Repo root** — the legacy SPA stays untouched until cutover, then is removed in a
+  dedicated cleanup commit. `netlify.toml` (feature 004) sets `base = "web"` — switching the
+  Netlify base is the cutover lever.
+- No npm workspaces for now — the two apps share no code; revisit only if shared types emerge.
+
+### Alternatives Considered
+
+| Alternative | Reason Rejected |
+| ----------- | --------------- |
+| Separate repos for web/cms | Overhead of cross-repo changes; docs/features system lives here |
+| Replace the root in place | Breaks the live `master` deploy mid-migration and loses the in-tree parity reference |
+| npm workspaces monorepo | Unneeded coupling for two apps that share nothing yet |
+
+### Consequences
+
+- ✅ New code is isolated; legacy stays deployable and serves as the parity reference.
+- ✅ Cutover is a config switch (Netlify `base`) plus a cleanup commit, both reviewable.
+- ⚠️ Two `package.json`/lockfiles to maintain until the legacy root is removed.
+
+---
+
 <!-- New ADRs go below this line, following the same format -->

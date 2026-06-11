@@ -18,6 +18,8 @@ files are created here.
 ```
 Talk
   title         string        (required)
+  slug          uid           (auto-generated from title — route key for /talks/<slug>)
+  legacyId      integer       (optional, unique — id from the legacy sheet; powers #talk-<id> redirects)
   date          date          (required)
   synopsis      richtext      (optional)
   youtubeUrl    string/url    (optional)
@@ -37,7 +39,7 @@ Speaker
 Event
   name          string        (required)
   dateTime      datetime      (required)
-  venue         string/component (optional)
+  venue         string        (optional — plain field for v1; no shared component)
   description   richtext      (optional)
   talks         relation      inverse of Talk.event
 
@@ -148,7 +150,7 @@ happen only through the Strapi admin.
 
 | Current source | Field(s) | → Strapi type.field |
 | -------------- | -------- | ------------------- |
-| Google Sheet TSV col 0 `id` | talk id | (Strapi-generated id; keep old id in a `legacyId` field if needed for routing) |
+| Google Sheet TSV col 0 `id` | talk id | `Talk.legacyId` (slug auto-generated from title) |
 | TSV col 1 `date` (epoch ms) | date | `Talk.date` (coerce ms → date) |
 | TSV col 2 `title` | title | `Talk.title` |
 | TSV col 3/4 `speakers`/`twitters` | names + handles | `Speaker.name` / `Speaker.twitter` (split CSV → related Speaker records) |
@@ -199,6 +201,6 @@ erDiagram
 
 | # | Question | Owner | Resolution |
 |---|----------|-------|------------|
-| 1 | ~~Dedicated `Organizer` type vs reusing `Speaker`?~~ Resolved: dedicated `Organizer` type | — | Resolved 2026-06-11 |
-| 2 | Keep a `legacyId` on `Talk` to preserve old `#talk-<id>` URLs / redirects? | — | — |
-| 3 | Model `venue` as a reusable Strapi **component** shared by Event and FindUs? | — | — |
+| 1 | Dedicated `Organizer` type vs reusing `Speaker`? | — | Resolved 2026-06-11: dedicated `Organizer` type |
+| 2 | Keep a `legacyId` on `Talk` to preserve old `#talk-<id>` URLs / redirects? | — | Resolved 2026-06-11: yes — `Talk.legacyId` + `Talk.slug` (UID) added to the model |
+| 3 | Model `venue` as a reusable Strapi **component** shared by Event and FindUs? | — | Resolved 2026-06-11: no — plain fields for v1; revisit if venue data grows |

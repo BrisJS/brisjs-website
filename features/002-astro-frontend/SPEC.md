@@ -87,7 +87,7 @@ current template behaviour in `templates/talk.hbs`.
 
 | # | Question | Owner | Resolution |
 |---|----------|-------|------------|
-| 1 | Slug strategy for talks — derive from title, or keep `legacyId` for stable redirects? | — | — |
-| 2 | Do we keep showing the *upcoming* event from the live Meetup API, or only Strapi-managed events? (ties to feature 001 Open Q3) | — | — |
-| 3 | How is the current look ported — keep Semantic UI (CDN/local) as-is, or extract just the used styles from `style.css`? | — | — |
-| 4 | Is a standalone Speakers page wanted, or are speakers shown only within talks? | — | — |
+| 1 | Slug strategy for talks — derive from title, or keep `legacyId` for stable redirects? | — | Resolved 2026-06-11: both — `Talk.slug` (UID from title) is the route key; `Talk.legacyId` powers `#talk-<id>` redirects (see feature 001 model) |
+| 2 | Do we keep showing the *upcoming* event from the live Meetup API, or only Strapi-managed events? (ties to feature 001 Open Q3) | — | Resolved 2026-06-11: Strapi-managed only; "next event TBA" + meetup.com/brisjs link as fallback |
+| 3 | How is the current look ported — keep Semantic UI (CDN/local) as-is, or extract just the used styles from `style.css`? | — | Resolved 2026-06-11: keep Semantic UI exactly as today (CDN) and carry `style.css` over verbatim — maximum parity, least effort; extraction/removal happens in feature 005 |
+| 4 | Is a standalone Speakers page wanted, or are speakers shown only within talks? | — | Resolved 2026-06-11: no standalone page in v1 (parity with the current site) |

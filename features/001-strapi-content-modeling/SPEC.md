@@ -31,7 +31,8 @@ migration step — the frontend rebuild (ADR-003) and data migration depend on t
 
 ### FR-01: Talk content type
 
-Model a talk with: `title`, `date`, `synopsis` (rich text), `youtubeUrl`, `slidesUrl`,
+Model a talk with: `title`, `slug` (UID route key), `legacyId` (optional — old sheet id for
+`#talk-<id>` redirects), `date`, `synopsis` (rich text), `youtubeUrl`, `slidesUrl`,
 `codeUrl`, a relation to one or more **Speakers**, and a relation to the **Event** it was given at.
 
 ### FR-02: Speaker content type
@@ -84,8 +85,8 @@ Every collection type supports Strapi's draft/publish so content can be staged b
 
 | # | Question | Owner | Resolution |
 |---|----------|-------|------------|
-| 1 | Should speakers be a full content type with login, or lightweight records managed by organizers? | — | — |
-| 2 | Are historical talks (Google Sheet) imported in full, or only recent ones? | — | — |
-| 3 | Do we keep pulling live Meetup data for the *next/upcoming* event, or manage events entirely in Strapi? | — | — |
-| 4 | What are Strapi Cloud free-plan's exact limits, and are they sufficient for the talks archive size? | — | — |
-| 5 | Is the Twitter/X handle still worth storing given API deprecation, or do we move to generic social links? | — | — |
+| 1 | Should speakers be a full content type with login, or lightweight records managed by organizers? | — | Resolved 2026-06-11: lightweight records managed by organizers; no login |
+| 2 | Are historical talks (Google Sheet) imported in full, or only recent ones? | — | Resolved 2026-06-11: full history (snapshot committed to repo first); revisit only if free-plan limits bite (Q4) |
+| 3 | Do we keep pulling live Meetup data for the *next/upcoming* event, or manage events entirely in Strapi? | — | Resolved 2026-06-11: events fully Strapi-managed for v1; home falls back to "next event TBA" + a meetup.com/brisjs link. Removes the fragile `sig` URL dependency |
+| 4 | What are Strapi Cloud free-plan's exact limits, and are they sufficient for the talks archive size? | — | — (human checkpoint — verify during cloud wiring) |
+| 5 | Is the Twitter/X handle still worth storing given API deprecation, or do we move to generic social links? | — | Resolved 2026-06-11: keep optional `twitter` handle as a plain string (display/link only, no API) plus `website`; no Twitter API dependency |

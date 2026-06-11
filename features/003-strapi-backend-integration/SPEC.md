@@ -58,6 +58,13 @@ URL) for feature 002/004 env configuration.
 Import legacy content into Strapi per the feature-001 migration mapping (Google Sheet talks,
 `data/twitter.json` speakers, Meetup events, GitHub-issue jobs/requests, static page copy).
 
+### FR-07: Content backup & exit path
+
+Document and verify a backup/export routine (Strapi's `export`/data-transfer tooling) so the
+content — the community's only copy of ~9 years of talk history once migrated — can be
+restored or moved to a self-hosted Strapi (ADR-002's escape hatch) at any time. Verify a
+local export/restore round-trip before go-live and record the runbook in this feature folder.
+
 ## Constraints
 
 - Stay within **Strapi Cloud free-plan** limits (entries, seats, bandwidth, API rate) —
@@ -73,6 +80,7 @@ Import legacy content into Strapi per the feature-001 migration mapping (Google 
 - [ ] Read-only build token issued and working from a build.
 - [ ] Publishing content triggers a Netlify rebuild via webhook.
 - [ ] Legacy content migrated and spot-checked against the live old site.
+- [ ] Backup/export round-trip verified and the runbook documented (FR-07).
 - [ ] Free-plan limits confirmed sufficient (or risks recorded in Open Questions).
 
 ## Open Questions
@@ -81,5 +89,5 @@ Import legacy content into Strapi per the feature-001 migration mapping (Google 
 |---|----------|-------|------------|
 | 1 | Exact Strapi Cloud free-plan limits, and headroom vs the historical talks archive size? | — | — |
 | 2 | How are media/images stored (Strapi Cloud media library vs external/CDN) within free-plan quota? | — | — |
-| 3 | Do we import the *full* talk history or only recent talks initially? (ties to feature 001 Open Q2) | — | — |
+| 3 | Do we import the *full* talk history or only recent talks initially? (ties to feature 001 Open Q2) | — | Resolved 2026-06-11: full history, per feature 001 Q2 resolution |
 | 4 | Organizer accounts/seats needed vs free-plan seat limit? | — | — |

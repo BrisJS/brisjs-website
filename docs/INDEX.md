@@ -15,6 +15,7 @@ This folder covers **system-wide** design and decisions. Feature-scoped design l
 | [`API_SPECIFICATION.md`](./API_SPECIFICATION.md) | Reference the external data sources the site consumes today, and the planned Strapi API surface |
 | [`TEST_STRATEGY.md`](./TEST_STRATEGY.md) | Understand the test approach, pyramid, tooling, coverage thresholds, and CI gates |
 | [`NON_FUNCTIONAL_TESTING.md`](./NON_FUNCTIONAL_TESTING.md) | Performance budgets, scalability targets, reliability scenarios, accessibility |
+| [`BUILD_WORKFLOW.md`](./BUILD_WORKFLOW.md) | Execute the migration build — dependency-driven task board, gates, and the session protocol |
 
 ## Relationship to Feature Docs
 

@@ -78,6 +78,6 @@ Enable Netlify deploy previews for PRs so changes can be reviewed before merge.
 | # | Question | Owner | Resolution |
 |---|----------|-------|------------|
 | 1 | Is the repo `CNAME` (`bris.js.org`) stale vs the live `brisjs.org`, and who controls DNS? (HLD Open Q1) | — | — |
-| 2 | Hash-based legacy URLs (`#talk-<id>`) can't be server-redirected — handle via a client shim on the home page? | — | — |
+| 2 | Hash-based legacy URLs (`#talk-<id>`) can't be server-redirected — handle via a client shim on the home page? | — | Resolved 2026-06-11: yes — client shim with a build-generated `legacyId → slug` map, fallback to `/talks` (see DESIGN + BUILD_WORKFLOW T3.1) |
 | 3 | Does the existing Netlify project get reused/reconfigured, or is a new project created for the Astro build? | — | — |
 | 4 | Build minutes/bandwidth on the current Netlify plan vs rebuild frequency from content publishes? | — | — |

@@ -41,34 +41,32 @@ organizers/contact, Code of Conduct, Find Us). See
 ## Prompt to run
 
 ```
-GOAL: Execute the BrisJS migration features end-to-end against a LOCAL backend, in order,
-following the project's doc system. Read CLAUDE.md and docs/INDEX.md first.
+GOAL: Build the BrisJS migration by executing the task board in docs/BUILD_WORKFLOW.md.
+Read CLAUDE.md, docs/INDEX.md, and docs/BUILD_WORKFLOW.md first — the board is the single
+source of truth for ordering, dependencies, and done-criteria.
 
-Work through these in sequence, using each feature's PROMPT.md as the task script:
-1. features/003-strapi-backend-integration P-01 — local Strapi with the feature-001 content
-   types as code, INCLUDING Organizer (collection) and HomePage (single type). Then seed it
-   with the legacy migration script (feature 001 P-03) run against LOCAL Strapi using the
-   public Google Sheet TSV in config.json + data/twitter.json + data/contact.json (→ Organizer).
-2. features/002-astro-frontend P-01..P-03 — scaffold the Astro app, data layer (port
-   lib/tsvTalks.js grouping), all pages/components incl. the /contact page (organizers) and the
-   home intro from HomePage, and tests. Honour the Content & Rendering Map in its DESIGN.md
-   (structure = Astro, content = Strapi). PORT THE CURRENT DESIGN as-is (style.css + Semantic UI
-   look; reference index.html + templates/talk.hbs). Do NOT redesign — feature 005 owns that.
-3. features/004-netlify-deployment P-01..P-02 — netlify.toml, redirects, and the #talk-<id>
-   client shim.
+Each iteration, follow the workflow protocol exactly:
+1. Read the board; pick the highest-priority `Owner: agent` task whose dependencies are done.
+2. If several independent tasks are ready, dispatch parallel subagents (max 3), each with a
+   self-contained prompt naming the relevant feature docs and the task's gate.
+3. Implement with TDD; the task is done only when its gate (referenced TEST_CASES) is green.
+4. One commit per task, message prefixed with the task ID. Update the board status and
+   features/FEATURES.md as features complete.
+5. If blocked: mark the task blocked with a reason on the board, log detail in the owning
+   feature's Open Questions, and move to the next ready task.
 
-Do NOT start feature 005 (design refresh) — it is deliberately deferred.
+Stop when all agent-owned tasks are done or blocked, then write docs/HUMAN_TODO.md
+summarising the Phase 4 human checklist (cloud accounts, tokens, env, webhook, DNS).
 
-Constraints:
-- Use TDD per the test-driven-development skill; keep each feature's TEST_CASES.md green.
-- Read STRAPI_API_URL/STRAPI_API_TOKEN from env; never commit secrets. If cloud creds are
-  absent, target local Strapi / mocked data and DO NOT block on cloud signups.
-- Commit after each feature with a clear message. Update each feature's status in
-  features/FEATURES.md as you complete it. Record any blocker in that feature's Open Questions
-  instead of guessing.
-- STOP and write a HUMAN-TODO note (e.g. docs/HUMAN_TODO.md) for everything requiring accounts,
-  tokens, DNS, or the live domain — do not attempt Strapi Cloud / Netlify account actions.
+Hard rules (also in the workflow doc):
+- Never start feature 005 (design refresh); never attempt Strapi Cloud / Netlify account
+  actions or DNS changes.
+- Read STRAPI_API_URL/STRAPI_API_TOKEN from env; never commit secrets. Without cloud creds,
+  target local Strapi / snapshot data only — do not block on cloud signups.
+- PORT THE CURRENT DESIGN as-is (style.css + Semantic UI; reference index.html +
+  templates/talk.hbs). Visual parity with the T0.2 baseline screenshots is the bar.
 
-Verify at the end: `npm run build` (Astro) succeeds against local Strapi, tests pass, and the
-home/talks/talk-detail pages visually match the current site.
+Verify at the end (workflow's Verification section): cms/ starts locally with seeded content,
+`npm run build` in web/ succeeds against it, all gates are green, and home/talks/talk-detail
+visually match the baseline.
 ```

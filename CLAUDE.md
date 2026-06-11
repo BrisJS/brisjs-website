@@ -29,6 +29,8 @@ This project uses a two-tier documentation system. Read `docs/INDEX.md` first.
 
 - **System-wide design** lives in `docs/` (INDEX, HLD, ARCHITECTURE, DESIGN_DECISIONS,
   API_SPECIFICATION, TEST_STRATEGY, NON_FUNCTIONAL_TESTING).
+- **Build execution** is orchestrated via `docs/BUILD_WORKFLOW.md` — a dependency-driven task
+  board + session protocol. Pick tasks there, keep gates green, update statuses as you go.
 - **Feature-scoped design** lives in `features/NNN-<slug>/`, created by copying
   `features/_template/` (SPEC, REQUIREMENTS, DESIGN, TEST_CASES, PROMPT).
 

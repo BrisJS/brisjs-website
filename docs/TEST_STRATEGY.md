@@ -2,36 +2,37 @@
 
 > **Last updated:** 2026-06-11
 > **Current state:** the project has **no tests and no CI quality gates** (the `package.json`
-> `test` script is a placeholder that exits 1). This document defines the **intended** test
-> approach for the migration/rebuild. Concrete tool choices marked TBD depend on the frontend
-> framework decision (ADR-003).
+> `test` script is a placeholder that exits 1). This document defines the test approach for
+> the migration/rebuild. Tooling is now pinned following the Astro adoption (ADR-004) and
+> repo layout (ADR-006): **Vitest, Playwright, TypeScript, ESLint + Prettier, GitHub Actions**.
 
-## Test Pyramid (intended)
+## Test Pyramid
 
 ```
         ▲
-       /E2E\          TBD (Playwright/Cypress) — critical user journeys only
+       /E2E\          Playwright — critical user journeys only
       /──────\
-     /Integr- \       TBD — content fetching from Strapi, render integration
+     /Integr- \       Vitest — content fetching from Strapi (local/mocked), render integration
     /──────────\
-   /  Unit Tests \    TBD (Vitest/Jest) — pure transforms (e.g. tsvTalks-style parsing)
+   /  Unit Tests \    Vitest — pure transforms (talk parsing/grouping in web/src/data)
   /──────────────\
 ```
 
 | Layer | Tool | Scope | Target Coverage |
 | ----- | ---- | ----- | --------------- |
-| Unit | TBD (Vitest or Jest) | pure functions / data transforms (talk parsing, grouping, date formatting) | High — ≥ 80% on transform/business logic |
-| Integration | TBD | content fetching from the Strapi API, mapping API → view models | Medium — key integration points |
-| E2E | TBD (Playwright or Cypress) | complete journeys in a real browser | Low — happy paths + critical failures |
+| Unit | Vitest | pure functions / data transforms (talk parsing, grouping, date formatting) | High — ≥ 80% on transform/business logic |
+| Integration | Vitest (against local Strapi or mocked fetch) | Strapi API → view-model mapping, build-output checks | Medium — key integration points |
+| E2E | Playwright | complete journeys in a real browser | Low — happy paths + critical failures |
 
 ## Tooling
 
 | Tool | Purpose |
 | ---- | ------- |
-| TBD unit runner | Run unit/integration tests; coverage reporting |
-| TBD E2E runner | Browser-level journey tests in CI (headless) |
-| Linter/formatter (TBD, e.g. ESLint + Prettier) | Style + static checks as a merge gate |
-| GitHub Actions (intended) | CI to run the gates on PRs (none configured today) |
+| Vitest | Unit + integration tests; coverage reporting |
+| Playwright | Browser-level journey tests in CI (headless) |
+| TypeScript | Static type checking (`astro check` / `tsc --noEmit`) as a merge gate |
+| ESLint + Prettier | Style + static checks as a merge gate |
+| GitHub Actions | CI running the gates on PRs (created during the build — see `docs/BUILD_WORKFLOW.md` T0.4) |
 
 ## What to Test at Each Layer
 
@@ -54,7 +55,7 @@
 These must pass before merging to the main branch (intended bar — not yet enforced):
 
 - [ ] All unit and integration tests pass
-- [ ] No type errors (if a typed stack is chosen)
+- [ ] No TypeScript errors
 - [ ] Formatting/lint passes
 - [ ] E2E tests pass on CI for affected journeys
 

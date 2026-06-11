@@ -151,6 +151,6 @@ islands with local state only.
 
 | # | Question | Owner | Resolution |
 |---|----------|-------|------------|
-| 1 | TypeScript + generated Strapi types, or JS + hand-written view models? | — | — |
-| 2 | Talk slug source (title-derived vs `legacyId`) — must align with feature 004 redirects | — | — |
-| 3 | Port Semantic UI wholesale (CDN/local) vs extract only the used rules from `style.css`? | — | — |
+| 1 | TypeScript + generated Strapi types, or JS + hand-written view models? | — | Resolved 2026-06-11: TypeScript with hand-written narrow view-model types in `src/data` (don't block on codegen; revisit generated types later) |
+| 2 | Talk slug source (title-derived vs `legacyId`) — must align with feature 004 redirects | — | Resolved 2026-06-11: `Talk.slug` UID for routes + `Talk.legacyId` for redirects (feature 001 model) |
+| 3 | Port Semantic UI wholesale (CDN/local) vs extract only the used rules from `style.css`? | — | Resolved 2026-06-11: keep Semantic UI CDN + `style.css` verbatim for parity; extraction is feature 005's job |
