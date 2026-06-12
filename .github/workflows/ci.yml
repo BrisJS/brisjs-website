@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [master, new-modern-refactor-astro-strapi-netlify]
+  pull_request:
+
+jobs:
+  web:
+    name: web (lint, typecheck, test, build)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # Becomes a real gate once web/ is scaffolded (BUILD_WORKFLOW T2.1).
+      - name: Run web checks
+        run: |
+          if [ -f web/package.json ]; then
+            cd web
+            npm ci
+            npm run lint --if-present
+            npm run typecheck --if-present
+            npm test --if-present
+            npm run build
+          else
+            echo "web/ not scaffolded yet — no-op (see docs/BUILD_WORKFLOW.md T2.1)"
+          fi
+        env:
+          STRAPI_API_URL: ${{ vars.STRAPI_API_URL }}
+          STRAPI_API_TOKEN: ${{ secrets.STRAPI_API_TOKEN }}
+
+  cms:
+    name: cms (build check)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # Becomes a real gate once cms/ is scaffolded (BUILD_WORKFLOW T1.1).
+      - name: Run cms checks
+        run: |
+          if [ -f cms/package.json ]; then
+            cd cms
+            npm ci
+            npm test --if-present
+            npm run build
+          else
+            echo "cms/ not scaffolded yet — no-op (see docs/BUILD_WORKFLOW.md T1.1)"
+          fi
