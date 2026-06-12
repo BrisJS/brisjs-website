@@ -1,0 +1,125 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Reactive Patterns in Modern JavaScript",
+        "slug": "reactive-patterns-in-modern-javascript",
+        "legacyId": 101,
+        "date": "2024-03-12",
+        "synopsis": "A tour of signals, observables, and the new reactivity primitives landing in frameworks.",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "slidesUrl": "https://slides.example.com/reactive-patterns",
+        "codeUrl": "https://github.com/example/reactive-patterns",
+        "speakers": {
+          "data": [
+            {
+              "id": 1,
+              "attributes": {
+                "name": "Ada Lovelace",
+                "bio": "Builds reactive UIs and writes about them.",
+                "website": "https://ada.example.com",
+                "twitter": "ada",
+                "photo": {
+                  "data": {
+                    "id": 11,
+                    "attributes": { "url": "/uploads/ada.jpg" }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "event": {
+          "data": {
+            "id": 10,
+            "attributes": {
+              "name": "BrisJS March 2024",
+              "dateTime": "2024-03-12T18:00:00.000Z",
+              "venue": "The Precinct"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "Edge Functions Without Tears",
+        "slug": "edge-functions-without-tears",
+        "legacyId": 102,
+        "date": "2024-03-12",
+        "synopsis": "Deploying JavaScript to the edge and keeping your sanity.",
+        "youtubeUrl": "https://www.youtube.com/watch?v=oHg5SJYRHA0",
+        "slidesUrl": null,
+        "codeUrl": null,
+        "speakers": {
+          "data": [
+            {
+              "id": 2,
+              "attributes": {
+                "name": "Grace Hopper",
+                "bio": null,
+                "website": null,
+                "twitter": "grace",
+                "photo": { "data": null }
+              }
+            },
+            {
+              "id": 3,
+              "attributes": {
+                "name": "Linus Torvalds",
+                "bio": null,
+                "website": null,
+                "twitter": null,
+                "photo": { "data": null }
+              }
+            }
+          ]
+        },
+        "event": {
+          "data": {
+            "id": 10,
+            "attributes": {
+              "name": "BrisJS March 2024",
+              "dateTime": "2024-03-12T18:00:00.000Z",
+              "venue": "The Precinct"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "TypeScript at Scale",
+        "slug": "typescript-at-scale",
+        "legacyId": 103,
+        "date": "2024-05-14",
+        "synopsis": "Lessons from a large TypeScript monorepo.",
+        "youtubeUrl": null,
+        "slidesUrl": null,
+        "codeUrl": null,
+        "speakers": { "data": [] },
+        "event": {
+          "data": {
+            "id": 11,
+            "attributes": {
+              "name": "BrisJS May 2024",
+              "dateTime": "2024-05-14T18:00:00.000Z",
+              "venue": "River City Labs"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 3
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "brisjs-web",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BrisJS Astro frontend (feature 002) — statically built from the Strapi API.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint .",
+    "typecheck": "astro check",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "astro": "^6.4.6",
+    "date-fns": "^4.4.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.18.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^4.1.8"
+  }
+}

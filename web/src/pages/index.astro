@@ -1,0 +1,40 @@
+---
+// Minimal scaffold page (T2.1). The real pages and ported design land in T2.2.
+// This page exists so `astro build` produces output and exercises the data
+// layer (src/data/talks) at build time against fixtures or a live Strapi.
+import { getTalks, groupByEvent } from '../data/talks.js';
+
+const talks = await getTalks();
+const groups = groupByEvent(talks);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BrisJS — scaffold</title>
+  </head>
+  <body>
+    <main>
+      <h1>BrisJS (scaffold)</h1>
+      <p>
+        T2.1 data-layer smoke page. {talks.length} talk(s) across {groups.length}
+        event group(s). Real pages and the ported design are built in T2.2.
+      </p>
+      {
+        groups.map((group) => (
+          <section>
+            <h2>{group.eventName ?? group.dateHuman}</h2>
+            <ul>
+              {group.talks.map((talk) => (
+                <li>
+                  <a href={`/talks/${talk.slug}`}>{talk.title}</a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </main>
+  </body>
+</html>
