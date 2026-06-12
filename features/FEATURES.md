@@ -42,3 +42,4 @@ features/<NNN>-<kebab-case-name>/
 | 003 | Strapi backend integration | ready | [`features/003-strapi-backend-integration/`](./003-strapi-backend-integration/) |
 | 004 | Netlify deployment & hosting | ready | [`features/004-netlify-deployment/`](./004-netlify-deployment/) |
 | 005 | Design refresh (post-migration redesign) | planning | [`features/005-design-refresh/`](./005-design-refresh/) |
+| 006 | Meetup past-events enrichment (backlog) | planning | [`features/006-meetup-events-enrichment/`](./006-meetup-events-enrichment/) |

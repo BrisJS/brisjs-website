@@ -99,8 +99,8 @@ Statuses: `todo` · `in-progress` · `blocked` · `done`
 |----|------|------|-----------|------|--------|-------|
 | T5.1 | Compare deploy preview vs baseline; merge to `master`; remove legacy root files (cleanup commit per ADR-006); update HLD/ARCHITECTURE to the post-migration system; flip FEATURES statuses to `complete` | all | Phase 4 done | 004 TC-01..07 on production; docs in sync | todo | human + agent |
 
-> Feature **005 (design refresh)** starts only after T5.1, as its own cycle on this board's
-> successor — not part of this build.
+> Features **005 (design refresh)** and **006 (Meetup past-events enrichment)** start only
+> after T5.1, as their own cycles on this board's successor — not part of this build.
 
 ## Verification (end-to-end, pre-Phase-4)
 
