@@ -65,7 +65,7 @@ Statuses: `todo` · `in-progress` · `blocked` · `done`
 
 | ID | Task | Refs | Depends on | Gate | Status | Owner |
 |----|------|------|-----------|------|--------|-------|
-| T1.1 | Strapi project in `cms/` with all feature-001 content types as code (incl. `Organizer`, `HomePage`, `Talk.slug`/`legacyId`); draft & publish on; Public role read-only | 003 P-01 / 001 P-01 | T0.3 | 001 TC-01..04 against local Strapi | todo | agent |
+| T1.1 | Strapi project in `cms/` with all feature-001 content types as code (incl. `Organizer`, `HomePage`, `Talk.slug`/`legacyId`); draft & publish on; Public role read-only | 003 P-01 / 001 P-01 | T0.3 | 001 TC-01..04 against local Strapi | in-progress | agent |
 | T1.2 | Idempotent legacy importer; seed local Strapi from `data/legacy/talks.tsv` + `data/twitter.json` + `data/contact.json` (→ Organizer) + static copy from `index.html` (→ HomePage, CodeOfConduct, FindUs) | 001 P-03 / 003 P-03 | T1.1, T0.1 | 001 TC-05; 003 TC-05 (re-run = no dupes) | todo | agent |
 | T1.3 | Verify a Strapi export/restore round-trip locally and write the backup runbook (content exit path per ADR-002) | 003 FR-07 | T1.2 | export → wipe → restore reproduces the seeded content | todo | agent |
 
@@ -73,7 +73,7 @@ Statuses: `todo` · `in-progress` · `blocked` · `done`
 
 | ID | Task | Refs | Depends on | Gate | Status | Owner |
 |----|------|------|-----------|------|--------|-------|
-| T2.1 | Astro scaffold in `web/` (TypeScript) + `src/lib/strapi` + typed `src/data/*` (port `lib/tsvTalks.js` grouping) + fixtures matching the 001 API shape | 002 P-01 | T0.3 | 002 TC-04 unit green; `astro build` works against fixtures | todo | agent |
+| T2.1 | Astro scaffold in `web/` (TypeScript) + `src/lib/strapi` + typed `src/data/*` (port `lib/tsvTalks.js` grouping) + fixtures matching the 001 API shape | 002 P-01 | T0.3 | 002 TC-04 unit green; `astro build` works against fixtures | in-progress | agent |
 | T2.2 | All pages & components, current design ported. Parallel sub-tracks: **(a)** layout/nav/footer + home (HomePage copy + upcoming event), **(b)** talks archive + talk detail, **(c)** jobs + talk-requests + contact, **(d)** code-of-conduct + find-us | 002 P-02 | T2.1; full-content verification needs T1.2 | 002 TC-01..03; visual parity vs T0.2 baseline | todo | agent |
 | T2.3 | Frontend test suite + security checks (token-leak grep, fail-loud build) | 002 P-03 | T2.1 | 002 TC-05, TC-06 | todo | agent |
 
