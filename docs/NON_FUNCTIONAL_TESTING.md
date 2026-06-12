@@ -59,6 +59,6 @@ security. Functional test cases live per-feature in `features/NNN/TEST_CASES.md`
 
 | # | Question | Owner | Resolution |
 |---|----------|-------|------------|
-| 1 | What is the current site's measured Lighthouse / Web Vitals baseline (so we can show improvement)? | — | — |
+| 1 | What is the current site's measured Lighthouse / Web Vitals baseline (so we can show improvement)? | — | Partially resolved 2026-06-12 (`docs/baseline/`): home a11y **48**, best-practices 96, SEO 82. Performance score still pending a perf trace |
 | 2 | What are Strapi Cloud free-plan's exact limits (entries, seats, bandwidth, API rate)? | — | — |
 | 3 | What accessibility issues exist in the current site today (audit not yet run)? | — | — |

@@ -57,9 +57,9 @@ Statuses: `todo` · `in-progress` · `blocked` · `done`
 | ID | Task | Refs | Depends on | Gate | Status | Owner |
 |----|------|------|-----------|------|--------|-------|
 | T0.1 | Snapshot legacy data: fetch the talks TSV (`config.json` → `dataSources.talks`) into `data/legacy/talks.tsv`; probe the Meetup `sig` URL and record the result against HLD Open Q2 | 001/003 | — | snapshot committed; probe result recorded | done | agent |
-| T0.2 | Capture the live-site baseline: screenshots of brisjs.org key pages (home, talks, a talk detail, jobs, contact, find-us) into `docs/baseline/` + Lighthouse scores (resolves NON_FUNCTIONAL Open Q1) | 002/005 | — | baseline files + scores committed | todo | agent |
+| T0.2 | Capture the live-site baseline: screenshots of brisjs.org key pages (home, talks, a talk detail, jobs, contact, find-us) into `docs/baseline/` + Lighthouse scores (resolves NON_FUNCTIONAL Open Q1) | 002/005 | — | baseline files + scores committed | done | agent |
 | T0.3 | Repo layout per ADR-006: create `web/` and `cms/` skeletons; root README note; legacy root untouched | ADR-006 | — | dirs exist; legacy unchanged | done | agent |
-| T0.4 | CI skeleton: GitHub Actions running lint, typecheck, unit tests, and build on PRs | TEST_STRATEGY | T0.3 | workflow green on a no-op run | in-progress | agent |
+| T0.4 | CI skeleton: GitHub Actions running lint, typecheck, unit tests, and build on PRs | TEST_STRATEGY | T0.3 | workflow green on a no-op run | done | agent |
 
 ### Phase 1 — Content backbone
 
