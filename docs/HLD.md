@@ -95,6 +95,6 @@ sequenceDiagram
 | # | Question | Owner | Resolution |
 |---|----------|-------|------------|
 | 1 | The repo `CNAME` contains `bris.js.org`, but the live site and README use `brisjs.org`. Is the `CNAME` stale/incorrect, and does it need correcting before any deploy changes? | — | — |
-| 2 | The Meetup events URL embeds a `sig`/`sig_id` signature. Is it still valid, and what is its longevity / who can regenerate it? | — | — |
+| 2 | The Meetup events URL embeds a `sig`/`sig_id` signature. Is it still valid, and what is its longevity / who can regenerate it? | — | Resolved 2026-06-12 (BUILD_WORKFLOW T0.1): probe returned **HTTP 404** — the URL is dead, so the live site's "next event" is already broken in production. Confirms the Strapi-managed-events decision (feature 001 Q3) |
 | 3 | `data/twitter.json` is a committed snapshot regenerated via `tools/build-twitter`, which uses the deprecated Twitter API v1. How stale is it, and is regeneration still possible? | — | — |
 | 4 | The talks archive's source of truth is a single Google Sheet owned by an individual. What is the access/continuity risk, and should it be migrated first? | — | — |

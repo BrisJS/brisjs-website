@@ -1,0 +1,229 @@
+ID	Date	Title	Speaker(s)	Twitter	YouTube	Slides	GitHub Repo	Description
+1	1275897600000	Training: JavaScript From the Ground Up - Part #1						
+2	1275897600000	CoffeeScript - JS done right	Dr Nic	drnic				
+3	1278316800000	NodeJS - How to install						
+4	1278316800000	jQuery Intro	Ben Hoskings	ben_h				
+5	1280736000000	Sproutcore - Website Application Framework	Geoffrey Donaldson	geoffreyd				
+6	1280736000000	jQuery continued						
+7	1280736000000	Training: JavaScript From the Ground Up - Strings, Booleans, Nulls and undefined.						
+8	1283761800000	Node.js Knockout competition						
+9	1286179200000	Learn JS while building a blog.						
+10	1288600200000	HTML5 mapping library Tile5	Damon Oehlman	damonoehlman				
+11	1292315400000	Introduction to data-driven 2D graphics and charts with Javascript frameworks and Websockets	Robert Ellen					
+12	1292486400000	Tech Drinks						
+13	1297065600000	TinyMCE	Rob Dawson					
+14	1301904000000	Crafty JavaScript game engine	Louis Stowasser	louisstow				
+15	1301904000000	SproutCore 1.5	Geoffrey Donaldson	geoffreyd				
+16	1304928000000	What's New in jQuery						
+17	1304928000000	Advanced JavaScript techniques						
+18	1307347200000	Spine.js						
+19	1307347200000	Desktop and "Native" Application Development using Javascript	Robert Ellen Deffereds, Ryan Blundel					
+20	1309766400000	JS Logging	Coen Deffereds, Ryan Blundel					
+21	1312185600000	javascript VS coffeescript	Damon Oehlman, Nathan					
+22	1315209600000	Node Knockout Roundup						
+23	1315209600000	jquery-oembed-all	Andrew					
+24	1315209600000	Trees	Geoffrey Donaldson	geoffreyd				
+25	1317628800000	GeoJSON and Javascript Mapping APIs	Todd					
+26	1317628800000	Hashbangs	Peter Chappell	petechappell				
+27	1317628800000	sugarjs.com	Tim Oxley	timoxley				
+28	1320652800000	Backbone.js	Marty Zalega	evilmarty				
+29	1320652800000	gestures in JavaScript support in openlayers	Andrew Newman					
+30	1320652800000	GeoJSON and CouchDB - Cutting out the web server middleman	Todd					
+31	1328515200000	Confusing & Completely unreadable JavaScript performance tricks that you will most probably never use	Maurice Butler	butlermaurice				
+32	1328515200000	Strict Javascript: Make your Internet Explorer woes disappear						
+33	1330934400000	An introduction to events in JS						
+34	1333353600000	Application Architecture & MVC in Node.js (deep dive) Interprocess communication in Node.js Testing in Node.js	Tim Oxley	timoxley				
+35	1336464000000	The future of JS libraries, will we be using jQuery in 2 years time?	Tim Oxley	timoxley				
+36	1338796800000	Learning Node	Nathan Hoad	nathanhoad				
+37	1338796800000	ArtNearMe: Meteor by example	Colin Gourlay	collypops				
+38	1338796800000	Rails and Node at Kondoot	Coen Hyde	coenhyde				
+39	1338796800000	NodeJS in Production	Damon Oehlman	damonoehlman				
+40	1338796800000	Node Fibers: Keeping your nodes regular	Simon Sturmer	sstur_				
+41	1341216000000	Minecraft in HTML	Nicholas Kinsey					
+42	1341216000000	WTF is EmberJS Lightning talks	Tim Oxley	timoxley				
+43	1341216000000	jquery-oembed-all	Andrew Mee					
+44	1341216000000	Orchestrated sound poem of random noises	Josh					
+45	1341216000000	wemux for pairing	Odin Dutton	twe4ked				
+46	1342598400000	Introductory session on Kendo UI at The Edge	John Bristowe	johnbristowe				
+47	1344240000000	Express 2 vs. Express 3	Colin Gourlay	collypops				
+48	1344240000000	Node Streams	Maurice Butler	butlermaurice				
+49	1344240000000	Node Domains	Tim Oxley	timoxley				
+50	1344240000000	Self-Consuming API's	Thomas Davis					
+51	1344240000000	Skyrun	Coen Hyde	coenhyde				
+52	1344240000000	Node Robotics	Jeff Lynne					
+53	1344240000000	Demo/Review: Integration with ServiceNow	Robert Ninness					
+54	1349683200000	Preparing Clientside Assets: BuildJS	Damon Oehlman	damonoehlman				
+55	1349683200000	Preparing Clientside Assets: grunt	Tim Oxley	timoxley				
+56	1349683200000	Gaffa/GEL	Kory Nunn, Maurice Butler	korynunn, butlermaurice				
+57	1349683200000	Chrome Extensions	Keiran McDonald					
+58	1352102400000	Introducing nCombo: a new Node Framework	Jonathan Gros-Dubois					
+59	1352102400000	Harmony in Node: New JavaScript features you can use in Node today	Tim Oxley	timoxley				
+60	1352102400000	Node as a Chrome extension, a Node server wherever you go	Thomas Davis					
+61	1352102400000	More Gel	Kory Nunn	korynunn				
+62	1352102400000	Async coding help from Taskify	Damon Oehlman	damonoehlman				
+63	1359964800000	Intro to SVG	Damon Oehlman	damonoehlman				
+64	1367222400000	NodeJS						
+65	1370246400000	Using 2D Canvas Text to Recapture the Magic of HTML 3.2	Daemon Oehlman	damonoehlman				
+66	1375689600000	Ninja Blocks	Tim Oxley	timoxley				
+67	1378108800000	SigForms	Damon Oehlman	damonoehlman				
+68	1380614400000	CSS3D+js	Kevin Vanderbeken	kevdesign				
+69	1380614400000	Lightning Talks	Kory Nunn, Maurice Butler	korynunn, butlermaurice				
+70	1383552000000	Robotics in Chrome	Glen Arrowsmith	garrows				
+71	1383552000000	Nodebots	Anna Gerber	annagerber				
+72	1391414400000	Polymer	John Bristowe	johnbristowe				
+73	1393833600000	React	Liam McLennan	liammclennan				
+74	1393833600000	Lightning Talk	Kory Nunn	korynunn				
+75	1396857600000	Getting Fat: Building large client side applications	Nick Fisher	spadgos				
+76	1396857600000	Grunt is so 2013. Come join the cool kids with Gulp	Glen Arrowsmith	garrows				
+77	1399276800000	Asset compilation and build chain with Browserify	Glen Arrowsmith	garrows				
+78	1399276800000	Using javascript to light your home with lifx bulbs	Maurice Butler	butlermaurice				
+79	1404720000000	Ember	Paul Knittel					
+80	1404720000000	Node module design patterns	Maurice Butler	butlermaurice				
+81	1404720000000	Prototypical Inheritance in Javascript	Kory Nunn	korynunn				
+82	1407139200000	Govhack	Joshua Donnely					
+83	1407139200000	Prototypical Inheritance in Javascript II	Kory Nunn	korynunn				
+84	1407139200000	Nodebots	Colin Gourlay	collypops				
+85	1409558400000	RTC.io / WebRTC	Glen Arrowsmith	garrows				
+86	1409558400000	2D Canvas Drawing & Animation	Ash Kyd	ashkyd				
+87	1409558400000	Node for PHP Developers	Andrew Eddie	andreweddie				
+88	1409558400000	Playing MIDI files on Piezo's via Arduino & Javascript	Colin Gourlay	collypops				
+89	1413273600000	Intro to ember and ember cli	Tom Ridge					
+90	1413273600000	Real-time interconnected services with Firebase	Tate Johnson	tatejohnson				
+91	1413273600000	Minimal dependency frontend components	Kory Nunn	korynunn				
+92	1417420800000	Vector Maps	Ash Kyd	ashkyd				
+93	1417420800000	Devtools	Kory Nunn	korynunn				
+94	1417420800000	Command line debugger	Maurice Butler	butlermaurice				
+95	1422864000000	Understanding ES6 Generators (+ Promises!)	Mark Lawlor	mwlawlor 				
+96	1422864000000	ES6 Generators	Chris					
+97	1422864000000	Production Node	Maurice Butler	butlermaurice				
+98	1425283200000	Fetching stuff with JS	Joshua Donnely					
+99	1425283200000	Writing Node CLI Tools	Glen Arrowsmith	garrows				
+100	1430726400000	Unit testing	Mark Lawlor	mwlawlor 	https://www.youtube.com/watch?v=8vtbJ-ujEzo			
+101	1430726400000	Offline 1st/The Service Worker	Chris Roberst		https://www.youtube.com/watch?v=-0i7RmS7rb4			
+102	1430726400000	D3.js Visualisation	Steven Leigh		https://www.youtube.com/watch?v=ExRu4Y7Tsec			
+103	1430726400000	Development in the Console	Warwick Cox	wazcox	https://www.youtube.com/watch?v=e5oqzP84hj0			
+104	1433145600000	Private NPM Modules	Glen Arrowsmith	garrows	https://www.youtube.com/watch?v=xxgrmq25z4w			
+105	1433145600000	Front End Components 2	Kory Nunn	korynunn	https://www.youtube.com/watch?v=spUPz_Lk-oQ			
+106	1433145600000	Ansible for a private repo	Sholto Maud	shizzmd	https://www.youtube.com/watch?v=nmCjx767X5U			
+107	1436169600000	Web Workers	Ash Kyd	ashkyd				
+108	1436169600000	EmberJS 2.0 & JSONAPI.org 1.0	Geoffrey Donaldson	geoffreyd				
+109	1436169600000	ES6 WeakMaps/Sets	Kory Nunn	korynunn				
+110	1438588800000	ReactJS in use at everydayhero.com	David Herse					
+111	1438588800000	International NodeBots Day roundup	Anna Gerber	annagerber	https://www.youtube.com/watch?v=JK9cvnWA8AI			
+112	1438588800000	IoT: Arduino -> ESP8266 -> MQTT -> Mosca on NodeJS	Steve Dalton					
+113	1441612800000	2D Canvas Basics & JS13K Game comp	Glen Arrowsmith	garrows				
+114	1441612800000	Making games with Phaser	Pablo Farias Navarro	zenvatweets				
+115	1441612800000	Emscripten	Louis Stowasser	louisstow				
+116	1441612800000	Knot.js and Cascade Binding Sheets	Sheng Zhao					
+117	1444636800000	PouchDB	Geoffrey Donaldson	geoffreyd				
+118	1444636800000	JAWS	Joshua Wulf	sitapati				
+119	1444636800000	NativeScript	John Bristowe	johnbristowe				
+120	1444636800000	JS micro framework for responsive web design	Mike Robinson					
+121	1446451200000	How to do Angular JS 2.0	Andrew Ling					
+122	1446451200000	Intro of Ionic for Hybrid Apps	Glen Arrowsmith	garrows				
+123	1446451200000	TypeScript	Steve Leigh	xwipeoutx				
+124	1449475200000	Building games for the Web	Ash Kyd	ashkyd				
+125	1449475200000	How to even debug	Maurice Butler	butlermaurice				
+126	1449475200000	ES6: The good, the bad, and async/await	Kory Nunn	korynunn				
+127	1454313600000	Webpack	Josh Girvin	girvo	https://www.youtube.com/watch?v=fLADI4WIF1s			
+128	1454313600000	XKCD style movie narrative charts using d3.js	Simon Elvery	drzax	https://www.youtube.com/watch?v=WoXWtxLhZlc			
+129	1454313600000	Slackbot-powered internet radio from a Raspberry Pi with Node	Tom Newby	tomnewbyau	https://www.youtube.com/watch?v=dzJs0yF3Riw			
+130	1454313600000	Ruffle + GIF parsing in JS	Matt Way		https://www.youtube.com/watch?v=LIU5wDsAQpU			
+131	1457337600000	Static websites still got it!	Dwight Gunning	dwightgunning	https://www.youtube.com/watch?v=X7SFdB3hmvg			
+132	1457337600000	An Adaptive Design approach to create cross-platform apps with Sencha Ext JS 6	Shikhir Singh		https://www.youtube.com/watch?v=Fn68PZluTG8			
+133	1457337600000	Intro to Vue.js	Kris Zima		https://www.youtube.com/watch?v=7TBdISl2VgM			
+134	1457337600000	The greatest thing to ever happen to the JavaScript	Joshua Wulf	sitapati	https://www.youtube.com/watch?v=-iubWPh-da8			
+135	1459756800000	Cross-thread data-replication with function-invoking	Kory Nunn	korynunn				
+136	1459756800000	Making something with Electron	Joshua Donnelly					
+137	1459756800000	What we learned building a cross-platform React Native app in 3 months	Josh Girvin	girvo				
+138	1462780800000	Aurelia Framework	Tom Newby	tomnewbyau	https://www.youtube.com/watch?v=-hur-j3sDgo			
+139	1462780800000	Machine Learning with Javascript	Andre de San Miguel		https://www.youtube.com/watch?v=m5ctLzB7xis			
+140	1462780800000	ES6 modules - Babel, Rollup, JSPM, what is the future?	Ash Kyd	ashkyd	https://www.youtube.com/watch?v=crRdez-184w			
+141	1465804800000	Not living up to the promise? Righto.	Kory Nunn	korynunn	https://www.youtube.com/watch?v=GJg1E_Fi7nU			
+142	1465804800000	CampJS Recap	Luke Brooker	lukebrooker	https://www.youtube.com/watch?v=VATFjMXK7Yk			
+143	1465804800000	Teaching kids to code in Minecraft using JavaScript	Joshua Wulf	sitapati	https://www.youtube.com/watch?v=eWPmUaOlS5Q			
+144	1465804800000	Experience of hiring a JS Dev	Peter Munro		https://www.youtube.com/watch?v=CXJzhRrMsdE			
+145	1465804800000	Open Mic - What I've been up to	Benjamin Lupton	balupton	https://www.youtube.com/watch?v=Lt_oKuaFgrg			
+146	1465804800000	Voxel.js	Kevin Vanderbeken	kevdesign	https://www.youtube.com/watch?v=iQGsZvNpv9s			
+147	1465804800000	Evolving JS Group Scene	Kevin Vanderbeken	kevdesign	https://www.youtube.com/watch?v=pL6_3Fi83EE			
+148	1467619200000	TDD by example using Node and Mocha	Andrew Eddie	andreweddie	https://www.youtube.com/watch?v=1o-EUOmjmZc			
+149	1467619200000	Minimising CSS Complexity	Luke Brooker	lukebrooker	https://www.youtube.com/watch?v=EqOCcpH0caQ			
+150	1467619200000	Experiences with Firebase	Marc (Lenny) Thompson		https://www.youtube.com/watch?v=XOeQ24JK2mM			
+151	1470038400000	Building Simpla on Web Components	Bede Overend	bedeoverend	https://www.youtube.com/watch?v=h3Yr1sJfHHE			
+152	1470038400000	Mongoose.js	Ryan Knell		https://www.youtube.com/watch?v=SY1Ph9aiqs0			
+153	1470038400000	Houdini	Azarel Howard	linuxninja_aza	https://www.youtube.com/watch?v=0CEvWa2D4U0			
+154	1470038400000	Develop modern JS projects with Make	Alex Hernandez	pori_alex	https://www.youtube.com/watch?v=NgINMObyggg			
+155	1473062400000	Chat Bots	Glen Arrowsmith	garrows				
+156	1473062400000	Automated browser testing with Nightwatch.js	Vladimir,Janna	vladimiraus,				
+157	1473062400000	Using nwb for React development	Jonny Buchanan	jbscript				
+158	1476086400000	Serverless Architectures	John McKim	johncmckim	https://www.youtube.com/watch?v=_mdfgodVxxA			
+159	1476086400000	Javascript rules my life (intro to Node-RED)	Christopher Biggs	unixbigot	https://www.youtube.com/watch?v=MoP8zH2hbnY			
+160	1476086400000	JS13K	Ash Kyd, Glen Arrowsmith, Kory Nunn	ashkyd, garrows, korynunn	https://www.youtube.com/watch?v=VIhJrFJXG8U			
+161	1478505600000	IoT for Slackers	Christopher Biggs	unixbigot		http://christopher.biggs.id.au/talk/2016-11-06-iot-slackers-brisjs/		
+162	1478505600000	Techniques and practices for testing Angular 2	Duncan Hunter	dunchunter		https://docs.google.com/presentation/d/19tJt0UQY2fJ5URqrL6VLiT9eYVdO4uoUUNPG9Vh8SAw/edit#slide=id.p14		
+163	1478505600000	Ionic framework dev with Cloud9 IDE - An intern's perspective	Michael Baggott			https://docs.google.com/viewer?url=https://github.com/BrisJS/meetups/files/630071/MichaelBaggott_Ionic.Cloud9.pdf		
+164	1481529600000	Angular 2 Routing from 0 to Hero	Thiago Passos	thiagospassos	https://www.youtube.com/watch?v=OlHNXEbVnag		https://github.com/thiagospassos/Angular2-Routing-BrisJS	This headline talk promises to show you everything there is to know about routing your next angular 2 app, or give you know familiarity to navigate anyone's project. Covering setting up, nesting routes and security just to name a few, this bills itself as a one stop demo. 
+165	1481529600000	Machine Vision / AI in Electron	Matt Way	_mattway	https://www.youtube.com/watch?v=i7GyyXdS2lc			Matt has been busy using electron to do AI experiments this year (working on new machine vision algorithms) and has volunteered to share and explain the state of machine vision.
+166	1481529600000	React Native	Ryan Knell		https://www.youtube.com/watch?v=xauREDTs7iU			Ryan actually started off volunteering to talk to us about Cordova and PhoneGap some time ago, but as our community does... we discover so much tech in such a short time. In demonstration of this... Ryan will be able to present React Native, and explain some common pitfalls and lay down what you need to know.
+167	1481529600000	Control your home with HomeBridge & iPhone	Christopher Biggs	unixbigot	https://www.youtube.com/watch?v=BvMspD1_lj0	http://christopher.biggs.id.au/presentations/homebridge/	https://medium.com/@unixbigot/latest	Chris has turned into quite a carryover-champ of BrisJS, presenting 3 topics in short succession of the IoT space; wowing the crowds with Slack connected toasters and more. This time he's back to show you the HomeBridge project (npm installable), and how you can set up a simple bit of config and JS to command devices from your iOS/Apple products with homekit too.
+168	1486369800000	Magikcraft	Tim Marwick,Ian Daniel,Chris Briggs	timmarwick,death667b,chrisbriggsy	https://www.youtube.com/watch?v=S63FxJ6to8I			While Josh couldn't make it to give us the original talk Tim Marwick, Ian Daniel & Briggsy stepped up to the plate to walk us through how Magikcraft works and their lofty goal of setting a world record.
+169	1486369800000	Node Debugging Revisited	Glen Arrowsmith	garrows	https://www.youtube.com/watch?v=dan0KDIOcm8	http://slides.com/glenarrowsmith/deck-10		Node now ships with V8 Inspector integrations so you can use the Chrome DevTools. Glen will cover some basic debugging, logging, performance debugging with flame graphs and more. It could save your life! ...or just your sanity.
+170	1486369800000	Startup Projects from a Tech Perspective	Christopher Grigg	chrisgrigg	https://www.youtube.com/watch?v=Rk8AOPr2YXg			Chris seems to have been enjoying the time honoured tradition of taking a food-snap/foodstagram/food-selfie. But in true developer style - this was a learning opportunity to build an app with some handy technologies, and he can tell us all about this journey mixing the MEAN stack with AWS and Ionic 2... making taking pics of your food cool again ;-)
+171	1488789000000	Building an Alexa Skill with Node + Lambda	John McKim	johncmckim	https://www.youtube.com/watch?v=F6KeUMtBuyU			John built a version of chaos monkey that allows you to start and stop servers on the Amazon Echo. He'll walk through building a skill that allows you to ask Alexa when the next BrisJS meetup is on using the meetup.com api.
+172	1488789000000	Serverless Express	Anna Gerber	annagerber	https://www.youtube.com/watch?v=S2nJBxZ_M0g	https://www.slideshare.net/annagerber/serverless-express		This talk will step through how to use the aws-serverless-express library to develop a simple API backed by DyamoDB, and how to deploy it to AWS via CloudFormation. In this way you can build web services with Node.js + express and run them through the Amazon API Gateway.
+173	1488789000000	Less is more. Writing software the unpopular way	Kory Nunn	korynunn	https://www.youtube.com/watch?v=ZPoj-rFwNVo			Kory will be running us through the other way to write software, the one where you don't use frameworks, build processes, or install a million libraries. There are pro's 'n' con's to both, and it will surely be an awesome debate on the merits of each!
+174	1491208200000	WebAssembly 101	Ash Kyd	ashkyd	https://www.youtube.com/watch?v=9Jdj_tReW1I	https://wasm-brisjs.talks.ash.ms/		Ash is going to blow us away and present his intro on our latest toy... I mean, tool… for this expanding web universe of ours. WebAssembly has landed in Firefox and Chrome with Edge to follow shortly, so with Ash's help we can get started by learning what is it, why we need it, how it works, and how to get a jump on coding with it today.
+175	1491208200000	State Mutation considered harmful: Pure Function Master Race	Joshua Wulf	sitapati	https://www.youtube.com/watch?v=lcab4NEp65M	https://github.com/BrisJS/meetups/issues/181#issuecomment-299094501		Functional programming is the One True Way(tm) to code - except when it's not. In this talk we'll look at functional programming in JavaScript, with some use cases and considerations. We're not going to do Monads and Endofunctors, grow a beard, and write a parser, but we will cover some practical use cases in JavaScript.
+176	1491208200000	Simplifying user interface programming	Liam McLennan	liammclennan	https://www.youtube.com/watch?v=aGEpfU_4wQA		http://codepen.io/liammclennan/pen/GWyBxq?editors=0110	Focused around Liams thoughts on simplifying user interface programming, with examples in React and Redux. Imagine a user interface generated entirely from data. The only way to change the UI is to change the data. Add a simple event system to translate user actions into changes to the data and you have the simple, complete way to construct user interfaces that has made React so popular.
+180	1494232200000	⚡ Talk: magikcraft, particles.js & more	Tim Marwick	timmarwick	https://www.youtube.com/watch?v=Go23pB4CwII	https://drive.google.com/a/kyd.com.au/file/d/0B-OuoMcKdoz4a1h3RDN1TlZDdjg/view?usp=drive_web		A last minute entry, Tim will talk about magikcraft, particles.js & more.
+179	1494232200000	React Native	Daniel Mitchell	mrceleryman	https://www.youtube.com/watch?v=3ePFnwdfXzA	https://prezi.com/view/jy37kuwouw9lNoNSE4UQ/	https://github.com/MrCeleryman/ParmyayMobile	By taking us through his experiences in developing out React Native code in the workplace we'll learn how to get up and running productively with React Native. 
+178	1494232200000	GraphQL + Relay.js	Josh Duck	joshduck	https://www.youtube.com/watch?v=HcnHuy3G1xY	https://www.dropbox.com/s/h78qzyibu6up0af/Exploring%20Relay%20-%20PDF.pdf?dl=0	https://github.com/joshduck/example-relay-app	Josh worked with the Facebook engineering team around Relay and will be able to give us a good explanation around the concepts of requests describing the data and show GraphQL via graphql.org/swapi-graphql/ and delve into the details of Relay at length.
+189	1496651400000	MCT1: Minecraft for Type 1 Diabetes	Prahlad Wulf	purpsta_yt	https://www.youtube.com/watch?v=UF6RvwKdweY			MCT1 is a global open-source project that produces a version of Minecraft specifically engineered to make a difference for children and families living with Type 1 Diabetes.
+184	1496651400000	Building an ExpressJS + GraphQL Server	Tim Marwick	timmarwick	https://www.youtube.com/watch?v=ly_A9QdXymI			Tim has volunteered a variant talk to follow up from Josh Duck's Relay.js talk last month. What is GraphQL & why is it cool... as well as getting started quickly with Express and GraphQL by the use of a pluggable provider architecture.
+183	1496651400000	Create a website by email	Matt Way	_mattway	https://www.youtube.com/watch?v=2XMTE0dvgRA			Matt volunteered to take us through how the stack for publishthis.email works. We use SES -> S3 -> Lambda -> Dynamo to convert any email sent to a particular address into a webpage.
+182	1496651400000	Redux	David Buchan-Swanson	deecewan	https://www.youtube.com/watch?v=cJdK1rhKUBg	https://github.com/BrisJS/meetups/issues/184#issuecomment-311495809		Answering the call to cover this buzzing topic, David will take us through the pattern and implementation of Redux so we can apply it.
+181	1496651400000	Blocking JS + Event Loop + Async	Kory Nunn	korynunn	https://www.youtube.com/watch?v=VAVVhp4R4_M			Now recovered from illness, Kory is reprising his much loved JS fundamentals series from years ago. This is a new section explaining another core tenet of JavaScript's operation: how does JS do async flow if it can't natively do async? The dilemma will be explained!
+188	1499070600000	Magikcraft's "JavaScript Über Alles" Tour of Europe	Joshua Wulf,Prahlad Wulf	sitapati, purpsta_yt	https://www.youtube.com/watch?v=95uyuO9HC80	https://medium.com/@sitapati/magikcraft-in-europe-140-characters-or-less-at-a-time-4a0b2b647af3		Fresh from speaking at NDC Oslo, setting a new JavaScript world record, and launching the Magikcraft Open Source Platform at CoderDojo's Coolest Projects in Dublin, Ireland, the legendary Josh Wulf presents a wrap-up of the trials, the triumphs, the revolutionary technology, and the life-changing movement that is Magikcraft: introducing a new generation of coders to the power of JavaScript through Minecraft. You will laugh, you will cry, you will be deeply moved by this touching story of the human impact of the world's one true full-stack language: JavaScript.
+187	1499070600000	Internet of JavaScript Things - Automate your life with MongooseOS and mJS	Christopher Biggs	unixbigot	https://www.youtube.com/watch?v=QRWmrOJbqlg	http://christopher.biggs.id.au/talk/2017-07-02-iot-in-two-minutes/		The Internet of Things (IoT) is the third computing revolution, the story so far being Personal computing, Cloud computing and now Ubiquitous computing (IoT). The most annoying challenges in the Internet of Things (IoT) are connecting Things to the cloud safely, managing your Things, and updating them. Mongoose-OS is the new hotness that solves all these problems for you out of the box, and lets you skip ahead to the cool stuff.
+186	1499070600000	Async and await in JavaScript VS promises VS callback	Alberto Falchi	ohiaia	https://www.youtube.com/watch?v=K0ShhDbgRxk			JavaScript is a naturally asynchronous language, but these days there's several ways of doing the same thing. Alberto Falchi will be joining us to discuss the varieties of asynchronous techniques, when to use one or the other… and why!
+185	1499070600000	Create, Debug & Deploy JavaScript Azure Functions	Thiago Passos	thiagospassos	https://www.youtube.com/watch?v=hs23U3tDzrI	https://passos.com.au/azure-functions-net-ug-tour/		What's serverless? And why would you go serverless? Worry no more, these questions will be answered, as Thiago shows us a great way to get started by using Azure Functions. You don't need to move all your applications to the cloud right now, you can start with bits and pieces without compromising your existing applications and see for yourself how great it can be.
+191	1502699400000	Scaffolding JS stacks using Yeoman, Cloud 66, Docker and pushing to Cloud	Amin Mousavi Hasab	samousavih		https://github.com/BrisJS/meetups/issues/175#issuecomment-333345007		This is a talk about how fast we can build up most JS stacks using Yeoman, utilise Docker, choose the cloud provider we like and orchestrate our containers using Cloud 66.
+190	1502699400000	Building a chatbot with AWS Lambda and Lex	John McKim	johncmckim		https://github.com/BrisJS/meetups/issues/215#issuecomment-323000882		John built a chatbot using AWS Lambda (Nodejs of course) and AWS Lex for the AWS Chatbot Challenge - see his blog - https://devpost.com/software/a-cloud-guru-bot-ryfwn3.  John will walk through building a Slack bot and using AWS Lex to add intelligence to the bot. He will touch on AWS Lambda & the Serverless framework. 
+189	1502699400000	Reflex - higher-order FRP for front-end development.	Dave Laing			https://blog.qfpl.io/share/talks/intro-to-reflex-brisjs/		There has been a lot of buzz about Functional Reactive Programming over the last few years.  Most of it has been about distant relatives of the original idea, which aren't anywhere near as powerful. This talk will be about Reflex, a Haskell library which uses FRP for  front-end development with great correctness, composability and  performance. Even if you're never going to touch Haskell with a ten-foot pole, the  ideas should be interesting for those who have been following the  various reactive technologies.
+198	1504513800000	Google Docs as a GraphQL backend	Tim Marwick	timmarwick	https://www.youtube.com/watch?v=v1WJiYD2mXU			A lightning talk by Tim Marwick, showing how he's using Google Sheets as a backend to his GraphQL API. Crazy stuff!
+197	1504513800000	Deploying to the cloud with now.sh	Kory Nunn	korynunn	https://www.youtube.com/watch?v=9eOaDBlvX0E			Spur of the moment lightning talk from Kory Nunn showing off how to deploy stuff with "now". Hilarious as always.
+196	1504513800000	What is FunCaptcha?	Glen Arrowsmith	garrows	https://www.youtube.com/watch?v=wgY7ApudLVA			
+195	1504513800000	Crash course in D3	Josh Byrd	phocks	https://www.youtube.com/watch?v=ZGcWUgQwj3k		https://glitch.com/~world	Josh is a developer for ABC News in Brisbane and has recently learned how to use D3. In this 10 minute video he shows us how to make a spinning globe from scratch in D3.
+193	1504513800000	Node and .NET in-process interop	Kim Burgess	_______kim	https://www.youtube.com/watch?v=L4yp6QsUrW8			Recently Kim Burgess had a project where they needed to integrate some of their front-end components (written in js) with another product. Tiny problem - the only integration option for this other product was a .NET SDK!  Faced with the option of having to re-implement one side of this, the thought occurred: why not use both? This talk will be how this was done, why it was done and some tools if others face a similar situation.
+192	1504513800000	Why your legal dept HATES React	Developer Steve, Thomas McCarthy, Jonathan Lewis	developersteve,iamtommcc,	https://www.youtube.com/watch?v=pmw-ASzF6KY			Developer Steven "Steve" Cooper has invited patent and trade mark attorney Jonathan Lewis and developer Thomas McCarthy to discuss the legal side of the React license controversy.  As this is a topic that covers a much wider issue around open source IP ownership and things that growing projects may not always be aware of this panel should be interesting from the legal side and the development side.  This is a panel discussion rather than a straight talk, so there will be an emphasis on audience participation. If you're a React user or generally interested in the project, think about any questions you'd like to throw to the panel on the night and you'll get your chance to ask them.
+200	1507537800000	Themeable email templates with MJML	Ben O'Neal	benonealux	https://www.youtube.com/watch?v=0NL2sDRyVr8		https://github.com/benoneal/brisjs-email-theming	Who likes making email templates? Not me! But this month Ben is  going to teach us how to build a complete brandable email templating  solution that doesn't suck.
+199	1507537800000	The theme is CSS in JS	Lochlan Bunn	loklaan	https://www.youtube.com/watch?v=fTmB8be_3Vk			Nowadays we write our css in .js files. Howdathunkit? Lets explore the future of writing reusable ui components for our web  apps, by stopping to take a look at the history of css-in-js. Its not a  very long history... but it's crammed full of hacks & innovation  from all corners of our web community! Also, since theming is often vital to successful styling, we'll jump  into some code to discover patterns to enable the overriding of styles  used inside of ui components. The talk is being given by the unknown web lurker & js fanboy,  Lochlan Bunn. Lochy has been writing reusable components, with various  levels of failure, at the local product house Rex Labs.
+194	1507537800000	Anna Gerber Presents: the great Typescript Debate 	Anna Gerber, Kory Nunn, Josh Wulf	annagerber,korynunn,sitapati	https://www.youtube.com/watch?v=nf0xeWxJhgI			TypeScript: Handy Helper, or Harmful Hindrance. This month Kory  and Josh will duke it out for and against TypeScript and strongly typed  languages!   Should Javascript proper support types? Does a compilation step  ruin all the fun? Why are we arguing? Prepare all your burning  questions to ask our caped crusaders on the night.
+204	1509957000000	Lightning talk: What is NodeGirls	Anwesha Chatterjee, Sammy Herbert	anweshachatte12,sammyherbert	https://www.youtube.com/watch?v=pNzEecXyO5c&feature=youtu.be&a			If you haven't heard yet, we have a proper NodeGirls chapter in Brisbane now - and there's plenty to get involved with. Anwesha can give you a quick 5 min rundown on the who the when and the what of Brisbane NodeGirls. https://www.facebook.com/NodeGirlsAustralia/ https://www.facebook.com/events/1542779579149962/ - Dec event
+203	1509957000000	Using Github as a CMS Backend	Tim Marwick	timmarwick	https://www.youtube.com/watch?v=aLrrD7JNDT0&feature=youtu.be&a			Tim has offered to demonstrate some novel uses for the Github API, and how you can extend it into far reaching places. Some may not use it, but Github has a fairly decent CRUD GUI, and a great API. Tim wants to show you that you can avoid building your own CRUD and Enable server-less CMS functionality with markdown and revisions in git.
+202	1509957000000	Service Workers: Annoying or Helpful?	Thiago Passos	thiagospassos	https://www.youtube.com/watch?v=Zv2F8uazHmM&feature=youtu.be&a=			A service worker is a script that your browser runs in the background, separate from a web page. This opens the door to features that don't need a web page or user interaction. Now, with a little bit of imagination, you can see how annoying or how useful service workers can be. Thiago will give us a tour of some of the features and annoyances of this piece of technology.
+201	1509957000000	Single Page Applications with ASP.NET Core	Jason Taylor	jasongtau	https://www.youtube.com/watch?v=q5nAZt4ABq8&feature=youtu.be&a			Jason will be showing how we can use ASP.NET Core JavaScript Services to build single page applications using Angular, Aurelia, Knockout, React, React+Redux or Vue. He'll demonstrate server-side pre-rendering, webpack dev middleware, hot module replacement (HMR), efficient production builds and much more. You will walk away ready to create single page applications using your favourite client-side framework and ASP.NET Core.
+208	1512374400000	RxJS Debugging and Visualisation	Nicholas Jamieson	ncjamieson		https://github.com/BrisJS/meetups/issues/237#issuecomment-350518895		Frustrated by the poor tooling available for RxJS apps, Nicholas made rxjs-spy. It's been very useful with NgRx, and Slack's engineering team have adopted it with redux-observable apps. Nicholas will cover the problems this tool solves, how it works, use cases, and DevTools integrations.
+207	1512374400000	Why Ember?	Kartik Gupta	_kartikgupta_	https://www.youtube.com/watch?v=cB-tLZK0MDo			Contributing to the Ember presence in the Brisbane user group scene,  Kartik has kindly offered to answer the very question - Why Ember? He'll  endeavour to tell you how the Emberjs framework stacks up to a  multitude of other JavaScript frameworks out there and why you would  choose it over another.
+206	1512374400000	Lightning talk: Adventure & Discovery at Fronteers Conf	Ash Kyd	ashkyd	https://www.youtube.com/watch?v=iOEdL1uscUY	https://ash.ms/2017-12-09/diversity-brisbane-tech/		The venerable Ash was a speaker at Fronteers (https://fronteers.nl/congres/2017/speakers#ash-kyd)  this year - and also had a great time being immersed in tech and the  Amsterdam nexus of the web interested minds. He'll be along to tell us  briefly about the cool things he learned/saw while there and tell you  what's hip and new in european JS. ;-)
+205	1512374400000	Turning syntax coloring off	Brandon Bakker	bakkerdesign	https://www.youtube.com/watch?v=g-U0wOKZimA	https://docs.google.com/presentation/d/1aHTSpvxHoD2V-It9Gm-f_X8Fc2TeKMj6UKuCTU3s81o/edit?usp=sharing		Syntax colouring is considered unquestionable for programmers. What  happens if your turn it off? After hearing about a number of high  profile programmers who choose not to use syntax colouring, Brandon  decided to banish it from his life, recorded the results, and will be  discussing what he learned during the process. It's through these  insights he can help to teach us how syntax colouring changes the way  programmers work.
+206	1517819400000	How I learned to stop worrying and love charting North Korean missile ranges in D3.js	Josh Byrd	phocks	https://www.youtube.com/watch?v=YMFNZ1beR14			Josh joined the ABC's Digital Storytelling Team a little over 6  months ago as his first proper programming gig. Since then he's learned a  bunch of stuff, and published one of last year's most impressive  stories, drawing acclaim from Reddit and around the world. In this talk he'll take us on his learning journey and go through how to get off the ground with D3.
+207	1517819400000	6 ways to an Awesome API	Anna Gerber	annagerber	https://www.youtube.com/watch?v=T6dFk28RH4k			
+208	1517819400000	Pair Programming	Cailtlin Palmer Bright	caitlinpb	https://www.youtube.com/watch?v=9dGvTP0BLA0			Pair programming is a great way to bring newbies up to speed and even hone your own skills. In this lightning talk Caitlin shares her experiences, and 6 key tips to success.
+209	1517819400000	Filling up on polyfills	Kartik Gupta	_kartikgupta_	https://www.youtube.com/watch?v=Gbcy2rtmnf4			You may have head of polyfills, but what the heck is a ponyfill? And how does that relate to a prollyfill? Find out all this and more in Kartik's 6 minute lightning talk!
+210	1517819400000	A fully asynchronous expression language	Kory Nunn	korynunn	https://www.youtube.com/watch?v=g7hWArKA2xw			The one where Kory Nunn does a lightning talk on PResh, a new totally asynchronous, functional, stateless, easy to add scope to, expressive, programming language.
+211	1517819400000	Bad Estimates: how one weekend blew out to 2.5 years (and a career change)	Julian Scharf					Julian offered to give a shortened version of his much anticipated talk (and made us all wish we could see the full version!)
+212	1520236800000	📰 Experiences working as a fellow at the ABC	Zoe Meers	zoe_meers1	https://www.youtube.com/watch?v=zstSJ4hhar8			The Google News Lab Fellowship offers those interested in journalism  & technology the opportunity to spend the summer working at relevant  organizations across the world. We'll hear how Zoe got involved, and  what it's like working on data journalism at the ABC.
+213	1520236800000	🐦 Flappy Bird under 5 minutes	Lochlan Bunn	loklaan	https://www.youtube.com/watch?v=MxlTdDHlFzo		https://github.com/loklaan/talks/tree/master/2018-ascii-bird	Flappy Bird will save you from boredom for about 5 minutes at a time.  Instead of playing it, Lochlan will attempt to build it from scratch!  Will he succeed?
+214	1520236800000	👩‍💻 NodeGirls & the traits of a good mentor	Anwesha Chatterjee	anweshachatte12	https://www.youtube.com/watch?v=rCnTDNBR0jI		https://docs.google.com/presentation/d/1DggNBvLEkpbsx6BQ1iNWMD0PwJyG-SEDQ9iZi2FiCZc/edit?usp=drivesdk	Anwesha is promoting the upcoming NodeGirls workshop (http://bit.ly/nodegirlsmarch18)  looking for mentors and attendees. As part of this we'll learn what  makes a good mentor, and how you can support and teach those around you.
+215	1520236800000	Building Static Sites with React	Tim Holt	astrotim	https://www.youtube.com/watch?v=2AAiqC1FSEw		http://astronautweb.co/react-static-sites/	React is great for client side applications, but has a heavy upfront  performance cost. So what if your site doesn't need to run a single page  app? Tim will show us how to scaffold a website using Create React App,  hook it up to content from a CMS and deploy as a static website on AWS  S3.
+217	1523262600000	What is TensorFlow JS?	Sarah Smith	sarah_j_smith	https://www.youtube.com/watch?v=u_bDKA1cXj4			Google has just released TensorFlow JS and yes, its an AI thing for  Javascript. But what does it mean, what's it good for, and how can I get  started doing something with it?
+216	1523262600000	I created a new design pattern!	Armagan Ersoz	broccolinisoup	https://www.youtube.com/watch?v=hJcA4D9KNi8			Armagan currently works at Red Hat as a software engineer and enjoys  developing web-based systems with JS. She is also organiser of NodeGirls  Brisbane. In this talk, we will learn the ins and outs of cross-domain  communication in Javascript.
+218	1523262600000	Performance tips for writing a text annotation editor	Iian Neill	iianneill	https://www.youtube.com/watch?v=AGw_AzxnhPc			Iian is developing The Codex, a Neo4j digital humanities project aiming to create an atlas of events from primary sources from the Italian Renaissance. In this talk we'll hear a little about what he's up to, and some performance tips encountered along the way.
+219	1526286600000	JS & Accessibility	Larene Lg	larenelg	https://www.youtube.com/watch?v=EOa7HeZZjQg			We haven't had an accessibility talk at BrisJS since the meetup started,  so Larene is boldly going to break this tradition by discussing the  basics, and how they might apply to React. We ran a poll to see what  people wanted to hear, check it out here: https://twitter.com/BrisJS/status/992259606435909633
+220	1526286600000	Fixed Mindset vs Growth Mindset	Jordan Morris	jawdinmorris	https://www.youtube.com/watch?v=FMcDJwfN4gM			A short presentation on the damaging effects of a fixed mindset and how you can foster a growth mindset in development and other areas of life.
+230	1526286600000	The Top Five Internet JavaScripts this Month - you won’t BELIEVE #4!	Josh Wulf	sitapati				Where did that month go? Who cares - here’s your chance to blink and  miss it all over again as Josh Wulf covers the top five JavaScript  internets of the month in five minutes.
+231	1526286600000	Rad Or Bad? The Javascript quiz with Kory Nunn	Kory Nunn	korynunn				Are you across the latest JS features? In this special feature Kory  throws the question to the panel, who will channel the zeitgeist and  determine which features are worth your time, and which are there for  show.  (To check out what we'll be discussing and have your say, submit Kory's survey in advance https://www.surveymonkey.com/r/SMQG9V9) 
+	1528101000000	Decoding Design	Anna Harrison	shinyux				Given that there are about 22 million developers in the world, it is likely that the billions of regular tappers and swipers of the world will not at all be just like you. Building a product for people like you, therefore, greatly limits the size of your total addressable market - which in short, is really bad business. We know that startups co-founded by designers are far more likely to succeed. But why is this? What exactly do these mysterious Design Creatures do, and more importantly, what can you learn from them to help your product win the tapping and swiping game? How can your development work succeed in the market?
+	1528101000000	Fast functional frontends in Elm and Javascript	Christopher Biggs	unixbigot				Elm is a lightweight functional language for the browser that compiles to javascript. Most elm tutorials show you a hello world or a small single page app and leave you at that. This presentation gives a brief introduction to elm and then  "heavyweight javascript" code such as oAuth providers, and mapping engines.dives in to how to integrate with existing "heavyweight javascript" code such as oAuth providers, and mapping engines.
+	1528101000000							
