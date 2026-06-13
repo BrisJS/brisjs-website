@@ -75,7 +75,7 @@ Statuses: `todo` · `in-progress` · `blocked` · `done`
 |----|------|------|-----------|------|--------|-------|
 | T2.1 | Astro scaffold in `web/` (TypeScript) + `src/lib/strapi` + typed `src/data/*` (port `lib/tsvTalks.js` grouping) + fixtures matching the 001 API shape | 002 P-01 | T0.3 | 002 TC-04 unit green; `astro build` works against fixtures | done | agent |
 | T2.2 | All pages & components, current design ported. Parallel sub-tracks: **(a)** layout/nav/footer + home (HomePage copy + upcoming event), **(b)** talks archive + talk detail, **(c)** jobs + talk-requests + contact, **(d)** code-of-conduct + find-us | 002 P-02 | T2.1; full-content verification needs T1.2 | 002 TC-01..03; visual parity vs T0.2 baseline | done | agent |
-| T2.3 | Frontend test suite + security checks (token-leak grep, fail-loud build) | 002 P-03 | T2.1 | 002 TC-05, TC-06 | todo | agent |
+| T2.3 | Frontend test suite + security checks (token-leak grep, fail-loud build) | 002 P-03 | T2.1 | 002 TC-05, TC-06 | done | agent |
 
 ### Phase 3 — Deploy configuration
 

@@ -24,6 +24,12 @@ jobs:
             npm run typecheck --if-present
             npm test --if-present
             npm run build
+            # TC-05: a Strapi token must never reach client output. Build with a
+            # sentinel token set and assert it does not appear anywhere in dist/.
+            STRAPI_API_TOKEN=LEAK_CANARY_DO_NOT_SHIP npm run build
+            if grep -rIn "LEAK_CANARY_DO_NOT_SHIP" dist; then
+              echo "::error::Strapi token leaked into web/dist (feature 002 TC-05)"; exit 1
+            fi
           else
             echo "web/ not scaffolded yet — no-op (see docs/BUILD_WORKFLOW.md T2.1)"
           fi
