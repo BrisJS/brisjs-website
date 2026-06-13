@@ -1,0 +1,62 @@
+---
+/**
+ * Find Us page (feature 002, FR-06). Ports the `data-page="findus"` section of
+ * `index.html`. Venue / parking / accessibility copy is CMS-managed (FindUs
+ * single type, rich-text/HTML), with static fallbacks for empty values. The
+ * Toowong map illustration stays a static repo asset.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getFindUs } from '../data/pages.js';
+
+const findUs = await getFindUs();
+---
+
+<BaseLayout
+  title="Find Us — BrisJS"
+  description="Where and when BrisJS meets, plus parking and accessibility info."
+  path="/find-us"
+>
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <div class="row">
+        <div class="eleven wide column">
+          {
+            findUs.mapEmbed ? (
+              <Fragment set:html={findUs.mapEmbed} />
+            ) : (
+              <img src="/images/toowong.svg" alt="Map to the BrisJS venue in Toowong" width="100%" />
+            )
+          }
+        </div>
+        <div class="five wide column">
+          <h2>Find the Meetup</h2>
+          {
+            findUs.venueName && (
+              <p>
+                BrisJS meetups are held on the first Monday of the month, and are hosted at{' '}
+                {findUs.venueName}
+                {findUs.address ? ` (${findUs.address})` : ''}.
+              </p>
+            )
+          }
+          {
+            findUs.parking ? (
+              <Fragment set:html={findUs.parking} />
+            ) : (
+              <p>Parking is available nearby — check the meetup event page for details.</p>
+            )
+          }
+          {findUs.accessibility && <Fragment set:html={findUs.accessibility} />}
+
+          <h2>Social Drinks</h2>
+          <p>Social drinks are held at numerous venues around town, so check the meetup event page.</p>
+          <p>
+            Feel free to suggest a venue on{' '}
+            <a href="https://twitter.com/brisjs">Twitter</a> or{' '}
+            <a href="https://meetup.com/brisjs">Meetup</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,11 @@
+{
+  "data": {
+    "id": 1,
+    "attributes": {
+      "heroTagline": "The Brisbane Javascript meetup.",
+      "intro": "<p>We're the Brisbane JavaScript programming group - BrisJS for short. Our mission is to provide a community and a voice for Brisbane's JavaScript technology community.</p>",
+      "whatWeDo": "<p>We present technical talks on the first Monday of every month, and have periodic networking events between.</p>"
+    }
+  },
+  "meta": {}
+}

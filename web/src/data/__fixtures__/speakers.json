@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "name": "Ada Lovelace",
+        "bio": "Builds reactive UIs and writes about them.",
+        "website": "https://ada.example.com",
+        "twitter": "ada",
+        "photo": {
+          "data": { "id": 11, "attributes": { "url": "/uploads/ada.jpg" } }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "name": "Grace Hopper",
+        "bio": null,
+        "website": null,
+        "twitter": "grace",
+        "photo": { "data": null }
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "name": "Linus Torvalds",
+        "bio": null,
+        "website": null,
+        "twitter": null,
+        "photo": { "data": null }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 3 }
+  }
+}

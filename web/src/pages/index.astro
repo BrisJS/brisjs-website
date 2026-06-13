@@ -1,40 +1,66 @@
 ---
-// Minimal scaffold page (T2.1). The real pages and ported design land in T2.2.
-// This page exists so `astro build` produces output and exercises the data
-// layer (src/data/talks) at build time against fixtures or a live Strapi.
-import { getTalks, groupByEvent } from '../data/talks.js';
+/**
+ * Home page (feature 002, FR-01). Ports the `data-page="home"` section of the
+ * legacy `index.html`: a two-column "Who we are / What we do / Code of Conduct"
+ * intro alongside the upcoming-event card.
+ *
+ * Per the Content & Rendering Map, the intro copy is CMS-driven (HomePage single
+ * type) and the upcoming event comes from Strapi (EventBanner). The hero shell
+ * itself is static (BaseLayout).
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EventBanner from '../components/EventBanner.astro';
+import { getHomePage } from '../data/pages.js';
+import { getUpcomingEvent } from '../data/events.js';
 
-const talks = await getTalks();
-const groups = groupByEvent(talks);
+const home = await getHomePage();
+const upcoming = await getUpcomingEvent();
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BrisJS — scaffold</title>
-  </head>
-  <body>
-    <main>
-      <h1>BrisJS (scaffold)</h1>
-      <p>
-        T2.1 data-layer smoke page. {talks.length} talk(s) across {groups.length}
-        event group(s). Real pages and the ported design are built in T2.2.
-      </p>
-      {
-        groups.map((group) => (
-          <section>
-            <h2>{group.eventName ?? group.dateHuman}</h2>
-            <ul>
-              {group.talks.map((talk) => (
-                <li>
-                  <a href={`/talks/${talk.slug}`}>{talk.title}</a>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))
-      }
-    </main>
-  </body>
-</html>
+<BaseLayout
+  title="Brisbane Javascript"
+  hero={true}
+  heroTagline={home.heroTagline ?? 'The Brisbane Javascript meetup.'}
+  path="/"
+>
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Who we are</h3>
+          {
+            home.intro ? (
+              <Fragment set:html={home.intro} />
+            ) : (
+              <p>
+                We're the Brisbane JavaScript programming group - BrisJS for short. Our
+                mission is to provide a community and a voice for Brisbane's JavaScript
+                technology community.
+              </p>
+            )
+          }
+          <h3 class="ui header">What we do</h3>
+          {
+            home.whatWeDo ? (
+              <Fragment set:html={home.whatWeDo} />
+            ) : (
+              <p>
+                We present technical talks on the first Monday of every month, and have
+                periodic networking events between.
+              </p>
+            )
+          }
+          <h3 class="ui header">Code of Conduct</h3>
+          <p>
+            BrisJS is dedicated to providing a harassment-free experience for everyone.
+            Our anti-harassment policy can be found at our{' '}
+            <a href="/code-of-conduct">Code of Conduct</a>.
+          </p>
+        </div>
+        <div class="six wide right floated column">
+          <EventBanner event={upcoming} />
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "name": "Jane Organizer",
+        "role": "Lead organizer",
+        "bio": "Runs the show and herds the speakers each month.",
+        "twitter": "https://twitter.com/janeorganizer",
+        "email": "jane@brisjs.org",
+        "order": 1,
+        "photo": {
+          "data": { "id": 21, "attributes": { "url": "/uploads/jane.jpg" } }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "name": "Sam Volunteer",
+        "role": "AV & venue",
+        "bio": "Makes sure the recordings actually happen.",
+        "twitter": "https://twitter.com/samvolunteer",
+        "email": "sam@brisjs.org",
+        "order": 2,
+        "photo": { "data": null }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 2 }
+  }
+}

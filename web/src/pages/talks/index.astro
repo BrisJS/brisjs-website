@@ -1,0 +1,47 @@
+---
+/**
+ * Talks archive (feature 002, FR-03 / TC-01). Ports `template-talks` from
+ * `index.html`: talks grouped by meetup/event (newest group first), each group
+ * a four-/twelve-wide row, with a heart divider between groups.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TalkCard from '../../components/TalkCard.astro';
+import { getTalks, groupByEvent } from '../../data/talks.js';
+
+const talks = await getTalks();
+const groups = groupByEvent(talks);
+---
+
+<BaseLayout title="Past talks — BrisJS" description="Past BrisJS talks, grouped by meetup." path="/talks">
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      {
+        groups.map((group, i) => (
+          <Fragment>
+            <div class={`ui grid ${group.className}`}>
+              <div class="four wide column">
+                <h2>{group.eventName ?? `${group.dateHuman} Meetup`}</h2>
+                <p>
+                  There {group.talks.length === 1 ? 'was' : 'were'} {group.talks.length}{' '}
+                  {group.talks.length === 1 ? 'talk' : 'talks'} at the {group.dateHuman} meetup.
+                </p>
+              </div>
+              <div class="twelve wide column">
+                <div class="ui link cards">
+                  {group.talks.map((talk) => (
+                    <TalkCard talk={talk} />
+                  ))}
+                </div>
+              </div>
+            </div>
+            {i < groups.length - 1 && (
+              <div class="ui horizontal divider">
+                <i class="heart icon" />
+              </div>
+            )}
+          </Fragment>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,40 @@
+---
+/**
+ * ResourceButtons — the Slides / Video / Code button row on a talk detail page
+ * (feature 002, FR-04). Ports the `{{#if slides}} … {{#if youtube}} … {{#if code}}`
+ * block from `templates/talk.hbs`. Each button only renders when its resource is
+ * present, so a talk with no resources shows only the "More talks" link.
+ */
+import type { TalkView } from '../data/types.js';
+
+export interface Props {
+  talk: TalkView;
+}
+
+const { talk } = Astro.props;
+---
+
+<div class="ui buttons">
+  {
+    talk.slides && (
+      <a class="ui button" href={talk.slides}>
+        <i class="file powerpoint outline icon" title="Slides available to view" /> Slides
+      </a>
+    )
+  }
+  {
+    talk.youtube && (
+      <a class="ui button" href={talk.youtube.url}>
+        <i class="video icon" title="Video available on YouTube" /> Video
+      </a>
+    )
+  }
+  {
+    talk.code && (
+      <a class="ui button" href={talk.code}>
+        <i class="file code outline icon" title="Code resources available" /> Code
+      </a>
+    )
+  }
+  <a class="ui button" href="/talks">More talks</a>
+</div>

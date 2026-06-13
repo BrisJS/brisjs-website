@@ -1,0 +1,13 @@
+{
+  "data": {
+    "id": 1,
+    "attributes": {
+      "venueName": "Auto & General, Toowong",
+      "address": "Toowong Village, Toowong QLD",
+      "mapEmbed": null,
+      "parking": "<p>BrisJS meetups are held on the first Monday of the month, and are hosted by Auto &amp; General.</p>\n<p>Parking is available at Toowong Village until 10:30. Find more <a href=\"http://www.toowongvillage.com.au/centre-info/getting-here/\">parking info on the Toowong Village site</a>.</p>",
+      "accessibility": "<p>These meetups are accessible from the <em>Gallery Level</em> (GL) elevators. This is the same level as the railway station, and one level up from Coles.</p>\n<p>Security will let people into the venue 30 minutes before and 15 minutes after the starting time. If you arrive late, you will need to get in touch with the contact on the meetup invite to arrange access.</p>"
+    }
+  },
+  "meta": {}
+}

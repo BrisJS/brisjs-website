@@ -1,0 +1,46 @@
+---
+/**
+ * Code of Conduct page (feature 002, FR-06). Ports the `data-page="conduct"`
+ * layout of `index.html`. The body is CMS-managed (CodeOfConduct single type)
+ * and rendered as rich-text/HTML; a static fallback covers an empty CMS value.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCodeOfConduct } from '../data/pages.js';
+
+const coc = await getCodeOfConduct();
+---
+
+<BaseLayout
+  title="Code of Conduct — BrisJS"
+  description="The BrisJS code of conduct — a safe, harassment-free experience for everyone."
+  path="/code-of-conduct"
+>
+  <div class="ui text container center aligned vertical stripe segment">
+    <p>
+      BrisJS is committed to making our talks, pub meets, and other events a safe and
+      enjoyable place for everyone.
+    </p>
+  </div>
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <div class="row">
+        <div class="three wide column"></div>
+        <div class="ten wide column">
+          {
+            coc.body ? (
+              <Fragment set:html={coc.body} />
+            ) : (
+              <Fragment>
+                <h3 class="ui huge header">Code of Conduct</h3>
+                <p>
+                  BrisJS is dedicated to providing a harassment-free experience for everyone.
+                  Please get in touch with an organiser if you have any concerns.
+                </p>
+              </Fragment>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

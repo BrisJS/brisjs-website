@@ -1,0 +1,60 @@
+---
+/**
+ * Jobs page (feature 002, FR-06). Ports the `data-page="jobs"` intro and
+ * `template-jobs` list from `index.html`. The legacy site fetched moderated
+ * GitHub issues at runtime; here the postings come from the Strapi JobPosting
+ * type. Bodies are CMS rich-text/HTML, rendered with set:html.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getJobPostings } from '../data/postings.js';
+
+const jobs = await getJobPostings();
+---
+
+<BaseLayout title="Jobs — BrisJS" description="The BrisJS community job board." path="/jobs">
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <div class="row">
+        <div class="five wide column">
+          <img alt="" src="/images/montage.svg" />
+        </div>
+        <div class="ten wide right floated column">
+          <h3 class="ui header">Job Board</h3>
+          <p>The BrisJS job board is an opportunity for the community to post jobs for the community.</p>
+          <h3 class="ui header">Post a Job</h3>
+          <p>Have a job to advertise? Great! Get in touch with the organisers and your job will appear on this page after moderation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {
+    jobs.map((job) => (
+      <div class="ui vertical stripe segment">
+        <div class="ui stackable grid container">
+          <div class="row">
+            <div class="five wide column">
+              <div class="ui card">
+                <div class="content">
+                  <div class="header">{job.title}</div>
+                  {job.dateHuman && <div class="meta">Posted {job.dateHuman}</div>}
+                  {job.status && <div class="meta">{job.status}</div>}
+                </div>
+              </div>
+            </div>
+            <div class="ten wide right floated column">
+              {job.body && <Fragment set:html={job.body} />}
+            </div>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+  {
+    jobs.length === 0 && (
+      <div class="ui text container center aligned vertical stripe segment">
+        <p>No jobs are posted right now. Check back soon!</p>
+      </div>
+    )
+  }
+</BaseLayout>

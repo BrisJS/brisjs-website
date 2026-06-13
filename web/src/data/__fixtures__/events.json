@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 10,
+      "attributes": {
+        "name": "BrisJS March 2024",
+        "dateTime": "2024-03-12T18:00:00.000Z",
+        "venue": "The Precinct",
+        "description": "A great night of talks on reactive patterns and edge functions."
+      }
+    },
+    {
+      "id": 11,
+      "attributes": {
+        "name": "BrisJS May 2024",
+        "dateTime": "2024-05-14T18:00:00.000Z",
+        "venue": "River City Labs",
+        "description": "Scaling TypeScript and more."
+      }
+    },
+    {
+      "id": 12,
+      "attributes": {
+        "name": "BrisJS July 2026",
+        "dateTime": "2026-07-06T18:00:00.000Z",
+        "venue": "Auto & General, Toowong",
+        "description": "<p>Our next meetup! Doors open 6pm, talks start 6:30. Pizza and drinks provided.</p>"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 3
+    }
+  }
+}

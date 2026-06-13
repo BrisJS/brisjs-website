@@ -70,3 +70,65 @@ export interface EventGroup {
   className: string;
   talks: TalkView[];
 }
+
+/** A full event view model (home "upcoming event", events listing). */
+export interface EventView {
+  id: number;
+  name: string;
+  /** The event date/time. */
+  date: Date;
+  /** e.g. "Monday, 3 March 2024". */
+  dateHuman: string;
+  venue: string | null;
+  /** Rich-text/HTML description, if any. */
+  description: string | null;
+}
+
+/** A moderated job posting or talk request (CMS-managed; was a GitHub issue). */
+export interface PostingView {
+  id: number;
+  title: string;
+  /** Rich-text/HTML body. */
+  body: string | null;
+  /** Submitted/updated date, if known. */
+  date: Date | null;
+  /** e.g. "March 2024", or null when no date. */
+  dateHuman: string | null;
+  /** Workflow status (open/filled/closed or open/scheduled/declined). */
+  status: string | null;
+}
+
+/** A BrisJS organizer shown on the contact page (was `data/contact.json`). */
+export interface OrganizerView {
+  id: number;
+  name: string;
+  role: string | null;
+  bio: string | null;
+  photoUrl: string | null;
+  /** Twitter URL or handle as stored. */
+  twitter: string | null;
+  email: string | null;
+  /** Display order (lower first). */
+  order: number;
+}
+
+/** Home-page intro copy (CMS single type). */
+export interface HomePageView {
+  heroTagline: string | null;
+  intro: string | null;
+  whatWeDo: string | null;
+}
+
+/** Code of Conduct single type. */
+export interface CodeOfConductView {
+  body: string | null;
+}
+
+/** Find Us / venue single type. */
+export interface FindUsView {
+  venueName: string | null;
+  address: string | null;
+  mapEmbed: string | null;
+  parking: string | null;
+  accessibility: string | null;
+}

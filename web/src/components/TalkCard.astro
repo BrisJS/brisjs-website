@@ -1,0 +1,75 @@
+---
+/**
+ * TalkCard — a talk in the archive grid (feature 002, FR-03). Ports the
+ * `{{#each talks}} <a class="ui card" …>` block from `index.html`'s
+ * `template-talks`:
+ *  - first speaker's photo as an avatar (grey placeholder when unknown, TC-03)
+ *  - all speaker names listed
+ *  - YouTube poster frame as the card image, else a placeholder with the title
+ *  - Slides / Video / Code resource markers when present
+ *
+ * Links to the talk detail page (legacy used `#talk-{{id}}`; this port uses the
+ * real route `/talks/<slug>`).
+ */
+import type { TalkView } from '../data/types.js';
+
+export interface Props {
+  talk: TalkView;
+}
+
+const { talk } = Astro.props;
+const firstPhoto = talk.speakers[0]?.photoUrl ?? null;
+const speakerNames = talk.speakers.map((s) => s.name).join(', ');
+---
+
+<a class="ui card" href={`/talks/${talk.slug}`}>
+  <div class="content">
+    {
+      firstPhoto ? (
+        <img class="ui avatar image" src={firstPhoto} alt="" />
+      ) : (
+        <span class="ui avatar image" />
+      )
+    }
+    {speakerNames}
+  </div>
+  <div class="image">
+    {
+      talk.youtube ? (
+        <div class="extra images">
+          <img alt="" src={talk.youtube.posterFrame.medium} style="width:100%;" />
+          <div class="talk title">{talk.title}</div>
+        </div>
+      ) : (
+        <div class="extra images">
+          <div class="talk placeholder" />
+          <div class="talk title">{talk.title}</div>
+        </div>
+      )
+    }
+  </div>
+  <div class="content">
+    <span class="right floated" />
+    {
+      talk.slides && (
+        <span class="resource">
+          <i class="file powerpoint outline icon" title="Slides available to view" /> Slides
+        </span>
+      )
+    }
+    {
+      talk.youtube && (
+        <span class="resource">
+          <i class="video icon" title="Video available on YouTube" /> Video
+        </span>
+      )
+    }
+    {
+      talk.code && (
+        <span class="resource">
+          <i class="file code outline icon" title="Code resources available" /> Code
+        </span>
+      )
+    }
+  </div>
+</a>

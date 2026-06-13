@@ -1,0 +1,48 @@
+---
+/**
+ * EventBanner — the home page "Next event" card (feature 002, FR-01). Ports the
+ * `data-latest` card in `index.html`'s home page. The legacy site filled this
+ * from the Meetup API at runtime; here it's the upcoming Strapi Event, or a
+ * "TBA" fallback (with a Meetup link) when none is scheduled.
+ */
+import type { EventView } from '../data/types.js';
+
+export interface Props {
+  event: EventView | null;
+}
+
+const { event } = Astro.props;
+---
+
+<div class="ui card">
+  <div class="content">
+    <img class="right floated mini ui image" alt="" src="/images/logo.svg" />
+    <div class="header">{event ? event.name : 'Next event'}</div>
+    <div class="meta">
+      {
+        event ? (
+          <Fragment>
+            {event.dateHuman}
+            {event.venue && <Fragment> at {event.venue}</Fragment>}
+          </Fragment>
+        ) : (
+          'To be announced'
+        )
+      }
+    </div>
+    <div class="description">
+      {
+        event?.description ? (
+          <Fragment set:html={event.description} />
+        ) : (
+          'Click through to Meetup for event details.'
+        )
+      }
+    </div>
+  </div>
+  <div class="extra content">
+    <div class="ui two buttons">
+      <a class="ui basic green button" href="https://meetup.com/BrisJS/">Join us!</a>
+    </div>
+  </div>
+</div>

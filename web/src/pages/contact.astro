@@ -1,0 +1,71 @@
+---
+/**
+ * Contact / organizers page (feature 002, FR-06). Ports the `data-page="contact"`
+ * section of `index.html` (`template-contact`). Organizers come from the Strapi
+ * Organizer type (was `data/contact.json`).
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getOrganizers } from '../data/organizers.js';
+
+const organizers = await getOrganizers();
+
+/** The legacy data stored either a full URL or a bare handle in `twitter`. */
+function twitterUrl(twitter: string): string {
+  if (/^https?:\/\//.test(twitter)) return twitter;
+  return `https://twitter.com/${twitter.replace(/^@/, '')}`;
+}
+---
+
+<BaseLayout title="Contact — BrisJS" description="Get in touch with the BrisJS organisers." path="/contact">
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <div class="row">
+        <div class="eleven wide column">
+          <div class="ui cards">
+            {
+              organizers.map((person) => (
+                <div class="ui card">
+                  {person.photoUrl && (
+                    <div class="image">
+                      <img alt={person.name} src={person.photoUrl} />
+                    </div>
+                  )}
+                  <div class="content">
+                    <div class="header">{person.name}</div>
+                    {person.role && <div class="meta">{person.role}</div>}
+                    {person.bio && <div class="description">{person.bio}</div>}
+                  </div>
+                  {(person.twitter || person.email) && (
+                    <div class="extra content">
+                      {person.twitter && (
+                        <a
+                          class="right floated"
+                          title={`Twitter account for ${person.name}`}
+                          href={twitterUrl(person.twitter)}
+                        >
+                          <i class="twitter icon" />
+                        </a>
+                      )}
+                      {person.email && (
+                        <a class="email" href={`mailto:${person.email}`}>
+                          {person.email}
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
+              ))
+            }
+          </div>
+        </div>
+        <div class="five wide column">
+          <h2>Get in touch</h2>
+          <p>
+            Whether you're looking to submit a talk, make an announcement, organise to
+            sponsor us, or otherwise have a query, please feel free to contact us.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Senior Frontend Engineer — Acme Corp",
+        "body": "<p>We're hiring a senior frontend engineer to work on our design system in React and TypeScript. Remote-friendly within AU.</p><ul><li>5+ years experience</li><li>Strong CSS fundamentals</li></ul>",
+        "submittedDate": "2026-05-20",
+        "status": "open"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "Full-stack Developer — Riverside Labs",
+        "body": "<p>Node.js + Astro shop looking for a versatile full-stack developer. Brisbane CBD, hybrid.</p>",
+        "submittedDate": "2026-04-02",
+        "status": "open"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 2 }
+  }
+}

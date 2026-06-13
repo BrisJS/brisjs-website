@@ -1,0 +1,128 @@
+---
+/**
+ * Present / Talk requests page (feature 002, FR-06). Ports the
+ * `data-page="present"` section of `index.html`: the "Submit your talk" CTA,
+ * the requested-talks list (`template-talksrequested`), and the static
+ * "Presenting at BrisJS" / tech / tips sidebar. Requested talks now come from
+ * the Strapi TalkRequest type instead of GitHub issues.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getTalkRequests } from '../data/postings.js';
+
+const requests = await getTalkRequests();
+const submitHref =
+  'https://github.com/BrisJS/meetups/issues/new?body=Talk%20title:+My+Talk%0ATalk%20length:+20+min/40+min%0ATalk%20synopsis:%0AAvailable+month(s):%0AOptional:+your+Twitter+account+so+we+can+promote+your+talk';
+---
+
+<BaseLayout
+  title="Present at BrisJS"
+  description="Present a talk at BrisJS — we're always looking for speakers."
+  path="/talk-requests"
+>
+  <div class="ui text container center aligned vertical stripe segment">
+    <h2 class="ui header">Present at BrisJS</h2>
+    <p>
+      We're always looking for presenters! If you have an idea for a talk you should
+      absolutely get in touch with us!
+    </p>
+    <a class="ui huge primary button" href={submitHref}>
+      Submit your talk <i class="right arrow icon"></i>
+    </a>
+  </div>
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Talks requested</h3>
+          <p>Need some inspiration? The following are talks requested by BrisJS users.</p>
+          <div class="ui items">
+            {
+              requests.map((req) => (
+                <div class="item">
+                  <div class="content">
+                    <span class="header">{req.title}</span>
+                    {req.dateHuman && (
+                      <div class="meta">
+                        <span>Requested {req.dateHuman}</span>
+                      </div>
+                    )}
+                    {req.body && <div class="description" set:html={req.body} />}
+                  </div>
+                </div>
+              ))
+            }
+            {requests.length === 0 && <p>No talk requests right now.</p>}
+          </div>
+        </div>
+        <div class="six wide right floated column">
+          <h3>Presenting at BrisJS</h3>
+          <p>
+            Talks run for either a 20 or 40 minute slot, let us know which you prefer.
+            Presentation style is relaxed and can take the form of a presentation, live
+            coding session, Q&amp;A session or all of the above.
+          </p>
+          <p>
+            Talks are video recorded for eventual sharing on our{' '}
+            <a
+              href="https://www.youtube.com/channel/UC9Zts-dkDz0DBZ_f8ETgHcQ"
+              target="_blank"
+              rel="noopener">Youtube channel</a
+            >. If you do not wish to be recorded, please let us know in advance and we will
+            make arrangements to prevent this.
+          </p>
+          <p>
+            BrisJS is dedicated to a harassment-free experience for everyone. Please make
+            sure to familiarise yourself with our <a href="/code-of-conduct">Code of Conduct</a>.
+          </p>
+
+          <h3>The tech</h3>
+          <p>
+            The venue is fitted out with 1080p displays mirrored throughout the venue.
+            These support HDMI &amp; mini DP output, however audio is not yet supported via
+            this output.
+          </p>
+          <p>There is room wide amplification for your presentation, with a lapel &amp; hand-held mic.</p>
+          <p>
+            Internet is generally not available at this time. If required, you may request
+            access to a tethered phone connection from organisers but please ensure your
+            presentation will work offline should the worst happen.
+          </p>
+          <p>If you have special requirements on the night (either technical or personal), please let us know.</p>
+
+          <h3>Presentation tips</h3>
+          <p>Follow these tips to help the audience get the most from your talk:</p>
+          <ul>
+            <li>
+              Use text that is large enough to read from the back of the room. This applies
+              not only to slides but also your code editor, command line and browser if you
+              are doing a demo — bump up the font size or use the accessibility features of
+              your O.S. to zoom in on part of the screen.
+            </li>
+            <li>
+              Some colors are harder to read than others on the displays. Adopt a
+              high-contrast color scheme for text to make it easier to read, and consider
+              people who are colorblind when selecting colors.
+            </li>
+            <li>
+              To get the best result for the recording of your talk, remember to speak
+              clearly using the microphone, and if someone asks a question, try to repeat or
+              rephrase the question as part of your answer so that it also gets recorded.
+            </li>
+            <li>
+              If you're planning on live coding or giving a live demo, it's a good idea to
+              have prepared a backup option (e.g. screenshots, video, or a version of the
+              code that is known to work) in case it doesn't go to plan.
+            </li>
+            <li>Consider checking your slides with <a href="http://slidelint.net/">slidelint</a></li>
+            <li>
+              For even more tips on accessibility of presentations check out the{' '}
+              <a href="https://www.w3.org/WAI/training/accessible"
+                >W3C Web Accessibility Initiative's Guide</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

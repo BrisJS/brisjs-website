@@ -1,0 +1,97 @@
+---
+/**
+ * Talk detail page (feature 002, FR-04 / TC-02 / TC-03). One static page per
+ * published talk via getStaticPaths. Ports `templates/talk.hbs`:
+ *  - title + "A talk at the <month> BrisJS meetup" + optional synopsis
+ *  - speaker cards (placeholder when none, TC-03)
+ *  - YouTube embed when present, else a "No video for this talk" panel
+ *  - Slides / Video / Code buttons (only those that exist) + "More talks"
+ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SpeakerCard from '../../components/SpeakerCard.astro';
+import ResourceButtons from '../../components/ResourceButtons.astro';
+import { getTalks } from '../../data/talks.js';
+import type { TalkView } from '../../data/types.js';
+
+export const getStaticPaths = (async () => {
+  const talks = await getTalks();
+  return talks.map((talk) => ({
+    params: { slug: talk.slug },
+    props: { talk },
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  talk: TalkView;
+}
+
+const { talk } = Astro.props;
+const description = talk.synopsis ?? `${talk.title} — a talk at the ${talk.dateHuman} BrisJS meetup.`;
+---
+
+<BaseLayout title={`${talk.title} — BrisJS`} description={description} path={`/talks/${talk.slug}`}>
+  <div class="ui text container center aligned vertical stripe segment">
+    <h2 class="ui header">{talk.title}</h2>
+    <p>A talk at the {talk.dateHuman} BrisJS meetup</p>
+    {talk.synopsis && <p>{talk.synopsis}</p>}
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui stackable grid container">
+      <div class="row">
+        <div class="four wide column">
+          <div class="ui cards">
+            {
+              talk.speakers.length > 0 ? (
+                talk.speakers.map((speaker) => <SpeakerCard speaker={speaker} />)
+              ) : (
+                <div class="card">
+                  <div class="content">
+                    <span class="right floated ui avatar image" />
+                    <div class="header">
+                      <strong>Speaker to be announced</strong>
+                    </div>
+                    <div class="description">
+                      We don't have speaker details for this talk yet.{' '}
+                      <a href="/contact">Contact us</a> to update this.
+                    </div>
+                  </div>
+                </div>
+              )
+            }
+          </div>
+        </div>
+        <div class="twelve wide column">
+          {
+            talk.youtube ? (
+              <div class="player-wrapper">
+                <div class="ui segment">
+                  <div class="ui active dimmer">
+                    <div class="ui text loader">Loading video</div>
+                  </div>
+                </div>
+                <iframe
+                  id="ytplayer"
+                  title={`${talk.title} — video`}
+                  src={`https://www.youtube.com/embed/${talk.youtube.id}?autoplay=0`}
+                  style="border:0;"
+                  allowfullscreen
+                />
+              </div>
+            ) : (
+              <div class="player-wrapper no-video">
+                <div class="ui segment">
+                  <div class="ui active dimmer">
+                    <div class="ui text">No video for this talk</div>
+                  </div>
+                </div>
+              </div>
+            )
+          }
+          <ResourceButtons talk={talk} />
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
