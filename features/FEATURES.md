@@ -37,9 +37,9 @@ features/<NNN>-<kebab-case-name>/
 
 | # | Feature | Status | Folder |
 | - | ------- | ------ | ------ |
-| 001 | Strapi content modeling | ready | [`features/001-strapi-content-modeling/`](./001-strapi-content-modeling/) |
-| 002 | Astro frontend (port current design) | ready | [`features/002-astro-frontend/`](./002-astro-frontend/) |
-| 003 | Strapi backend integration | ready | [`features/003-strapi-backend-integration/`](./003-strapi-backend-integration/) |
-| 004 | Netlify deployment & hosting | ready | [`features/004-netlify-deployment/`](./004-netlify-deployment/) |
+| 001 | Strapi content modeling | active | [`features/001-strapi-content-modeling/`](./001-strapi-content-modeling/) |
+| 002 | Astro frontend (port current design) | active | [`features/002-astro-frontend/`](./002-astro-frontend/) |
+| 003 | Strapi backend integration | active | [`features/003-strapi-backend-integration/`](./003-strapi-backend-integration/) |
+| 004 | Netlify deployment & hosting | active | [`features/004-netlify-deployment/`](./004-netlify-deployment/) |
 | 005 | Design refresh (post-migration redesign) | planning | [`features/005-design-refresh/`](./005-design-refresh/) |
 | 006 | Meetup past-events enrichment (backlog) | planning | [`features/006-meetup-events-enrichment/`](./006-meetup-events-enrichment/) |
