@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "code_of_conducts",
+  "info": {
+    "singularName": "code-of-conduct",
+    "pluralName": "code-of-conducts",
+    "displayName": "Code of Conduct",
+    "description": "Editable Code of Conduct copy (replaces hard-coded index.html section)."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

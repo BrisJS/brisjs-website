@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "find_uses",
+  "info": {
+    "singularName": "find-us",
+    "pluralName": "find-uses",
+    "displayName": "Find Us",
+    "description": "Editable venue / find-us copy (replaces hard-coded index.html section)."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "venueName": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "mapEmbed": {
+      "type": "text"
+    },
+    "parking": {
+      "type": "richtext"
+    },
+    "accessibility": {
+      "type": "richtext"
+    }
+  }
+}

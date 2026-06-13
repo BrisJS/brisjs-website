@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "talk_requests",
+  "info": {
+    "singularName": "talk-request",
+    "pluralName": "talk-requests",
+    "displayName": "Talk Request",
+    "description": "A request for a talk on a topic (replaces label-filtered GitHub issues)."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "submittedDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "scheduled",
+        "declined"
+      ],
+      "default": "open"
+    }
+  }
+}

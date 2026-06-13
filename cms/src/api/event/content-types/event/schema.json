@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": "A BrisJS meetup event."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "dateTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "venue": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "talks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::talk.talk",
+      "mappedBy": "event"
+    }
+  }
+}

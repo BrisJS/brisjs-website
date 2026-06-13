@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Editable home-page intro copy (replaces hard-coded index.html intro)."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTagline": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "whatWeDo": {
+      "type": "richtext"
+    }
+  }
+}

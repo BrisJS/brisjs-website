@@ -44,6 +44,8 @@ jobs:
         run: |
           if [ -f cms/package.json ]; then
             cd cms
+            # Seed a throwaway .env so `strapi build` has APP_KEYS etc. (real secrets live in Strapi Cloud)
+            [ -f .env ] || cp .env.example .env
             npm ci
             npm test --if-present
             npm run build

@@ -65,7 +65,7 @@ Statuses: `todo` · `in-progress` · `blocked` · `done`
 
 | ID | Task | Refs | Depends on | Gate | Status | Owner |
 |----|------|------|-----------|------|--------|-------|
-| T1.1 | Strapi project in `cms/` with all feature-001 content types as code (incl. `Organizer`, `HomePage`, `Talk.slug`/`legacyId`); draft & publish on; Public role read-only | 003 P-01 / 001 P-01 | T0.3 | 001 TC-01..04 against local Strapi | in-progress | agent |
+| T1.1 | Strapi project in `cms/` with all feature-001 content types as code (incl. `Organizer`, `HomePage`, `Talk.slug`/`legacyId`); draft & publish on; Public role read-only | 003 P-01 / 001 P-01 | T0.3 | 001 TC-01..04 against local Strapi | done | agent |
 | T1.2 | Idempotent legacy importer; seed local Strapi from `data/legacy/talks.tsv` + `data/twitter.json` + `data/contact.json` (→ Organizer) + static copy from `index.html` (→ HomePage, CodeOfConduct, FindUs) | 001 P-03 / 003 P-03 | T1.1, T0.1 | 001 TC-05; 003 TC-05 (re-run = no dupes) | todo | agent |
 | T1.3 | Verify a Strapi export/restore round-trip locally and write the backup runbook (content exit path per ADR-002) | 003 FR-07 | T1.2 | export → wipe → restore reproduces the seeded content | todo | agent |
 
