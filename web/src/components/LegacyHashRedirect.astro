@@ -1,0 +1,37 @@
+---
+/**
+ * LegacyHashRedirect — client shim for old `#hash` URLs (feature 004, FR-04).
+ *
+ * Included on the home page (where legacy `https://brisjs.org/#…` links land).
+ * Emits the build-time `legacyId → slug` map as JSON, then a small bundled
+ * script reads `location.hash` and forwards to the new route. Pure mapping
+ * logic lives in `src/lib/legacyRedirect.ts` (unit-tested, TC-04).
+ */
+import { getTalks } from '../data/talks';
+
+const talks = await getTalks();
+const legacyIdToSlug: Record<string, string> = {};
+for (const t of talks) {
+  if (t.legacyId != null) legacyIdToSlug[String(t.legacyId)] = t.slug;
+}
+---
+
+<script is:inline type="application/json" id="legacy-talk-map" set:html={JSON.stringify(legacyIdToSlug)}
+></script>
+
+<script>
+  import { resolveLegacyHash } from '../lib/legacyRedirect';
+
+  const el = document.getElementById('legacy-talk-map');
+  let map: Record<string, string> = {};
+  try {
+    map = el?.textContent ? JSON.parse(el.textContent) : {};
+  } catch {
+    map = {};
+  }
+
+  const target = resolveLegacyHash(window.location.hash, map);
+  if (target && target !== window.location.pathname) {
+    window.location.replace(target);
+  }
+</script>

@@ -10,6 +10,7 @@
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EventBanner from '../components/EventBanner.astro';
+import LegacyHashRedirect from '../components/LegacyHashRedirect.astro';
 import { getHomePage } from '../data/pages.js';
 import { getUpcomingEvent } from '../data/events.js';
 
@@ -23,6 +24,7 @@ const upcoming = await getUpcomingEvent();
   heroTagline={home.heroTagline ?? 'The Brisbane Javascript meetup.'}
   path="/"
 >
+  <LegacyHashRedirect />
   <div class="ui vertical stripe segment">
     <div class="ui stackable grid container">
       <div class="row">

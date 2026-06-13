@@ -81,7 +81,7 @@ Statuses: `todo` · `in-progress` · `blocked` · `done`
 
 | ID | Task | Refs | Depends on | Gate | Status | Owner |
 |----|------|------|-----------|------|--------|-------|
-| T3.1 | `netlify.toml` (`base = "web"`), legacy redirects, `#talk-<id>` client shim using a build-generated `legacyId → slug` map | 004 P-01 + shim from P-02 | T2.2 | 004 TC-06; local build green; shim unit-tested | todo | agent |
+| T3.1 | `netlify.toml` (`base = "web"`), legacy redirects, `#talk-<id>` client shim using a build-generated `legacyId → slug` map | 004 P-01 + shim from P-02 | T2.2 | 004 TC-06; local build green; shim unit-tested | done | agent |
 
 ### Phase 4 — Cloud wiring (human checkpoint)
 

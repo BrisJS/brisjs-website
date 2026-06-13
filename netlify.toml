@@ -1,0 +1,33 @@
+# Netlify build config for the BrisJS migration (feature 004, ADR-005/ADR-006).
+#
+# The Astro frontend lives in web/. `base = "web"` makes Netlify build from
+# there — this is the CUTOVER LEVER (ADR-006): until the migration goes live,
+# the legacy SPA still serves from the repo root; switching the connected
+# Netlify project to this config publishes the new site.
+#
+# STRAPI_API_URL and STRAPI_API_TOKEN are set in the Netlify UI (build env),
+# never committed. With them unset, the build falls back to fixtures.
+
+[build]
+  base = "web"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Legacy hash routes (#talks, #talk-<id>, …) can't be redirected server-side —
+# the hash never reaches Netlify — so they're handled by the client shim
+# (src/components/LegacyHashRedirect.astro). Path-style legacy URLs go here.
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+# SPA-era catch: the old site served everything from "/", so any unknown path
+# falls back to the home page (where the hash shim can still act). Astro's
+# generated 404 takes precedence for real 404s.
+[[redirects]]
+  from = "/talk-single"
+  to = "/talks"
+  status = 301
