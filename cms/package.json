@@ -13,6 +13,8 @@
     "strapi": "strapi",
     "import:legacy": "node scripts/import-legacy.js",
     "import:legacy:dry": "node scripts/import-legacy.js --dry-run",
+    "backup": "strapi export --no-encrypt",
+    "restore": "strapi import --force -f",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },

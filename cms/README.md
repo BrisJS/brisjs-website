@@ -110,6 +110,30 @@ Notes / manual follow-ups:
 - `Talk.slug` is derived in the script (`slugify(title)-legacyId`) because the core document
   service does not auto-populate `uid` fields the way the admin content-manager does.
 
+## Backup & restore — content exit path (feature 003 FR-07, BUILD_WORKFLOW T1.3)
+
+Once migrated, Strapi holds the community's only copy of ~9 years of talk history on a
+free-tier CMS. Strapi's data-transfer tooling is the **backup and exit path** — it also moves
+content to a self-hosted Strapi if we ever leave Strapi Cloud (ADR-002's escape hatch).
+
+```bash
+# Back up everything to a timestamped archive (unencrypted; add -k <key> to encrypt):
+npm run backup            # → export_YYYYMMDDHHMMSS.tar.gz
+
+# Restore into a fresh/empty instance (recreates content from the archive):
+npm run restore -- <archive>.tar          # wraps: strapi import --force -f <archive>
+```
+
+> Run under Node 22 (`nvm use 22`). On Strapi Cloud, run these against the cloud instance
+> using a transfer token. Store archives **off** Strapi Cloud (e.g. cloud storage), and take
+> one before each significant deploy/migration.
+
+**Verified round-trip (2026-06-12, T1.3):** exported the seeded DB (2812 entities incl. 1857
+relation links), deleted `.tmp/data.db` to simulate total loss, then `restore`d — content
+reproduced exactly: **talk 454, speaker 240, event 160, organizer 2 rows** (counts doubled by
+draft+publish: 227/120/80/1 entries). The only delta was users-permissions config, which the
+bootstrap regenerates on boot.
+
 ## What's NOT in this task
 
 - Strapi Cloud deploy, API tokens, CORS, publish webhooks → later cloud tasks
