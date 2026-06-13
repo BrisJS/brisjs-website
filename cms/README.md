@@ -75,8 +75,43 @@ Verified locally: public `GET /api/talks` → `200`; public `POST`/`PUT`/`DELETE
 Because draft & publish is on, the public API returns **published** entries only (drafts
 are excluded).
 
-## What's NOT in this task (T1.1)
+## Legacy data importer (feature 003 / T1.2)
 
-- Data migration / legacy importer → **T1.2**.
+`scripts/import-legacy.js` seeds the LOCAL Strapi DB from the legacy data sources
+(`data/legacy/talks.tsv`, `data/twitter.json`, `data/contact.json`, plus static copy
+transcribed from `index.html`), following the Migration Mapping in
+`features/001-strapi-content-modeling/DESIGN.md`. It bootstraps a full Strapi instance and
+writes through the document service (`strapi.documents(...)`), then **publishes** every entry
+so it is visible on the public read-only API.
+
+```bash
+cd cms
+nvm use 22                       # Strapi requires Node 20-24
+npm run import:legacy:dry        # report what would be created/updated, no writes
+npm run import:legacy            # write + publish to .tmp/data.db
+```
+
+**Idempotent** — every entry upserts on a stable natural key (Talk → `legacyId`,
+Speaker → `name`, Event → `dateTime`, Organizer → `name`; single types are find-or-create),
+so a second run creates **no duplicates** (it only updates existing rows).
+
+What it imports (from a clean DB): **227 talks, 120 speakers, 80 events, 1 organizer,
+3 single types** (HomePage, CodeOfConduct, FindUs).
+
+Notes / manual follow-ups:
+
+- `Speaker.photo` and `Organizer.photo` are Strapi **media** fields; the legacy data only has
+  image URLs, which can't be set without an upload step. Bios/websites/twitter handles are
+  imported; **photos need manual upload** in the admin.
+- `FindUs.mapEmbed` is left empty — `index.html` uses a static SVG, not an embeddable map.
+- The legacy sheet reuses a few `legacyId`s across different talks (189, 206, 207, 208). The
+  importer keeps the first occurrence's original id (so `#talk-<id>` redirects resolve) and
+  assigns deterministic synthetic ids to the later collisions, so no talks are lost.
+- `Talk.slug` is derived in the script (`slugify(title)-legacyId`) because the core document
+  service does not auto-populate `uid` fields the way the admin content-manager does.
+
+## What's NOT in this task
+
 - Strapi Cloud deploy, API tokens, CORS, publish webhooks → later cloud tasks
-  (feature 003 / 004). Schema and Public-role permissions are the scope here.
+  (feature 003 / 004). Schema, Public-role permissions, and the local legacy importer are the
+  scope of T1.1 + T1.2.

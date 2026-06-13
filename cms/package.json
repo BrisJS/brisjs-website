@@ -11,6 +11,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi",
+    "import:legacy": "node scripts/import-legacy.js",
+    "import:legacy:dry": "node scripts/import-legacy.js --dry-run",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
