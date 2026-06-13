@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       # Becomes a real gate once web/ is scaffolded (BUILD_WORKFLOW T2.1).
       - name: Run web checks
         run: |
@@ -38,7 +38,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       # Becomes a real gate once cms/ is scaffolded (BUILD_WORKFLOW T1.1).
       - name: Run cms checks
         run: |
