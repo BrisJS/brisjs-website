@@ -7,6 +7,17 @@
 > `docs/`, the **task board statuses are mutable working state**: every session updates them
 > as gates pass. The phases/protocol text itself changes only by decision.
 
+## ⛔ Build boundary reached (2026-06-13)
+
+All **agent-owned** tasks (T0.1–T3.1) are **done** and CI-green. The remaining tasks
+(H4.1–H4.5, T5.1) are **blocked on human-only prerequisites** — creating the Strapi Cloud and
+Netlify accounts, setting secrets, wiring the build hook, and changing `brisjs.org` DNS. Per
+this board's own hard rules ("never attempt Strapi Cloud / Netlify account actions or DNS"),
+an agent must not do these. The protocol stop condition ("all agent-owned tasks done or
+blocked → write `docs/HUMAN_TODO.md`") is satisfied. **Next steps: `docs/HUMAN_TODO.md`.**
+Once `STRAPI_API_URL` / `STRAPI_API_TOKEN` and a Netlify build hook exist, the agent can
+resume H4.3 (webhook wiring) and H4.4 (cloud content migration).
+
 ## Protocol (how a session executes this board)
 
 Each iteration:
@@ -87,17 +98,17 @@ Statuses: `todo` · `in-progress` · `blocked` · `done`
 
 | ID | Task | Refs | Depends on | Gate | Status | Owner |
 |----|------|------|-----------|------|--------|-------|
-| H4.1 | Create Strapi Cloud project + admin; deploy `cms/`; issue read-only API token; verify free-plan limits (001 Open Q4) | 003 P-01/P-02 | T1.1 | cloud API serves published content | todo | human |
-| H4.2 | Connect Netlify project; set `STRAPI_API_URL`/`STRAPI_API_TOKEN` env; create build hook; enable deploy previews | 004 P-01/P-02 | T3.1, H4.1 | 004 TC-01, TC-07 | todo | human |
-| H4.3 | Strapi webhook → Netlify build hook | 003 P-02 | H4.1, H4.2 | 003 TC-03; 004 TC-02 | todo | human + agent |
-| H4.4 | Re-run the importer against cloud Strapi; spot-check vs the live old site | 003 P-03 | H4.1, T1.2 | 003 TC-05 | todo | agent (needs creds) |
-| H4.5 | Domain/DNS: `brisjs.org` on the new deploy; reconcile the stale `CNAME` (HLD Open Q1) | 004 P-02 | H4.2 | 004 TC-05 | todo | human |
+| H4.1 | Create Strapi Cloud project + admin; deploy `cms/`; issue read-only API token; verify free-plan limits (001 Open Q4) | 003 P-01/P-02 | T1.1 | cloud API serves published content | blocked | human |
+| H4.2 | Connect Netlify project; set `STRAPI_API_URL`/`STRAPI_API_TOKEN` env; create build hook; enable deploy previews | 004 P-01/P-02 | T3.1, H4.1 | 004 TC-01, TC-07 | blocked | human |
+| H4.3 | Strapi webhook → Netlify build hook | 003 P-02 | H4.1, H4.2 | 003 TC-03; 004 TC-02 | blocked | human + agent |
+| H4.4 | Re-run the importer against cloud Strapi; spot-check vs the live old site | 003 P-03 | H4.1, T1.2 | 003 TC-05 | blocked | agent (needs creds) |
+| H4.5 | Domain/DNS: `brisjs.org` on the new deploy; reconcile the stale `CNAME` (HLD Open Q1) | 004 P-02 | H4.2 | 004 TC-05 | blocked | human |
 
 ### Phase 5 — Cutover
 
 | ID | Task | Refs | Depends on | Gate | Status | Owner |
 |----|------|------|-----------|------|--------|-------|
-| T5.1 | Compare deploy preview vs baseline; merge to `master`; remove legacy root files (cleanup commit per ADR-006); update HLD/ARCHITECTURE to the post-migration system; flip FEATURES statuses to `complete` | all | Phase 4 done | 004 TC-01..07 on production; docs in sync | todo | human + agent |
+| T5.1 | Compare deploy preview vs baseline; merge to `master`; remove legacy root files (cleanup commit per ADR-006); update HLD/ARCHITECTURE to the post-migration system; flip FEATURES statuses to `complete` | all | Phase 4 done | 004 TC-01..07 on production; docs in sync | blocked | human + agent |
 
 > Features **005 (design refresh)** and **006 (Meetup past-events enrichment)** start only
 > after T5.1, as their own cycles on this board's successor — not part of this build.
