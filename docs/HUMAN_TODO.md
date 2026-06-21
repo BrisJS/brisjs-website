@@ -4,6 +4,9 @@
 > `new-modern-refactor-astro-strapi-netlify`. What remains needs accounts, secrets, and DNS —
 > things an agent must not do. This is the checklist to take it live. See
 > `docs/BUILD_WORKFLOW.md` (Phase 4/5) for the task board and gates.
+>
+> 📖 **For click-by-click instructions, follow [`docs/SETUP_GUIDE.md`](./SETUP_GUIDE.md)** —
+> this page is the summary checklist; the guide has the exact steps, values, and verification.
 
 ## What's already built (no action needed)
 - `cms/` — Strapi 5, all content types as code, public role read-only, **227 talks / 120
